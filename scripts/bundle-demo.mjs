@@ -20,7 +20,12 @@ const js = outputFiles[0].text.replaceAll('</script', '<\\/script');
 const css = readFileSync(`${src}/styles.css`, 'utf8');
 const polyfills = readFileSync(`${src}/polyfills.js`, 'utf8').replaceAll('</script', '<\\/script');
 
+// Sample data for the in-browser API (see demo-api.interceptor). "<" is escaped so it can never close the script tag.
+const data = readFileSync('mock-server/db.json', 'utf8');
+const demoDb = JSON.stringify(JSON.parse(data)).replaceAll('<', '\\u003c');
+
 const body = `<style>:root{color-scheme:dark}${css}</style>
+<script type="application/json" id="demo-db">${demoDb}</script>
 <app-root></app-root>
 <script>${polyfills}</script>
 <script>${js}</script>

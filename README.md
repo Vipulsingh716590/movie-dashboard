@@ -53,7 +53,7 @@ and the charts are accessible), keyboard-accessible `role="switch"` toggles, res
 
 ## Hosted demo (Netlify)
 `npm run build:demo` builds a demo that needs no API: `demo-api.interceptor` answers the requests from an in-memory copy of
-`mock-server/db.json`, routing uses `#` URLs, and `scripts/bundle-demo.mjs` packs everything into one file (`dist/demo/index.html`).
+`mock-server/db.json` (embedded in the page by the bundler), routing uses `#` URLs, and `scripts/bundle-demo.mjs` packs everything into one file (`dist/demo/index.html`).
 Changes in the demo stay in the browser tab and reset on reload.
 
 On Netlify: **Add new site -> Import from Git**, pick this repo. `netlify.toml` supplies the build command and publish folder.

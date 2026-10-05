@@ -53,7 +53,10 @@ export class MovieStore {
         this.moviesState.update((list) => list.map((m) => (m.id === id ? { ...m, ...edit } : m)));
         this.toast.show('Movie saved');
         onDone?.();
-      }
+      },
+      // An edit is several writes (the movie, then each list that holds a copy). If one fails the server may be
+      // half updated, so show what it really has; the interceptor already told the user it failed.
+      error: () => this.load(true)
     });
   }
 

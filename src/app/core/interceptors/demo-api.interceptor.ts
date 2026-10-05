@@ -1,14 +1,22 @@
 import { HttpErrorResponse, HttpInterceptorFn, HttpResponse } from '@angular/common/http';
-import { delay, from, of, switchMap, throwError } from 'rxjs';
+import { delay, of, switchMap, throwError } from 'rxjs';
 import { environment } from '../../../environments/environment';
 
 type Db = Record<string, any>;
 
-let db: Promise<Db> | null = null;
+let db: Db | null = null;
 
-/** Loaded lazily, so the normal build never downloads the sample data. */
-function database(): Promise<Db> {
-  return (db ??= import('../../../../mock-server/db.json').then((m) => structuredClone(m.default) as Db));
+/**
+ * The sample data is embedded in the page by scripts/bundle-demo.mjs (<script id="demo-db">). It is read from the DOM
+ * instead of imported, so `ng serve` never watches mock-server/db.json (json-server rewrites it on every save).
+ */
+function database(): Db {
+  if (!db) {
+    const raw = document.getElementById('demo-db')?.textContent;
+    if (!raw) throw new Error('Demo data missing: build the demo with `npm run build:demo`.');
+    db = JSON.parse(raw) as Db;
+  }
+  return db;
 }
 
 const notFound = (url: string) =>
@@ -23,7 +31,7 @@ export const demoApiInterceptor: HttpInterceptorFn = (req, next) => {
 
   const [resource, id] = req.url.slice(environment.apiBaseUrl.length).split('/').filter(Boolean);
 
-  return from(database()).pipe(
+  return of(database()).pipe(
     switchMap((data) => {
       const reply = (body: unknown) => of(new HttpResponse({ status: 200, body: structuredClone(body) }));
       const collection = data[resource];
