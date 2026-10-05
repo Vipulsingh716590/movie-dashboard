@@ -1,0 +1,8 @@
+# Hosted demo: no API needed, sample data runs in the browser. Netlify -> Add new site -> Import from Git -> this repo.
+# This publishes the demo build, not the real dashboard, because the real one edits the API and has no login yet.
+[build]
+  command = "npm run build:demo"
+  publish = "dist/demo"
+
+[build.environment]
+  NODE_VERSION = "20"

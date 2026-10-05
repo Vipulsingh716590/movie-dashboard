@@ -1,0 +1,11 @@
+@if (failed) {
+  <div class="state" role="alert">
+    <h2>Can't reach the movie API</h2>
+    <p>Start it with <code>npm run mock:server</code> (port 3000), then retry.</p>
+    <button type="button" class="btn btn--primary" (click)="retry.emit()">Retry</button>
+  </div>
+} @else {
+  <div class="skeleton" aria-busy="true" aria-label="Loading">
+    <span></span><span></span><span></span><span></span>
+  </div>
+}

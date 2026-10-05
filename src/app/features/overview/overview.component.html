@@ -1,0 +1,72 @@
+<div class="page">
+  <header class="overview__head">
+    <div>
+      <h1 class="page__title">Overview</h1>
+      <p class="page__subtitle">A live summary of the catalogue shown in the MovieFlix app.</p>
+    </div>
+    <button type="button" class="btn" (click)="store.load(true)" [disabled]="store.loading()">
+      {{ store.loading() ? 'Refreshing…' : 'Refresh' }}
+    </button>
+  </header>
+
+  @if (!store.loaded()) {
+    <app-loading-state [failed]="store.failed()" (retry)="store.load()"></app-loading-state>
+  } @else {
+    <section class="overview__kpis" aria-label="Key numbers">
+      <app-stat-card label="Movies" [value]="store.kpis().total" [hint]="store.kpis().rated + ' rated'"></app-stat-card>
+      <app-stat-card label="Average rating" [value]="store.kpis().averageRating + ' / 10'" hint="Rated movies only"></app-stat-card>
+      <app-stat-card label="Average runtime" [value]="store.kpis().averageRuntime | runtime"></app-stat-card>
+      <app-stat-card label="Genres" [value]="store.kpis().genreCount"></app-stat-card>
+    </section>
+
+    <section class="panel overview__control">
+      <div>
+        <h2>Show ratings on the site</h2>
+        <p>
+          {{ store.settings().showRatings ? 'Rating badges are visible to visitors.' : 'All rating badges are hidden from visitors.' }}
+          @if (store.settings().hiddenRatingIds.length) {
+            <a routerLink="/movies">{{ store.settings().hiddenRatingIds.length }} movie(s) hidden individually</a>
+          }
+        </p>
+      </div>
+      <app-toggle-switch label="Show ratings on the site" [checked]="store.settings().showRatings"
+        (changed)="store.updateSettings({ showRatings: $event }, $event ? 'Ratings are now visible' : 'Ratings are now hidden')"></app-toggle-switch>
+    </section>
+
+    <div class="overview__grid">
+      <section class="panel">
+        <h2>Rating distribution</h2>
+        <app-bar-chart label="Number of movies per rating band" [data]="store.ratingBuckets()"></app-bar-chart>
+      </section>
+
+      <section class="panel">
+        <h2>Genres</h2>
+        <app-donut-chart label="Movies per genre (a movie can have several)" centerLabel="tags" [data]="store.genreCounts()"></app-donut-chart>
+      </section>
+
+      <section class="panel">
+        <h2>Movies by decade</h2>
+        <app-bar-chart label="Number of movies per release decade" color="#4aa3ff" [data]="store.decadeCounts()"></app-bar-chart>
+      </section>
+
+      <section class="panel">
+        <h2>Site sections</h2>
+        <app-bar-chart label="Number of movies in each home page section" color="#46d369" [data]="store.sectionCounts()"></app-bar-chart>
+      </section>
+    </div>
+
+    <section class="panel">
+      <h2>Top rated</h2>
+      <ol class="top">
+        @for (m of store.topRated(); track m.id; let i = $index) {
+          <li class="top__row">
+            <span class="top__rank">{{ i + 1 }}</span>
+            <img class="top__poster" [src]="m.poster_path" [alt]="''" loading="lazy" (error)="$any($event.target).style.visibility = 'hidden'" width="36" height="54">
+            <span class="top__title">{{ m.title }} <small>{{ m.release_date.slice(0, 4) }}</small></span>
+            <app-rating-badge [rating]="m.vote_average"></app-rating-badge>
+          </li>
+        }
+      </ol>
+    </section>
+  }
+</div>

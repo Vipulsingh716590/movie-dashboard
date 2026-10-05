@@ -1,0 +1,36 @@
+@use 'mixins' as *;
+
+.overview {
+  &__head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+  &__kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px; }
+  &__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+
+  &__control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    h2 { margin-bottom: 4px; }
+    p { margin: 0; color: var(--muted); font-size: 0.9rem; }
+    a { margin-left: 6px; color: #fff; }
+  }
+}
+
+.panel {
+  @include card;
+  padding: 18px 20px;
+  h2 { font-size: 1.05rem; margin-bottom: 14px; }
+}
+
+.top {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+
+  &__row { display: grid; grid-template-columns: 24px 36px 1fr auto; align-items: center; gap: 12px; }
+  &__rank { color: var(--muted); text-align: center; }
+  &__poster { width: 36px; height: 54px; object-fit: cover; border-radius: 4px; background: var(--surface-2); }
+  &__title { small { color: var(--muted); margin-left: 6px; } }
+}

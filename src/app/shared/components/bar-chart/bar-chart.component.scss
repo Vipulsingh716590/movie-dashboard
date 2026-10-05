@@ -1,0 +1,14 @@
+.bars {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+
+  &__row { display: grid; grid-template-columns: 84px 1fr 32px; align-items: center; gap: 10px; font-size: 0.85rem; }
+  &__label { color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  &__track { height: 10px; border-radius: 999px; background: var(--surface-2); overflow: hidden; }
+  &__fill { display: block; height: 100%; border-radius: 999px; transition: width 0.3s; }
+  &__value { text-align: right; font-variant-numeric: tabular-nums; }
+  &__empty { color: var(--muted); }
+}

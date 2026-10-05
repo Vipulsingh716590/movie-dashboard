@@ -1,0 +1,3054 @@
+{
+    "popular": {
+        "results": [
+            {
+                "id": 401,
+                "title": "Inception",
+                "alternative_titles": [
+                    "इंसेप्शन"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Inception_%282010%29_theatrical_poster.jpg/500px-Inception_%282010%29_theatrical_poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Inception_%282010%29_theatrical_poster.jpg/500px-Inception_%282010%29_theatrical_poster.jpg",
+                "release_date": "2010-07-16",
+                "vote_average": 8.4,
+                "overview": "A skilled thief who steals secrets from inside dreams is offered a chance to erase his past by planting an idea in a target's mind.",
+                "genres": [
+                    {
+                        "id": 1,
+                        "name": "Action"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Sci-Fi"
+                    }
+                ],
+                "trailer_key": "YoHD9XEInc0"
+            },
+            {
+                "id": 402,
+                "title": "The Dark Knight",
+                "alternative_titles": [
+                    "द डार्क नाइट"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/The_Dark_Knight_%282008_film%29.jpg/500px-The_Dark_Knight_%282008_film%29.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/The_Dark_Knight_%282008_film%29.jpg/500px-The_Dark_Knight_%282008_film%29.jpg",
+                "release_date": "2008-07-18",
+                "vote_average": 8.5,
+                "overview": "Batman faces the Joker, an anarchic criminal mastermind who pushes Gotham City to the edge and tests the hero's limits.",
+                "genres": [
+                    {
+                        "id": 1,
+                        "name": "Action"
+                    },
+                    {
+                        "id": 8,
+                        "name": "Crime"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Drama"
+                    }
+                ],
+                "trailer_key": "EXeTwQWrcwY"
+            },
+            {
+                "id": 403,
+                "title": "Interstellar",
+                "alternative_titles": [
+                    "इंटरस्टेलर"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Interstellar_film_poster.jpg/500px-Interstellar_film_poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Interstellar_film_poster.jpg/500px-Interstellar_film_poster.jpg",
+                "release_date": "2014-11-07",
+                "vote_average": 8.4,
+                "overview": "With Earth dying, a former pilot leads a crew through a wormhole in search of a new home for humanity.",
+                "genres": [
+                    {
+                        "id": 2,
+                        "name": "Sci-Fi"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Drama"
+                    }
+                ],
+                "trailer_key": "zSWdZVtXT7E"
+            },
+            {
+                "id": 404,
+                "title": "The Shawshank Redemption",
+                "alternative_titles": [
+                    "द शॉशैंक रिडेम्पशन"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/8/81/ShawshankRedemptionMoviePoster.jpg/500px-ShawshankRedemptionMoviePoster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/8/81/ShawshankRedemptionMoviePoster.jpg/500px-ShawshankRedemptionMoviePoster.jpg",
+                "release_date": "1994-09-23",
+                "vote_average": 8.7,
+                "overview": "A banker sentenced to life in prison forms an unlikely friendship and finds hope inside Shawshank State Penitentiary.",
+                "genres": [
+                    {
+                        "id": 3,
+                        "name": "Drama"
+                    }
+                ],
+                "trailer_key": "NmzuHjWmXOc"
+            },
+            {
+                "id": 405,
+                "title": "Pulp Fiction",
+                "alternative_titles": [
+                    "पल्प फिक्शन"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Pulp_Fiction_%281994%29_poster.jpg/500px-Pulp_Fiction_%281994%29_poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Pulp_Fiction_%281994%29_poster.jpg/500px-Pulp_Fiction_%281994%29_poster.jpg",
+                "release_date": "1994-10-14",
+                "vote_average": 8.5,
+                "overview": "The lives of two hitmen, a boxer and a gangster's wife intertwine in a series of darkly comic tales of violence and redemption.",
+                "genres": [
+                    {
+                        "id": 8,
+                        "name": "Crime"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Thriller"
+                    }
+                ],
+                "trailer_key": "s7EdQ4FqbhY"
+            },
+            {
+                "id": 406,
+                "title": "The Matrix",
+                "alternative_titles": [
+                    "द मैट्रिक्स"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/The_Matrix.png/500px-The_Matrix.png",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/The_Matrix.png/500px-The_Matrix.png",
+                "release_date": "1999-03-31",
+                "vote_average": 8.2,
+                "overview": "A hacker discovers that reality is a simulation and joins a rebellion against the machines that control it.",
+                "genres": [
+                    {
+                        "id": 1,
+                        "name": "Action"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Sci-Fi"
+                    }
+                ],
+                "trailer_key": "vKQi3bBA1y8"
+            },
+            {
+                "id": 407,
+                "title": "Gladiator",
+                "alternative_titles": [
+                    "ग्लैडिएटर"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Gladiator_%282000_film_poster%29.png/500px-Gladiator_%282000_film_poster%29.png",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Gladiator_%282000_film_poster%29.png/500px-Gladiator_%282000_film_poster%29.png",
+                "release_date": "2000-05-05",
+                "vote_average": 8.2,
+                "overview": "A betrayed Roman general becomes a gladiator and fights his way toward revenge against the emperor who destroyed his family.",
+                "genres": [
+                    {
+                        "id": 1,
+                        "name": "Action"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Drama"
+                    }
+                ],
+                "trailer_key": "P5ieIbInFpg"
+            },
+            {
+                "id": 408,
+                "title": "Parasite",
+                "alternative_titles": [
+                    "पैरासाइट"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Parasite_%282019_film%29.png/500px-Parasite_%282019_film%29.png",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Parasite_%282019_film%29.png/500px-Parasite_%282019_film%29.png",
+                "release_date": "2019-10-11",
+                "vote_average": 8.5,
+                "overview": "A poor family schemes its way into the lives of a wealthy household, with consequences no one expects.",
+                "genres": [
+                    {
+                        "id": 4,
+                        "name": "Thriller"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Drama"
+                    }
+                ],
+                "trailer_key": "isOGD_7hNIY"
+            },
+            {
+                "id": 409,
+                "title": "Avengers: Endgame",
+                "alternative_titles": [
+                    "अवेंजर्स: एंडगेम"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0d/Avengers_Endgame_poster.jpg/500px-Avengers_Endgame_poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0d/Avengers_Endgame_poster.jpg/500px-Avengers_Endgame_poster.jpg",
+                "release_date": "2019-04-26",
+                "vote_average": 8.3,
+                "overview": "The surviving Avengers assemble once more to undo the damage caused by Thanos and restore the universe.",
+                "genres": [
+                    {
+                        "id": 1,
+                        "name": "Action"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Sci-Fi"
+                    }
+                ],
+                "trailer_key": "TcMBFSGVi1c"
+            },
+            {
+                "id": 410,
+                "title": "The Godfather",
+                "alternative_titles": [
+                    "द गॉडफादर"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/Godfather_ver1.jpg/500px-Godfather_ver1.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/Godfather_ver1.jpg/500px-Godfather_ver1.jpg",
+                "release_date": "1972-03-24",
+                "vote_average": 8.7,
+                "overview": "The aging patriarch of a crime dynasty transfers control of his empire to his reluctant youngest son.",
+                "genres": [
+                    {
+                        "id": 8,
+                        "name": "Crime"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Drama"
+                    }
+                ],
+                "trailer_key": "UaVTIH8mujA"
+            },
+            {
+                "id": 411,
+                "title": "Spider-Man: Into the Spider-Verse",
+                "alternative_titles": [
+                    "स्पाइडर-मैन: इनटू द स्पाइडर-वर्स"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Spider-Man_Into_the_Spider-Verse_poster.png/500px-Spider-Man_Into_the_Spider-Verse_poster.png",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Spider-Man_Into_the_Spider-Verse_poster.png/500px-Spider-Man_Into_the_Spider-Verse_poster.png",
+                "release_date": "2018-12-14",
+                "vote_average": 8.4,
+                "overview": "Teen Miles Morales becomes Spider-Man and teams up with heroes from other dimensions to stop a threat to all realities.",
+                "genres": [
+                    {
+                        "id": 1,
+                        "name": "Action"
+                    },
+                    {
+                        "id": 9,
+                        "name": "Animation"
+                    }
+                ],
+                "trailer_key": "g4Hbz2jLxvQ"
+            },
+            {
+                "id": 412,
+                "title": "Joker",
+                "alternative_titles": [
+                    "जोकर"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Joker_%282019_film%29_poster.jpg/500px-Joker_%282019_film%29_poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Joker_%282019_film%29_poster.jpg/500px-Joker_%282019_film%29_poster.jpg",
+                "release_date": "2019-10-04",
+                "vote_average": 8.1,
+                "overview": "A struggling comedian is pushed to the margins of Gotham society and descends into madness and violence.",
+                "genres": [
+                    {
+                        "id": 8,
+                        "name": "Crime"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Drama"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Thriller"
+                    }
+                ],
+                "trailer_key": "zAGVQLHvwOY"
+            }
+        ]
+    },
+    "upcoming": {
+        "results": [
+            {
+                "id": 601,
+                "title": "Avengers: Doomsday",
+                "alternative_titles": [
+                    "अवेंजर्स: डूम्सडे"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ee/Avengers_Doomsday_poster.jpg/500px-Avengers_Doomsday_poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ee/Avengers_Doomsday_poster.jpg/500px-Avengers_Doomsday_poster.jpg",
+                "release_date": "2026-12-18",
+                "vote_average": 0,
+                "overview": "The Avengers and their allies face a new multiversal threat as an old enemy returns in a new and dangerous form.",
+                "genres": [
+                    {
+                        "id": 1,
+                        "name": "Action"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Sci-Fi"
+                    }
+                ],
+                "trailer_key": "irVNGjRFZGk"
+            },
+            {
+                "id": 602,
+                "title": "Spider-Man: Brand New Day",
+                "alternative_titles": [
+                    "स्पाइडर-मैन: ब्रांड न्यू डे"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Spider-Man_Brand_New_Day_poster.jpg/500px-Spider-Man_Brand_New_Day_poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Spider-Man_Brand_New_Day_poster.jpg/500px-Spider-Man_Brand_New_Day_poster.jpg",
+                "release_date": "2026-07-31",
+                "vote_average": 0,
+                "overview": "Peter Parker returns to the streets of New York as the world has forgotten who he is, and a new danger tests his resolve.",
+                "genres": [
+                    {
+                        "id": 1,
+                        "name": "Action"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Adventure"
+                    }
+                ],
+                "trailer_key": "62bIsvRcPv0"
+            },
+            {
+                "id": 603,
+                "title": "Toy Story 5",
+                "alternative_titles": [
+                    "टॉय स्टोरी 5"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/0/08/Toy_Story_5_poster.jpg/500px-Toy_Story_5_poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/0/08/Toy_Story_5_poster.jpg/500px-Toy_Story_5_poster.jpg",
+                "release_date": "2026-06-19",
+                "vote_average": 0,
+                "overview": "Woody, Buzz and the gang face a new kind of rival as technology competes for their kid's attention.",
+                "genres": [
+                    {
+                        "id": 4,
+                        "name": "Animation"
+                    },
+                    {
+                        "id": 5,
+                        "name": "Family"
+                    }
+                ],
+                "trailer_key": "c51ND9Hdbw0"
+            },
+            {
+                "id": 604,
+                "title": "The Mandalorian and Grogu",
+                "alternative_titles": [
+                    "द मैंडलोरियन एंड ग्रोगु"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/The_Mandalorian_and_Grogu_poster.jpg/500px-The_Mandalorian_and_Grogu_poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/The_Mandalorian_and_Grogu_poster.jpg/500px-The_Mandalorian_and_Grogu_poster.jpg",
+                "release_date": "2026-05-22",
+                "vote_average": 0,
+                "overview": "The bounty hunter Din Djarin and his young apprentice Grogu take on a new mission across the galaxy.",
+                "genres": [
+                    {
+                        "id": 2,
+                        "name": "Sci-Fi"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Adventure"
+                    }
+                ],
+                "trailer_key": "IHWlvwu8t1w"
+            },
+            {
+                "id": 605,
+                "title": "Supergirl",
+                "alternative_titles": [
+                    "सुपरगर्ल"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Supergirl_%282026_film%29_poster.jpg/500px-Supergirl_%282026_film%29_poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Supergirl_%282026_film%29_poster.jpg/500px-Supergirl_%282026_film%29_poster.jpg",
+                "release_date": "2026-06-26",
+                "vote_average": 0,
+                "overview": "Kara Zor-El embarks on a hard-edged cosmic adventure that tests what it means to be a hero.",
+                "genres": [
+                    {
+                        "id": 1,
+                        "name": "Action"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Sci-Fi"
+                    }
+                ],
+                "trailer_key": "s1-pfiVMKAs"
+            },
+            {
+                "id": 606,
+                "title": "Dune: Part Three",
+                "alternative_titles": [
+                    "ड्यून: पार्ट थ्री"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Dune_Part_Three_poster.jpg/500px-Dune_Part_Three_poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Dune_Part_Three_poster.jpg/500px-Dune_Part_Three_poster.jpg",
+                "release_date": "2026-12-18",
+                "vote_average": 0,
+                "overview": "Paul Atreides faces the consequences of his rise as emperor while war spreads across the known universe.",
+                "genres": [
+                    {
+                        "id": 2,
+                        "name": "Sci-Fi"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Adventure"
+                    }
+                ],
+                "trailer_key": "NdvqHc56lE0"
+            },
+            {
+                "id": 607,
+                "title": "The Odyssey",
+                "alternative_titles": [
+                    "द ओडिसी"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/9/90/The_Odyssey_%282026_film%29_poster.jpg/500px-The_Odyssey_%282026_film%29_poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/9/90/The_Odyssey_%282026_film%29_poster.jpg/500px-The_Odyssey_%282026_film%29_poster.jpg",
+                "release_date": "2026-07-17",
+                "vote_average": 0,
+                "overview": "The epic journey of Odysseus, a king trying to return home after the Trojan War, is brought to the screen.",
+                "genres": [
+                    {
+                        "id": 3,
+                        "name": "Adventure"
+                    },
+                    {
+                        "id": 6,
+                        "name": "Drama"
+                    }
+                ],
+                "trailer_key": "f_bKjZeJBBI"
+            },
+            {
+                "id": 608,
+                "title": "Moana",
+                "alternative_titles": [
+                    "मोआना"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/Moana_%282026_film%29_poster.jpg/500px-Moana_%282026_film%29_poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/Moana_%282026_film%29_poster.jpg/500px-Moana_%282026_film%29_poster.jpg",
+                "release_date": "2026-07-10",
+                "vote_average": 0,
+                "overview": "A live-action retelling of the story of a young wayfinder who sails beyond the reef to save her island.",
+                "genres": [
+                    {
+                        "id": 3,
+                        "name": "Adventure"
+                    },
+                    {
+                        "id": 5,
+                        "name": "Family"
+                    }
+                ],
+                "trailer_key": "n7f6hlKsxxo"
+            },
+            {
+                "id": 609,
+                "title": "Michael",
+                "alternative_titles": [
+                    "माइकल"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Michael_%282026_film_poster%29.png/500px-Michael_%282026_film_poster%29.png",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Michael_%282026_film_poster%29.png/500px-Michael_%282026_film_poster%29.png",
+                "release_date": "2026-04-24",
+                "vote_average": 0,
+                "overview": "A biographical drama following the life and legacy of Michael Jackson, from the Jackson 5 to global stardom.",
+                "genres": [
+                    {
+                        "id": 6,
+                        "name": "Drama"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Music"
+                    }
+                ],
+                "trailer_key": "mbtgEE6rkxw"
+            },
+            {
+                "id": 610,
+                "title": "The Super Mario Galaxy Movie",
+                "alternative_titles": [
+                    "द सुपर मारियो गैलेक्सी मूवी"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/The_Super_Mario_Galaxy_Movie_poster.jpeg/500px-The_Super_Mario_Galaxy_Movie_poster.jpeg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/The_Super_Mario_Galaxy_Movie_poster.jpeg/500px-The_Super_Mario_Galaxy_Movie_poster.jpeg",
+                "release_date": "2026-04-03",
+                "vote_average": 0,
+                "overview": "Mario and Luigi head to the stars in a new cosmic adventure inspired by the Super Mario Galaxy games.",
+                "genres": [
+                    {
+                        "id": 4,
+                        "name": "Animation"
+                    },
+                    {
+                        "id": 5,
+                        "name": "Family"
+                    }
+                ],
+                "trailer_key": "GuCejewteF8"
+            },
+            {
+                "id": 611,
+                "title": "Project Hail Mary",
+                "alternative_titles": [
+                    "प्रोजेक्ट हेल मैरी"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Project_Hail_Mary_poster.jpg/500px-Project_Hail_Mary_poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Project_Hail_Mary_poster.jpg/500px-Project_Hail_Mary_poster.jpg",
+                "release_date": "2026-03-20",
+                "vote_average": 0,
+                "overview": "A lone astronaut wakes up on a spacecraft with no memory and must solve a mystery that could save Earth.",
+                "genres": [
+                    {
+                        "id": 2,
+                        "name": "Sci-Fi"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Adventure"
+                    }
+                ],
+                "trailer_key": "m08TxIsFTRI"
+            },
+            {
+                "id": 612,
+                "title": "The Devil Wears Prada 2",
+                "alternative_titles": [
+                    "द डेविल वियर्स प्राडा 2"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/9/97/The_Devil_Wears_Prada_2_%28film_poster%29.png/500px-The_Devil_Wears_Prada_2_%28film_poster%29.png",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/9/97/The_Devil_Wears_Prada_2_%28film_poster%29.png/500px-The_Devil_Wears_Prada_2_%28film_poster%29.png",
+                "release_date": "2026-05-01",
+                "vote_average": 0,
+                "overview": "Miranda Priestly and Andy Sachs cross paths again as the fashion world faces a changing media landscape.",
+                "genres": [
+                    {
+                        "id": 8,
+                        "name": "Comedy"
+                    },
+                    {
+                        "id": 6,
+                        "name": "Drama"
+                    }
+                ],
+                "trailer_key": "e9HXmMnUEdE"
+            }
+        ]
+    },
+    "latest": {
+        "results": [
+            {
+                "id": 701,
+                "title": "Dune: Part Two",
+                "alternative_titles": [
+                    "ड्यून: पार्ट टू"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/5/52/Dune_Part_Two_poster.jpeg/500px-Dune_Part_Two_poster.jpeg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/5/52/Dune_Part_Two_poster.jpeg/500px-Dune_Part_Two_poster.jpeg",
+                "release_date": "2024-03-01",
+                "vote_average": 8.2,
+                "overview": "Paul Atreides unites with the Fremen and seeks revenge against those who destroyed his family.",
+                "genres": [
+                    {
+                        "id": 2,
+                        "name": "Sci-Fi"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Adventure"
+                    }
+                ],
+                "trailer_key": "Way9Dexny3w"
+            },
+            {
+                "id": 702,
+                "title": "Inside Out 2",
+                "alternative_titles": [
+                    "इनसाइड आउट 2"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/Inside_Out_2_poster.jpg/500px-Inside_Out_2_poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/Inside_Out_2_poster.jpg/500px-Inside_Out_2_poster.jpg",
+                "release_date": "2024-06-14",
+                "vote_average": 7.6,
+                "overview": "Riley enters her teens and new emotions, including Anxiety, arrive at Headquarters.",
+                "genres": [
+                    {
+                        "id": 4,
+                        "name": "Animation"
+                    },
+                    {
+                        "id": 5,
+                        "name": "Family"
+                    }
+                ],
+                "trailer_key": "LEjhY15eCx0"
+            },
+            {
+                "id": 703,
+                "title": "Deadpool & Wolverine",
+                "alternative_titles": [
+                    "डेडपूल एंड वूल्वरिन"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Deadpool_%26_Wolverine_poster.jpg/500px-Deadpool_%26_Wolverine_poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Deadpool_%26_Wolverine_poster.jpg/500px-Deadpool_%26_Wolverine_poster.jpg",
+                "release_date": "2024-07-26",
+                "vote_average": 7.6,
+                "overview": "Deadpool teams up with a reluctant Wolverine for a mission that could reshape the multiverse.",
+                "genres": [
+                    {
+                        "id": 1,
+                        "name": "Action"
+                    },
+                    {
+                        "id": 8,
+                        "name": "Comedy"
+                    }
+                ],
+                "trailer_key": "73_1biulkYk"
+            },
+            {
+                "id": 704,
+                "title": "Wicked",
+                "alternative_titles": [
+                    "विकेड"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Wicked_%282024_film%29_poster.png/500px-Wicked_%282024_film%29_poster.png",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Wicked_%282024_film%29_poster.png/500px-Wicked_%282024_film%29_poster.png",
+                "release_date": "2024-11-22",
+                "vote_average": 7.3,
+                "overview": "Elphaba and Glinda meet at Shiz University and form an unlikely friendship before the Wizard of Oz.",
+                "genres": [
+                    {
+                        "id": 9,
+                        "name": "Fantasy"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Music"
+                    }
+                ],
+                "trailer_key": "6COmYeLsz4c"
+            },
+            {
+                "id": 705,
+                "title": "Anora",
+                "alternative_titles": [
+                    "अनोरा"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Anora_%282024_film%29_poster.jpg/500px-Anora_%282024_film%29_poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Anora_%282024_film%29_poster.jpg/500px-Anora_%282024_film%29_poster.jpg",
+                "release_date": "2024-10-18",
+                "vote_average": 7.1,
+                "overview": "A young sex worker from Brooklyn gets her chance at a fairy-tale life by marrying the son of a Russian oligarch.",
+                "genres": [
+                    {
+                        "id": 6,
+                        "name": "Drama"
+                    },
+                    {
+                        "id": 8,
+                        "name": "Comedy"
+                    }
+                ],
+                "trailer_key": "GuPkfvxmtdw"
+            },
+            {
+                "id": 706,
+                "title": "Sinners",
+                "alternative_titles": [
+                    "सिनर्स"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Sinners_%282025_film%29_poster.jpg/500px-Sinners_%282025_film%29_poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Sinners_%282025_film%29_poster.jpg/500px-Sinners_%282025_film%29_poster.jpg",
+                "release_date": "2025-04-18",
+                "vote_average": 7.5,
+                "overview": "Twin brothers return to their Mississippi hometown to start over, only to face a greater evil.",
+                "genres": [
+                    {
+                        "id": 10,
+                        "name": "Horror"
+                    },
+                    {
+                        "id": 6,
+                        "name": "Drama"
+                    }
+                ],
+                "trailer_key": "bKGxHflevuk"
+            },
+            {
+                "id": 707,
+                "title": "Superman",
+                "alternative_titles": [
+                    "सुपरमैन"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Superman_%282025_film%29_poster.jpg/500px-Superman_%282025_film%29_poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Superman_%282025_film%29_poster.jpg/500px-Superman_%282025_film%29_poster.jpg",
+                "release_date": "2025-07-11",
+                "vote_average": 7.2,
+                "overview": "Superman reconciles his alien heritage with his human upbringing as the embodiment of truth and justice.",
+                "genres": [
+                    {
+                        "id": 1,
+                        "name": "Action"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Sci-Fi"
+                    }
+                ],
+                "trailer_key": "Ox8ZLF6cGM0"
+            },
+            {
+                "id": 708,
+                "title": "F1",
+                "alternative_titles": [
+                    "एफ1"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/38/F1_%282025_film%29.png/500px-F1_%282025_film%29.png",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/38/F1_%282025_film%29.png/500px-F1_%282025_film%29.png",
+                "release_date": "2025-06-27",
+                "vote_average": 7.6,
+                "overview": "A veteran driver returns to Formula One to mentor a rookie on a struggling team.",
+                "genres": [
+                    {
+                        "id": 1,
+                        "name": "Action"
+                    },
+                    {
+                        "id": 6,
+                        "name": "Drama"
+                    }
+                ],
+                "trailer_key": "69ffwl-8pCU"
+            },
+            {
+                "id": 709,
+                "title": "Oppenheimer",
+                "alternative_titles": [
+                    "ओपेनहाइमर"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Oppenheimer_%28film%29.jpg/500px-Oppenheimer_%28film%29.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Oppenheimer_%28film%29.jpg/500px-Oppenheimer_%28film%29.jpg",
+                "release_date": "2023-07-21",
+                "vote_average": 8.1,
+                "overview": "The story of J. Robert Oppenheimer and his role in developing the atomic bomb.",
+                "genres": [
+                    {
+                        "id": 6,
+                        "name": "Drama"
+                    },
+                    {
+                        "id": 11,
+                        "name": "Biography"
+                    }
+                ],
+                "trailer_key": "uYPbbksJxIg"
+            },
+            {
+                "id": 710,
+                "title": "Barbie",
+                "alternative_titles": [
+                    "बार्बी"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Barbie_2023_poster.jpg/500px-Barbie_2023_poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Barbie_2023_poster.jpg/500px-Barbie_2023_poster.jpg",
+                "release_date": "2023-07-21",
+                "vote_average": 7,
+                "overview": "Barbie and Ken leave Barbieland for the real world and discover the joys and perils of living among humans.",
+                "genres": [
+                    {
+                        "id": 8,
+                        "name": "Comedy"
+                    },
+                    {
+                        "id": 9,
+                        "name": "Fantasy"
+                    }
+                ],
+                "trailer_key": "pBk4NYhWNMM"
+            },
+            {
+                "id": 711,
+                "title": "Mission: Impossible – The Final Reckoning",
+                "alternative_titles": [
+                    "मिशन: इम्पॉसिबल – द फाइनल रेकनिंग"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Mission_Impossible_%E2%80%93_The_Final_Reckoning_Poster.jpg/500px-Mission_Impossible_%E2%80%93_The_Final_Reckoning_Poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Mission_Impossible_%E2%80%93_The_Final_Reckoning_Poster.jpg/500px-Mission_Impossible_%E2%80%93_The_Final_Reckoning_Poster.jpg",
+                "release_date": "2025-05-23",
+                "vote_average": 7.2,
+                "overview": "Ethan Hunt and his team race against time to stop a rogue artificial intelligence that threatens the world.",
+                "genres": [
+                    {
+                        "id": 1,
+                        "name": "Action"
+                    },
+                    {
+                        "id": 12,
+                        "name": "Thriller"
+                    }
+                ],
+                "trailer_key": "fsQgc9pCyDU"
+            },
+            {
+                "id": 712,
+                "title": "Zootopia 2",
+                "alternative_titles": [
+                    "ज़ूटोपिया 2"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6a/Zootopia_2_%282025_film%29.jpg/500px-Zootopia_2_%282025_film%29.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6a/Zootopia_2_%282025_film%29.jpg/500px-Zootopia_2_%282025_film%29.jpg",
+                "release_date": "2025-11-26",
+                "vote_average": 7.6,
+                "overview": "Judy Hopps and Nick Wilde take on a new case that leads them to unexpected corners of the animal city.",
+                "genres": [
+                    {
+                        "id": 4,
+                        "name": "Animation"
+                    },
+                    {
+                        "id": 5,
+                        "name": "Family"
+                    }
+                ],
+                "trailer_key": "BjkIOU5PhyQ"
+            }
+        ]
+    },
+    "hero": {
+        "results": [
+            {
+                "id": 503,
+                "title": "Top Gun: Maverick",
+                "alternative_titles": [
+                    "टॉप गन: मेवरिक"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Top_Gun_Maverick_Poster.jpg/500px-Top_Gun_Maverick_Poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Top_Gun_Maverick_Poster.jpg/500px-Top_Gun_Maverick_Poster.jpg",
+                "release_date": "2022-05-27",
+                "vote_average": 8.2,
+                "overview": "After thirty years, Maverick returns to train a new generation of elite pilots for a dangerous mission.",
+                "genres": [
+                    {
+                        "id": 1,
+                        "name": "Action"
+                    },
+                    {
+                        "id": 6,
+                        "name": "Drama"
+                    }
+                ],
+                "trailer_key": "qSqVVswa420"
+            },
+            {
+                "id": 401,
+                "title": "Inception",
+                "alternative_titles": [
+                    "इंसेप्शन"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Inception_%282010%29_theatrical_poster.jpg/500px-Inception_%282010%29_theatrical_poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Inception_%282010%29_theatrical_poster.jpg/500px-Inception_%282010%29_theatrical_poster.jpg",
+                "release_date": "2010-07-16",
+                "vote_average": 8.4,
+                "overview": "A skilled thief who steals secrets from inside dreams is offered a chance to erase his past by planting an idea in a target's mind.",
+                "genres": [
+                    {
+                        "id": 1,
+                        "name": "Action"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Sci-Fi"
+                    }
+                ],
+                "trailer_key": "YoHD9XEInc0"
+            },
+            {
+                "id": 402,
+                "title": "The Dark Knight",
+                "alternative_titles": [
+                    "द डार्क नाइट"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/The_Dark_Knight_%282008_film%29.jpg/500px-The_Dark_Knight_%282008_film%29.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/The_Dark_Knight_%282008_film%29.jpg/500px-The_Dark_Knight_%282008_film%29.jpg",
+                "release_date": "2008-07-18",
+                "vote_average": 8.5,
+                "overview": "Batman faces the Joker, an anarchic criminal mastermind who pushes Gotham City to the edge and tests the hero's limits.",
+                "genres": [
+                    {
+                        "id": 1,
+                        "name": "Action"
+                    },
+                    {
+                        "id": 8,
+                        "name": "Crime"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Drama"
+                    }
+                ],
+                "trailer_key": "EXeTwQWrcwY"
+            },
+            {
+                "id": 403,
+                "title": "Interstellar",
+                "alternative_titles": [
+                    "इंटरस्टेलर"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Interstellar_film_poster.jpg/500px-Interstellar_film_poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Interstellar_film_poster.jpg/500px-Interstellar_film_poster.jpg",
+                "release_date": "2014-11-07",
+                "vote_average": 8.4,
+                "overview": "With Earth dying, a former pilot leads a crew through a wormhole in search of a new home for humanity.",
+                "genres": [
+                    {
+                        "id": 2,
+                        "name": "Sci-Fi"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Drama"
+                    }
+                ],
+                "trailer_key": "zSWdZVtXT7E"
+            },
+            {
+                "id": 404,
+                "title": "The Shawshank Redemption",
+                "alternative_titles": [
+                    "द शॉशैंक रिडेम्पशन"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/8/81/ShawshankRedemptionMoviePoster.jpg/500px-ShawshankRedemptionMoviePoster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/8/81/ShawshankRedemptionMoviePoster.jpg/500px-ShawshankRedemptionMoviePoster.jpg",
+                "release_date": "1994-09-23",
+                "vote_average": 8.7,
+                "overview": "A banker sentenced to life in prison forms an unlikely friendship and finds hope inside Shawshank State Penitentiary.",
+                "genres": [
+                    {
+                        "id": 3,
+                        "name": "Drama"
+                    }
+                ],
+                "trailer_key": "NmzuHjWmXOc"
+            },
+            {
+                "id": 405,
+                "title": "Pulp Fiction",
+                "alternative_titles": [
+                    "पल्प फिक्शन"
+                ],
+                "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Pulp_Fiction_%281994%29_poster.jpg/500px-Pulp_Fiction_%281994%29_poster.jpg",
+                "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Pulp_Fiction_%281994%29_poster.jpg/500px-Pulp_Fiction_%281994%29_poster.jpg",
+                "release_date": "1994-10-14",
+                "vote_average": 8.5,
+                "overview": "The lives of two hitmen, a boxer and a gangster's wife intertwine in a series of darkly comic tales of violence and redemption.",
+                "genres": [
+                    {
+                        "id": 8,
+                        "name": "Crime"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Thriller"
+                    }
+                ],
+                "trailer_key": "s7EdQ4FqbhY"
+            }
+        ]
+    },
+    "movieDetails": [
+        {
+            "id": 401,
+            "title": "Inception",
+            "alternative_titles": [
+                "इंसेप्शन"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Inception_%282010%29_theatrical_poster.jpg/500px-Inception_%282010%29_theatrical_poster.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Inception_%282010%29_theatrical_poster.jpg/500px-Inception_%282010%29_theatrical_poster.jpg",
+            "release_date": "2010-07-16",
+            "vote_average": 8.4,
+            "overview": "A skilled thief who steals secrets from inside dreams is offered a chance to erase his past by planting an idea in a target's mind.",
+            "genres": [
+                {
+                    "id": 1,
+                    "name": "Action"
+                },
+                {
+                    "id": 2,
+                    "name": "Sci-Fi"
+                }
+            ],
+            "runtime": 148,
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Leonardo DiCaprio",
+                    "character": "Dom Cobb",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/LeoPTABFI191125-28_%28cropped%29.jpg/330px-LeoPTABFI191125-28_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Joseph Gordon-Levitt",
+                    "character": "Arthur",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Joseph_Gordon_Levitt_Sundance_Film_Festival_2026_%28cropped%29.jpg/330px-Joseph_Gordon_Levitt_Sundance_Film_Festival_2026_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Elliot Page",
+                    "character": "Ariadne",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/ElliotPage-byPhilipRomano2.jpg/330px-ElliotPage-byPhilipRomano2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "trailer_key": "YoHD9XEInc0"
+        },
+        {
+            "id": 402,
+            "title": "The Dark Knight",
+            "alternative_titles": [
+                "द डार्क नाइट"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/The_Dark_Knight_%282008_film%29.jpg/500px-The_Dark_Knight_%282008_film%29.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/The_Dark_Knight_%282008_film%29.jpg/500px-The_Dark_Knight_%282008_film%29.jpg",
+            "release_date": "2008-07-18",
+            "vote_average": 8.5,
+            "overview": "Batman faces the Joker, an anarchic criminal mastermind who pushes Gotham City to the edge and tests the hero's limits.",
+            "genres": [
+                {
+                    "id": 1,
+                    "name": "Action"
+                },
+                {
+                    "id": 8,
+                    "name": "Crime"
+                },
+                {
+                    "id": 3,
+                    "name": "Drama"
+                }
+            ],
+            "runtime": 152,
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Christian Bale",
+                    "character": "Bruce Wayne",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Christian_Bale-7837.jpg/330px-Christian_Bale-7837.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Heath Ledger",
+                    "character": "Joker",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Heath_Ledger_%282%29.jpg/330px-Heath_Ledger_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Aaron Eckhart",
+                    "character": "Harvey Dent",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Aaron_Eckhart_%2829830286295%29_%28cropped%29.jpg/330px-Aaron_Eckhart_%2829830286295%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "trailer_key": "EXeTwQWrcwY"
+        },
+        {
+            "id": 403,
+            "title": "Interstellar",
+            "alternative_titles": [
+                "इंटरस्टेलर"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Interstellar_film_poster.jpg/500px-Interstellar_film_poster.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Interstellar_film_poster.jpg/500px-Interstellar_film_poster.jpg",
+            "release_date": "2014-11-07",
+            "vote_average": 8.4,
+            "overview": "With Earth dying, a former pilot leads a crew through a wormhole in search of a new home for humanity.",
+            "genres": [
+                {
+                    "id": 2,
+                    "name": "Sci-Fi"
+                },
+                {
+                    "id": 3,
+                    "name": "Drama"
+                }
+            ],
+            "runtime": 169,
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Matthew McConaughey",
+                    "character": "Cooper",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Matthew_McConaughey_at_the_2025_Toronto_Film_Festival_%283x4_cropped%29.jpg/330px-Matthew_McConaughey_at_the_2025_Toronto_Film_Festival_%283x4_cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Anne Hathaway",
+                    "character": "Brand",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/AnneHathaway-byPhilipRomano-Crop.jpg/330px-AnneHathaway-byPhilipRomano-Crop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Jessica Chastain",
+                    "character": "Murph",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Jessica_Chastain-64631_%28cropped%29.jpg/330px-Jessica_Chastain-64631_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "trailer_key": "zSWdZVtXT7E"
+        },
+        {
+            "id": 404,
+            "title": "The Shawshank Redemption",
+            "alternative_titles": [
+                "द शॉशैंक रिडेम्पशन"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/8/81/ShawshankRedemptionMoviePoster.jpg/500px-ShawshankRedemptionMoviePoster.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/8/81/ShawshankRedemptionMoviePoster.jpg/500px-ShawshankRedemptionMoviePoster.jpg",
+            "release_date": "1994-09-23",
+            "vote_average": 8.7,
+            "overview": "A banker sentenced to life in prison forms an unlikely friendship and finds hope inside Shawshank State Penitentiary.",
+            "genres": [
+                {
+                    "id": 3,
+                    "name": "Drama"
+                }
+            ],
+            "runtime": 142,
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Tim Robbins",
+                    "character": "Andy Dufresne",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Tim_Robbins_%28Berlin_Film_Festival_2013%29.jpg/330px-Tim_Robbins_%28Berlin_Film_Festival_2013%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Morgan Freeman",
+                    "character": "Ellis \"Red\" Redding",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Morgan_Freeman_at_The_Pentagon_on_2_August_2023_-_230802-D-PM193-3363_%28cropped%29.jpg/330px-Morgan_Freeman_at_The_Pentagon_on_2_August_2023_-_230802-D-PM193-3363_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Bob Gunton",
+                    "character": "Warden Norton",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Bob_Gunton%2C_1963_senior_photo.jpg/330px-Bob_Gunton%2C_1963_senior_photo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "trailer_key": "NmzuHjWmXOc"
+        },
+        {
+            "id": 405,
+            "title": "Pulp Fiction",
+            "alternative_titles": [
+                "पल्प फिक्शन"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Pulp_Fiction_%281994%29_poster.jpg/500px-Pulp_Fiction_%281994%29_poster.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Pulp_Fiction_%281994%29_poster.jpg/500px-Pulp_Fiction_%281994%29_poster.jpg",
+            "release_date": "1994-10-14",
+            "vote_average": 8.5,
+            "overview": "The lives of two hitmen, a boxer and a gangster's wife intertwine in a series of darkly comic tales of violence and redemption.",
+            "genres": [
+                {
+                    "id": 8,
+                    "name": "Crime"
+                },
+                {
+                    "id": 4,
+                    "name": "Thriller"
+                }
+            ],
+            "runtime": 154,
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "John Travolta",
+                    "character": "Vincent Vega",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/John_Travolta_in_2024_%28cropped%29.jpg/330px-John_Travolta_in_2024_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Samuel L. Jackson",
+                    "character": "Jules Winnfield",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Samuel_L._Jackson_attending_the_World_premier_of_%22Argylle%22_in_London_%2C_January_2024_%28cropped2%29.jpg/330px-Samuel_L._Jackson_attending_the_World_premier_of_%22Argylle%22_in_London_%2C_January_2024_%28cropped2%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Uma Thurman",
+                    "character": "Mia Wallace",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/UmaThurman-byPhilipRomano.jpg/330px-UmaThurman-byPhilipRomano.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "trailer_key": "s7EdQ4FqbhY"
+        },
+        {
+            "id": 406,
+            "title": "The Matrix",
+            "alternative_titles": [
+                "द मैट्रिक्स"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/The_Matrix.png/500px-The_Matrix.png",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/The_Matrix.png/500px-The_Matrix.png",
+            "release_date": "1999-03-31",
+            "vote_average": 8.2,
+            "overview": "A hacker discovers that reality is a simulation and joins a rebellion against the machines that control it.",
+            "genres": [
+                {
+                    "id": 1,
+                    "name": "Action"
+                },
+                {
+                    "id": 2,
+                    "name": "Sci-Fi"
+                }
+            ],
+            "runtime": 136,
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Keanu Reeves",
+                    "character": "Neo",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Keanu_Reeves_at_TIFF_2025_02_%28Cropped%29.jpg/330px-Keanu_Reeves_at_TIFF_2025_02_%28Cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Laurence Fishburne",
+                    "character": "Morpheus",
+                    "profile_path": "https://picsum.photos/seed/c4061/200/200"
+                },
+                {
+                    "id": 3,
+                    "name": "Carrie-Anne Moss",
+                    "character": "Trinity",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Carrie-Anne_Moss_at_2026_Toronto_International_Film_Festival_-_%22YAGA%22_Premiere_14-2.jpg/330px-Carrie-Anne_Moss_at_2026_Toronto_International_Film_Festival_-_%22YAGA%22_Premiere_14-2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "trailer_key": "vKQi3bBA1y8"
+        },
+        {
+            "id": 407,
+            "title": "Gladiator",
+            "alternative_titles": [
+                "ग्लैडिएटर"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Gladiator_%282000_film_poster%29.png/500px-Gladiator_%282000_film_poster%29.png",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Gladiator_%282000_film_poster%29.png/500px-Gladiator_%282000_film_poster%29.png",
+            "release_date": "2000-05-05",
+            "vote_average": 8.2,
+            "overview": "A betrayed Roman general becomes a gladiator and fights his way toward revenge against the emperor who destroyed his family.",
+            "genres": [
+                {
+                    "id": 1,
+                    "name": "Action"
+                },
+                {
+                    "id": 3,
+                    "name": "Drama"
+                }
+            ],
+            "runtime": 155,
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Russell Crowe",
+                    "character": "Maximus",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Russell_Crowe_Venice_2026.jpg/330px-Russell_Crowe_Venice_2026.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Joaquin Phoenix",
+                    "character": "Commodus",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Joaquin_Phoenix-64908_%28cropped%29.jpg/330px-Joaquin_Phoenix-64908_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Connie Nielsen",
+                    "character": "Lucilla",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Connie_Nielsen_by_Gage_Skidmore.jpg/330px-Connie_Nielsen_by_Gage_Skidmore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "trailer_key": "P5ieIbInFpg"
+        },
+        {
+            "id": 408,
+            "title": "Parasite",
+            "alternative_titles": [
+                "पैरासाइट"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Parasite_%282019_film%29.png/500px-Parasite_%282019_film%29.png",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Parasite_%282019_film%29.png/500px-Parasite_%282019_film%29.png",
+            "release_date": "2019-10-11",
+            "vote_average": 8.5,
+            "overview": "A poor family schemes its way into the lives of a wealthy household, with consequences no one expects.",
+            "genres": [
+                {
+                    "id": 4,
+                    "name": "Thriller"
+                },
+                {
+                    "id": 3,
+                    "name": "Drama"
+                }
+            ],
+            "runtime": 133,
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Song Kang-ho",
+                    "character": "Kim Ki-taek",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Song_Gangho_2016.jpg/330px-Song_Gangho_2016.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Lee Sun-kyun",
+                    "character": "Park Dong-ik",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Lee_Seon-gun_in_Oct_2018.png/330px-Lee_Seon-gun_in_Oct_2018.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Cho Yeo-jeong",
+                    "character": "Park Yeon-kyo",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Cho_Yeo-jeong_%28cropped%29.jpg/330px-Cho_Yeo-jeong_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "trailer_key": "isOGD_7hNIY"
+        },
+        {
+            "id": 409,
+            "title": "Avengers: Endgame",
+            "alternative_titles": [
+                "अवेंजर्स: एंडगेम"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0d/Avengers_Endgame_poster.jpg/500px-Avengers_Endgame_poster.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0d/Avengers_Endgame_poster.jpg/500px-Avengers_Endgame_poster.jpg",
+            "release_date": "2019-04-26",
+            "vote_average": 8.3,
+            "overview": "The surviving Avengers assemble once more to undo the damage caused by Thanos and restore the universe.",
+            "genres": [
+                {
+                    "id": 1,
+                    "name": "Action"
+                },
+                {
+                    "id": 2,
+                    "name": "Sci-Fi"
+                }
+            ],
+            "runtime": 181,
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Robert Downey Jr.",
+                    "character": "Tony Stark",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/RobertDowneyJr-byPhilipRomano7_%28cropped%29.jpg/330px-RobertDowneyJr-byPhilipRomano7_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Chris Evans",
+                    "character": "Steve Rogers",
+                    "profile_path": "https://picsum.photos/seed/c4091/200/200"
+                },
+                {
+                    "id": 3,
+                    "name": "Scarlett Johansson",
+                    "character": "Natasha Romanoff",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Scarlett_Johansson-8588.jpg/330px-Scarlett_Johansson-8588.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "trailer_key": "TcMBFSGVi1c"
+        },
+        {
+            "id": 410,
+            "title": "The Godfather",
+            "alternative_titles": [
+                "द गॉडफादर"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/Godfather_ver1.jpg/500px-Godfather_ver1.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/Godfather_ver1.jpg/500px-Godfather_ver1.jpg",
+            "release_date": "1972-03-24",
+            "vote_average": 8.7,
+            "overview": "The aging patriarch of a crime dynasty transfers control of his empire to his reluctant youngest son.",
+            "genres": [
+                {
+                    "id": 8,
+                    "name": "Crime"
+                },
+                {
+                    "id": 3,
+                    "name": "Drama"
+                }
+            ],
+            "runtime": 175,
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Marlon Brando",
+                    "character": "Vito Corleone",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Marlon_Brando_publicity_for_One-Eyed_Jacks.png/330px-Marlon_Brando_publicity_for_One-Eyed_Jacks.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Al Pacino",
+                    "character": "Michael Corleone",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Al_Pacino_-_Killing_Castro_-_Q%26A_-_Tribeca_2026_-_by_%40JJxFile-23_%28cropped%29.jpg/330px-Al_Pacino_-_Killing_Castro_-_Q%26A_-_Tribeca_2026_-_by_%40JJxFile-23_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "James Caan",
+                    "character": "Sonny Corleone",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/en/thumb/8/85/James_Caan_-_1972.jpg/330px-James_Caan_-_1972.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "trailer_key": "UaVTIH8mujA"
+        },
+        {
+            "id": 411,
+            "title": "Spider-Man: Into the Spider-Verse",
+            "alternative_titles": [
+                "स्पाइडर-मैन: इनटू द स्पाइडर-वर्स"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Spider-Man_Into_the_Spider-Verse_poster.png/500px-Spider-Man_Into_the_Spider-Verse_poster.png",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Spider-Man_Into_the_Spider-Verse_poster.png/500px-Spider-Man_Into_the_Spider-Verse_poster.png",
+            "release_date": "2018-12-14",
+            "vote_average": 8.4,
+            "overview": "Teen Miles Morales becomes Spider-Man and teams up with heroes from other dimensions to stop a threat to all realities.",
+            "genres": [
+                {
+                    "id": 1,
+                    "name": "Action"
+                },
+                {
+                    "id": 9,
+                    "name": "Animation"
+                }
+            ],
+            "runtime": 117,
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Shameik Moore",
+                    "character": "Miles Morales",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Shameik_Moore_Photo_Op_GalaxyCon_Raleigh_2023.jpg/330px-Shameik_Moore_Photo_Op_GalaxyCon_Raleigh_2023.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Jake Johnson",
+                    "character": "Peter B. Parker",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Jake_Johnson_-_Maximum_Pleasure_Guaranteed.jpg/330px-Jake_Johnson_-_Maximum_Pleasure_Guaranteed.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Hailee Steinfeld",
+                    "character": "Gwen Stacy",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Hailee_Steinfeld_by_Gage_Skidmore.jpg/330px-Hailee_Steinfeld_by_Gage_Skidmore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "trailer_key": "g4Hbz2jLxvQ"
+        },
+        {
+            "id": 412,
+            "title": "Joker",
+            "alternative_titles": [
+                "जोकर"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Joker_%282019_film%29_poster.jpg/500px-Joker_%282019_film%29_poster.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Joker_%282019_film%29_poster.jpg/500px-Joker_%282019_film%29_poster.jpg",
+            "release_date": "2019-10-04",
+            "vote_average": 8.1,
+            "overview": "A struggling comedian is pushed to the margins of Gotham society and descends into madness and violence.",
+            "genres": [
+                {
+                    "id": 8,
+                    "name": "Crime"
+                },
+                {
+                    "id": 3,
+                    "name": "Drama"
+                },
+                {
+                    "id": 4,
+                    "name": "Thriller"
+                }
+            ],
+            "runtime": 122,
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Joaquin Phoenix",
+                    "character": "Arthur Fleck",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Joaquin_Phoenix-64908_%28cropped%29.jpg/330px-Joaquin_Phoenix-64908_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Robert De Niro",
+                    "character": "Murray Franklin",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Robert_de_Niro_Cannes_Film_Festival_%283x4_cropped%29.jpg/330px-Robert_de_Niro_Cannes_Film_Festival_%283x4_cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Zazie Beetz",
+                    "character": "Sophie Dumond",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Zazie_Beetz-4134.jpg/330px-Zazie_Beetz-4134.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "trailer_key": "zAGVQLHvwOY"
+        },
+        {
+            "id": 601,
+            "title": "Avengers: Doomsday",
+            "alternative_titles": [
+                "अवेंजर्स: डूम्सडे"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ee/Avengers_Doomsday_poster.jpg/500px-Avengers_Doomsday_poster.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ee/Avengers_Doomsday_poster.jpg/500px-Avengers_Doomsday_poster.jpg",
+            "release_date": "2026-12-18",
+            "vote_average": 0,
+            "overview": "The Avengers and their allies face a new multiversal threat as an old enemy returns in a new and dangerous form.",
+            "genres": [
+                {
+                    "id": 1,
+                    "name": "Action"
+                },
+                {
+                    "id": 2,
+                    "name": "Sci-Fi"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Robert Downey Jr.",
+                    "character": "Victor von Doom",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/RobertDowneyJr-byPhilipRomano7_%28cropped%29.jpg/330px-RobertDowneyJr-byPhilipRomano7_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Chris Hemsworth",
+                    "character": "Thor",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Chris_Hemsworth_-_Crime_101.jpg/330px-Chris_Hemsworth_-_Crime_101.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Anthony Mackie",
+                    "character": "Sam Wilson",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Anthony_Mackie_on_the_Green_Carpet_at_the_2025_Zurich_Film_Festival_03_%28cropped%29.jpg/330px-Anthony_Mackie_on_the_Green_Carpet_at_the_2025_Zurich_Film_Festival_03_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "trailer_key": "irVNGjRFZGk"
+        },
+        {
+            "id": 602,
+            "title": "Spider-Man: Brand New Day",
+            "alternative_titles": [
+                "स्पाइडर-मैन: ब्रांड न्यू डे"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Spider-Man_Brand_New_Day_poster.jpg/500px-Spider-Man_Brand_New_Day_poster.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Spider-Man_Brand_New_Day_poster.jpg/500px-Spider-Man_Brand_New_Day_poster.jpg",
+            "release_date": "2026-07-31",
+            "vote_average": 0,
+            "overview": "Peter Parker returns to the streets of New York as the world has forgotten who he is, and a new danger tests his resolve.",
+            "genres": [
+                {
+                    "id": 1,
+                    "name": "Action"
+                },
+                {
+                    "id": 3,
+                    "name": "Adventure"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Tom Holland",
+                    "character": "Peter Parker",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/TomHolland-byPhilipRomano.jpg/330px-TomHolland-byPhilipRomano.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Zendaya",
+                    "character": "MJ",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Zendaya-byPhilipRomano.jpg/330px-Zendaya-byPhilipRomano.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Jon Bernthal",
+                    "character": "Frank Castle",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/JonBernthal-byPhilipRomano2.jpg/330px-JonBernthal-byPhilipRomano2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "trailer_key": "62bIsvRcPv0"
+        },
+        {
+            "id": 603,
+            "title": "Toy Story 5",
+            "alternative_titles": [
+                "टॉय स्टोरी 5"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/0/08/Toy_Story_5_poster.jpg/500px-Toy_Story_5_poster.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/0/08/Toy_Story_5_poster.jpg/500px-Toy_Story_5_poster.jpg",
+            "release_date": "2026-06-19",
+            "vote_average": 0,
+            "overview": "Woody, Buzz and the gang face a new kind of rival as technology competes for their kid's attention.",
+            "genres": [
+                {
+                    "id": 4,
+                    "name": "Animation"
+                },
+                {
+                    "id": 5,
+                    "name": "Family"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Tom Hanks",
+                    "character": "Woody",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/TomHanksPrincEdw031223_%2811_of_41%29_%28cropped%29.jpg/330px-TomHanksPrincEdw031223_%2811_of_41%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Tim Allen",
+                    "character": "Buzz Lightyear",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Tim_Allen_2012.jpg/330px-Tim_Allen_2012.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Joan Cusack",
+                    "character": "Jessie",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Fan_Expo_2016_-_Cusack_02_%2833090356786%29_%28cropped%29.jpg/330px-Fan_Expo_2016_-_Cusack_02_%2833090356786%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "trailer_key": "c51ND9Hdbw0"
+        },
+        {
+            "id": 604,
+            "title": "The Mandalorian and Grogu",
+            "alternative_titles": [
+                "द मैंडलोरियन एंड ग्रोगु"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/The_Mandalorian_and_Grogu_poster.jpg/500px-The_Mandalorian_and_Grogu_poster.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/The_Mandalorian_and_Grogu_poster.jpg/500px-The_Mandalorian_and_Grogu_poster.jpg",
+            "release_date": "2026-05-22",
+            "vote_average": 0,
+            "overview": "The bounty hunter Din Djarin and his young apprentice Grogu take on a new mission across the galaxy.",
+            "genres": [
+                {
+                    "id": 2,
+                    "name": "Sci-Fi"
+                },
+                {
+                    "id": 3,
+                    "name": "Adventure"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Pedro Pascal",
+                    "character": "Din Djarin",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Pedro_Pascal_at_the_2025_Cannes_Film_Festival_04.jpg/330px-Pedro_Pascal_at_the_2025_Cannes_Film_Festival_04.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Sigourney Weaver",
+                    "character": "Ward",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Sigourney_Weaver_at_the_2025_Toronto_International_Film_Festival_%28cropped%29.jpg/330px-Sigourney_Weaver_at_the_2025_Toronto_International_Film_Festival_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Jeremy Allen White",
+                    "character": "Rotta",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Jeremy_Allen_White_Springsteen-33_%28cropped%29.jpg/330px-Jeremy_Allen_White_Springsteen-33_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "trailer_key": "IHWlvwu8t1w"
+        },
+        {
+            "id": 605,
+            "title": "Supergirl",
+            "alternative_titles": [
+                "सुपरगर्ल"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Supergirl_%282026_film%29_poster.jpg/500px-Supergirl_%282026_film%29_poster.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Supergirl_%282026_film%29_poster.jpg/500px-Supergirl_%282026_film%29_poster.jpg",
+            "release_date": "2026-06-26",
+            "vote_average": 0,
+            "overview": "Kara Zor-El embarks on a hard-edged cosmic adventure that tests what it means to be a hero.",
+            "genres": [
+                {
+                    "id": 1,
+                    "name": "Action"
+                },
+                {
+                    "id": 2,
+                    "name": "Sci-Fi"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Milly Alcock",
+                    "character": "Kara Zor-El",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Milly_alcock_2026_1.jpg/330px-Milly_alcock_2026_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "David Corenswet",
+                    "character": "Clark Kent",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/David_Corenswet_Manila_2025.jpg/330px-David_Corenswet_Manila_2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Jason Momoa",
+                    "character": "Lobo",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Jason_Momoa_%2843055621224%29_%28cropped%29.jpg/330px-Jason_Momoa_%2843055621224%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "trailer_key": "s1-pfiVMKAs"
+        },
+        {
+            "id": 606,
+            "title": "Dune: Part Three",
+            "alternative_titles": [
+                "ड्यून: पार्ट थ्री"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Dune_Part_Three_poster.jpg/500px-Dune_Part_Three_poster.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Dune_Part_Three_poster.jpg/500px-Dune_Part_Three_poster.jpg",
+            "release_date": "2026-12-18",
+            "vote_average": 0,
+            "overview": "Paul Atreides faces the consequences of his rise as emperor while war spreads across the known universe.",
+            "genres": [
+                {
+                    "id": 2,
+                    "name": "Sci-Fi"
+                },
+                {
+                    "id": 3,
+                    "name": "Adventure"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Timothée Chalamet",
+                    "character": "Paul Atreides",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Timoth%C3%A9e_Chalamet-63482_%28cropped%29.jpg/330px-Timoth%C3%A9e_Chalamet-63482_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Zendaya",
+                    "character": "Chani",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Zendaya-byPhilipRomano.jpg/330px-Zendaya-byPhilipRomano.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Florence Pugh",
+                    "character": "Princess Irulan",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Florence_Pugh_at_the_2024_Toronto_International_Film_Festival_13_%28cropped_2_%E2%80%93_color_adjusted%29.jpg/330px-Florence_Pugh_at_the_2024_Toronto_International_Film_Festival_13_%28cropped_2_%E2%80%93_color_adjusted%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "trailer_key": "NdvqHc56lE0"
+        },
+        {
+            "id": 607,
+            "title": "The Odyssey",
+            "alternative_titles": [
+                "द ओडिसी"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/9/90/The_Odyssey_%282026_film%29_poster.jpg/500px-The_Odyssey_%282026_film%29_poster.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/9/90/The_Odyssey_%282026_film%29_poster.jpg/500px-The_Odyssey_%282026_film%29_poster.jpg",
+            "release_date": "2026-07-17",
+            "vote_average": 0,
+            "overview": "The epic journey of Odysseus, a king trying to return home after the Trojan War, is brought to the screen.",
+            "genres": [
+                {
+                    "id": 3,
+                    "name": "Adventure"
+                },
+                {
+                    "id": 6,
+                    "name": "Drama"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Matt Damon",
+                    "character": "Odysseus",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/MattDamon-byPhilipRomano2.jpg/330px-MattDamon-byPhilipRomano2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Tom Holland",
+                    "character": "Telemachus",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/TomHolland-byPhilipRomano.jpg/330px-TomHolland-byPhilipRomano.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Anne Hathaway",
+                    "character": "Penelope",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/AnneHathaway-byPhilipRomano-Crop.jpg/330px-AnneHathaway-byPhilipRomano-Crop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "trailer_key": "f_bKjZeJBBI"
+        },
+        {
+            "id": 608,
+            "title": "Moana",
+            "alternative_titles": [
+                "मोआना"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/Moana_%282026_film%29_poster.jpg/500px-Moana_%282026_film%29_poster.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/Moana_%282026_film%29_poster.jpg/500px-Moana_%282026_film%29_poster.jpg",
+            "release_date": "2026-07-10",
+            "vote_average": 0,
+            "overview": "A live-action retelling of the story of a young wayfinder who sails beyond the reef to save her island.",
+            "genres": [
+                {
+                    "id": 3,
+                    "name": "Adventure"
+                },
+                {
+                    "id": 5,
+                    "name": "Family"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Catherine Laga‘aia",
+                    "character": "Moana",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Catherine_Laga%27aia_by_Gage_Skidmore.jpg/330px-Catherine_Laga%27aia_by_Gage_Skidmore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Dwayne Johnson",
+                    "character": "Maui",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Dwayne_Johnson-1764_%284x5_cropped_with_moderate_headroom%29.jpg/330px-Dwayne_Johnson-1764_%284x5_cropped_with_moderate_headroom%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "John Tui",
+                    "character": "Chief Tui",
+                    "profile_path": "https://upload.wikimedia.org/wikipedia/commons/3/3a/John_Tui_%287064083597%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+                }
+            ],
+            "trailer_key": "n7f6hlKsxxo"
+        },
+        {
+            "id": 609,
+            "title": "Michael",
+            "alternative_titles": [
+                "माइकल"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Michael_%282026_film_poster%29.png/500px-Michael_%282026_film_poster%29.png",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Michael_%282026_film_poster%29.png/500px-Michael_%282026_film_poster%29.png",
+            "release_date": "2026-04-24",
+            "vote_average": 0,
+            "overview": "A biographical drama following the life and legacy of Michael Jackson, from the Jackson 5 to global stardom.",
+            "genres": [
+                {
+                    "id": 6,
+                    "name": "Drama"
+                },
+                {
+                    "id": 7,
+                    "name": "Music"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Jaafar Jackson",
+                    "character": "Michael Jackson",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Jaafar_Jackson.jpg/330px-Jaafar_Jackson.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Colman Domingo",
+                    "character": "Joe Jackson",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Colman_Domingo_at_Ralph_Lauren_dinner_2026_%28cropped%29.jpg/330px-Colman_Domingo_at_Ralph_Lauren_dinner_2026_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Nia Long",
+                    "character": "Katherine Jackson",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Nia_Long_2012.jpg/330px-Nia_Long_2012.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "trailer_key": "mbtgEE6rkxw"
+        },
+        {
+            "id": 610,
+            "title": "The Super Mario Galaxy Movie",
+            "alternative_titles": [
+                "द सुपर मारियो गैलेक्सी मूवी"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/The_Super_Mario_Galaxy_Movie_poster.jpeg/500px-The_Super_Mario_Galaxy_Movie_poster.jpeg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/The_Super_Mario_Galaxy_Movie_poster.jpeg/500px-The_Super_Mario_Galaxy_Movie_poster.jpeg",
+            "release_date": "2026-04-03",
+            "vote_average": 0,
+            "overview": "Mario and Luigi head to the stars in a new cosmic adventure inspired by the Super Mario Galaxy games.",
+            "genres": [
+                {
+                    "id": 4,
+                    "name": "Animation"
+                },
+                {
+                    "id": 5,
+                    "name": "Family"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Chris Pratt",
+                    "character": "Mario",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Chris_Pratt_Jurassic_World_Fallen_Kingdom_Japan_Premiere_Red_Carpet_%283x4_cropped%29.jpg/330px-Chris_Pratt_Jurassic_World_Fallen_Kingdom_Japan_Premiere_Red_Carpet_%283x4_cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Anya Taylor-Joy",
+                    "character": "Princess Peach",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Anya_Taylor-Joy_at_the_2025_Toronto_International_Film_Festival._06_%28cropped%29.jpg/330px-Anya_Taylor-Joy_at_the_2025_Toronto_International_Film_Festival._06_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Charlie Day",
+                    "character": "Luigi",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Charlie_Day_%289365896600%29_%28cropped%29_2.jpg/330px-Charlie_Day_%289365896600%29_%28cropped%29_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "trailer_key": "GuCejewteF8"
+        },
+        {
+            "id": 611,
+            "title": "Project Hail Mary",
+            "alternative_titles": [
+                "प्रोजेक्ट हेल मैरी"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Project_Hail_Mary_poster.jpg/500px-Project_Hail_Mary_poster.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Project_Hail_Mary_poster.jpg/500px-Project_Hail_Mary_poster.jpg",
+            "release_date": "2026-03-20",
+            "vote_average": 0,
+            "overview": "A lone astronaut wakes up on a spacecraft with no memory and must solve a mystery that could save Earth.",
+            "genres": [
+                {
+                    "id": 2,
+                    "name": "Sci-Fi"
+                },
+                {
+                    "id": 3,
+                    "name": "Adventure"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Ryan Gosling",
+                    "character": "Ryland Grace",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/GoslingBFI081223_%2822_of_30%29_%2853388157347%29_%28cropped%29.jpg/330px-GoslingBFI081223_%2822_of_30%29_%2853388157347%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Sandra Hüller",
+                    "character": "Eva Stratt",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Sandra_H%C3%BCller_at_Berlinale_2026-6.jpg/330px-Sandra_H%C3%BCller_at_Berlinale_2026-6.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "trailer_key": "m08TxIsFTRI"
+        },
+        {
+            "id": 612,
+            "title": "The Devil Wears Prada 2",
+            "alternative_titles": [
+                "द डेविल वियर्स प्राडा 2"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/9/97/The_Devil_Wears_Prada_2_%28film_poster%29.png/500px-The_Devil_Wears_Prada_2_%28film_poster%29.png",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/9/97/The_Devil_Wears_Prada_2_%28film_poster%29.png/500px-The_Devil_Wears_Prada_2_%28film_poster%29.png",
+            "release_date": "2026-05-01",
+            "vote_average": 0,
+            "overview": "Miranda Priestly and Andy Sachs cross paths again as the fashion world faces a changing media landscape.",
+            "genres": [
+                {
+                    "id": 8,
+                    "name": "Comedy"
+                },
+                {
+                    "id": 6,
+                    "name": "Drama"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Meryl Streep",
+                    "character": "Miranda Priestly",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Meryl_Streep-_Press_conference_for_the_film_%22The_Devil_Wears_Prada_2%22_-_55194765350_%28cropped1%29.jpg/330px-Meryl_Streep-_Press_conference_for_the_film_%22The_Devil_Wears_Prada_2%22_-_55194765350_%28cropped1%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Anne Hathaway",
+                    "character": "Andy Sachs",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/AnneHathaway-byPhilipRomano-Crop.jpg/330px-AnneHathaway-byPhilipRomano-Crop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Emily Blunt",
+                    "character": "Emily Charlton",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Emily_Blunt_at_TIFF_2025_01_%28cropped%29.jpg/330px-Emily_Blunt_at_TIFF_2025_01_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "trailer_key": "e9HXmMnUEdE"
+        },
+        {
+            "id": 701,
+            "title": "Dune: Part Two",
+            "alternative_titles": [
+                "ड्यून: पार्ट टू"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/5/52/Dune_Part_Two_poster.jpeg/500px-Dune_Part_Two_poster.jpeg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/5/52/Dune_Part_Two_poster.jpeg/500px-Dune_Part_Two_poster.jpeg",
+            "release_date": "2024-03-01",
+            "vote_average": 8.2,
+            "overview": "Paul Atreides unites with the Fremen and seeks revenge against those who destroyed his family.",
+            "genres": [
+                {
+                    "id": 2,
+                    "name": "Sci-Fi"
+                },
+                {
+                    "id": 3,
+                    "name": "Adventure"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Timothée Chalamet",
+                    "character": "Paul Atreides",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Timoth%C3%A9e_Chalamet-63482_%28cropped%29.jpg/330px-Timoth%C3%A9e_Chalamet-63482_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Zendaya",
+                    "character": "Chani",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Zendaya-byPhilipRomano.jpg/330px-Zendaya-byPhilipRomano.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Rebecca Ferguson",
+                    "character": "Lady Jessica",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Rebecca_Ferguson_A_House_of_Dynamite-67_%28cropped2%29.jpg/330px-Rebecca_Ferguson_A_House_of_Dynamite-67_%28cropped2%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "runtime": 166,
+            "trailer_key": "Way9Dexny3w"
+        },
+        {
+            "id": 702,
+            "title": "Inside Out 2",
+            "alternative_titles": [
+                "इनसाइड आउट 2"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/Inside_Out_2_poster.jpg/500px-Inside_Out_2_poster.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/Inside_Out_2_poster.jpg/500px-Inside_Out_2_poster.jpg",
+            "release_date": "2024-06-14",
+            "vote_average": 7.6,
+            "overview": "Riley enters her teens and new emotions, including Anxiety, arrive at Headquarters.",
+            "genres": [
+                {
+                    "id": 4,
+                    "name": "Animation"
+                },
+                {
+                    "id": 5,
+                    "name": "Family"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Amy Poehler",
+                    "character": "Joy",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Amy_Poehler_%2853671989427%29_cropped.jpg/330px-Amy_Poehler_%2853671989427%29_cropped.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Maya Hawke",
+                    "character": "Anxiety",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Maya_Hawke_%40_Sid_The_Cat_Auditorium.jpg/330px-Maya_Hawke_%40_Sid_The_Cat_Auditorium.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Kensington Tallman",
+                    "character": "Riley",
+                    "profile_path": "https://picsum.photos/seed/1801/200/200"
+                }
+            ],
+            "runtime": 96,
+            "trailer_key": "LEjhY15eCx0"
+        },
+        {
+            "id": 703,
+            "title": "Deadpool & Wolverine",
+            "alternative_titles": [
+                "डेडपूल एंड वूल्वरिन"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Deadpool_%26_Wolverine_poster.jpg/500px-Deadpool_%26_Wolverine_poster.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Deadpool_%26_Wolverine_poster.jpg/500px-Deadpool_%26_Wolverine_poster.jpg",
+            "release_date": "2024-07-26",
+            "vote_average": 7.6,
+            "overview": "Deadpool teams up with a reluctant Wolverine for a mission that could reshape the multiverse.",
+            "genres": [
+                {
+                    "id": 1,
+                    "name": "Action"
+                },
+                {
+                    "id": 8,
+                    "name": "Comedy"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Ryan Reynolds",
+                    "character": "Deadpool",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Deadpool_2_Japan_Premiere_Red_Carpet_Ryan_Reynolds_%28cropped%29.jpg/330px-Deadpool_2_Japan_Premiere_Red_Carpet_Ryan_Reynolds_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Hugh Jackman",
+                    "character": "Wolverine",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Hugh_Jackman_Is_This_Thing_On-68_%28cropped%29.jpg/330px-Hugh_Jackman_Is_This_Thing_On-68_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Emma Corrin",
+                    "character": "Cassandra Nova",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Emma_Corrin_at_the_83rd_Venice_International_Film_Festival.jpg/330px-Emma_Corrin_at_the_83rd_Venice_International_Film_Festival.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "runtime": 128,
+            "trailer_key": "73_1biulkYk"
+        },
+        {
+            "id": 704,
+            "title": "Wicked",
+            "alternative_titles": [
+                "विकेड"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Wicked_%282024_film%29_poster.png/500px-Wicked_%282024_film%29_poster.png",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Wicked_%282024_film%29_poster.png/500px-Wicked_%282024_film%29_poster.png",
+            "release_date": "2024-11-22",
+            "vote_average": 7.3,
+            "overview": "Elphaba and Glinda meet at Shiz University and form an unlikely friendship before the Wizard of Oz.",
+            "genres": [
+                {
+                    "id": 9,
+                    "name": "Fantasy"
+                },
+                {
+                    "id": 7,
+                    "name": "Music"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Cynthia Erivo",
+                    "character": "Elphaba",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Cynthia_Erivo_-_Wicked-FYC-2_%28cropped%29.jpg/330px-Cynthia_Erivo_-_Wicked-FYC-2_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Ariana Grande",
+                    "character": "Glinda",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Ariana_Grande_promoting_Wicked_%282024%29.jpg/330px-Ariana_Grande_promoting_Wicked_%282024%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Jonathan Bailey",
+                    "character": "Fiyero",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Jonathan_Bailey_at_the_83rd_Venice_FILM_festival-8.jpg/330px-Jonathan_Bailey_at_the_83rd_Venice_FILM_festival-8.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "runtime": 160,
+            "trailer_key": "6COmYeLsz4c"
+        },
+        {
+            "id": 705,
+            "title": "Anora",
+            "alternative_titles": [
+                "अनोरा"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Anora_%282024_film%29_poster.jpg/500px-Anora_%282024_film%29_poster.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Anora_%282024_film%29_poster.jpg/500px-Anora_%282024_film%29_poster.jpg",
+            "release_date": "2024-10-18",
+            "vote_average": 7.1,
+            "overview": "A young sex worker from Brooklyn gets her chance at a fairy-tale life by marrying the son of a Russian oligarch.",
+            "genres": [
+                {
+                    "id": 6,
+                    "name": "Drama"
+                },
+                {
+                    "id": 8,
+                    "name": "Comedy"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Mikey Madison",
+                    "character": "Ani",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Mikey_Madison_at_the_2024_New_York_Film_Festival_2_%28cropped_4%29.jpg/330px-Mikey_Madison_at_the_2024_New_York_Film_Festival_2_%28cropped_4%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Mark Eydelshteyn",
+                    "character": "Ivan",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/MarkEdelshtein_2024_%28cropped-J1%29.jpg/330px-MarkEdelshtein_2024_%28cropped-J1%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Yura Borisov",
+                    "character": "Igor",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Yura_Borisov_at_the_2024_Toronto_International_Film_Festival_%28Cropped%29.jpg/330px-Yura_Borisov_at_the_2024_Toronto_International_Film_Festival_%28Cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "runtime": 139,
+            "trailer_key": "GuPkfvxmtdw"
+        },
+        {
+            "id": 706,
+            "title": "Sinners",
+            "alternative_titles": [
+                "सिनर्स"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Sinners_%282025_film%29_poster.jpg/500px-Sinners_%282025_film%29_poster.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Sinners_%282025_film%29_poster.jpg/500px-Sinners_%282025_film%29_poster.jpg",
+            "release_date": "2025-04-18",
+            "vote_average": 7.5,
+            "overview": "Twin brothers return to their Mississippi hometown to start over, only to face a greater evil.",
+            "genres": [
+                {
+                    "id": 10,
+                    "name": "Horror"
+                },
+                {
+                    "id": 6,
+                    "name": "Drama"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Michael B. Jordan",
+                    "character": "Smoke and Stack",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Michael_B_Jordan_-_Sinners_%28cropped%29.jpg/330px-Michael_B_Jordan_-_Sinners_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Hailee Steinfeld",
+                    "character": "Mary",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Hailee_Steinfeld_by_Gage_Skidmore.jpg/330px-Hailee_Steinfeld_by_Gage_Skidmore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Miles Caton",
+                    "character": "Sammie",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Miles_Caton_-_Sinners.jpg/330px-Miles_Caton_-_Sinners.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "runtime": 137,
+            "trailer_key": "bKGxHflevuk"
+        },
+        {
+            "id": 707,
+            "title": "Superman",
+            "alternative_titles": [
+                "सुपरमैन"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Superman_%282025_film%29_poster.jpg/500px-Superman_%282025_film%29_poster.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Superman_%282025_film%29_poster.jpg/500px-Superman_%282025_film%29_poster.jpg",
+            "release_date": "2025-07-11",
+            "vote_average": 7.2,
+            "overview": "Superman reconciles his alien heritage with his human upbringing as the embodiment of truth and justice.",
+            "genres": [
+                {
+                    "id": 1,
+                    "name": "Action"
+                },
+                {
+                    "id": 2,
+                    "name": "Sci-Fi"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "David Corenswet",
+                    "character": "Clark Kent",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/David_Corenswet_Manila_2025.jpg/330px-David_Corenswet_Manila_2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Rachel Brosnahan",
+                    "character": "Lois Lane",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Rachel_Brosnahan_Manilla_2025.jpg/330px-Rachel_Brosnahan_Manilla_2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Nicholas Hoult",
+                    "character": "Lex Luthor",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Nicholas_Hoult-67849_%28cropped%29.jpg/330px-Nicholas_Hoult-67849_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "runtime": 129,
+            "trailer_key": "Ox8ZLF6cGM0"
+        },
+        {
+            "id": 708,
+            "title": "F1",
+            "alternative_titles": [
+                "एफ1"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/38/F1_%282025_film%29.png/500px-F1_%282025_film%29.png",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/38/F1_%282025_film%29.png/500px-F1_%282025_film%29.png",
+            "release_date": "2025-06-27",
+            "vote_average": 7.6,
+            "overview": "A veteran driver returns to Formula One to mentor a rookie on a struggling team.",
+            "genres": [
+                {
+                    "id": 1,
+                    "name": "Action"
+                },
+                {
+                    "id": 6,
+                    "name": "Drama"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Brad Pitt",
+                    "character": "Sonny Hayes",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Brad_Pitt-69858.jpg/330px-Brad_Pitt-69858.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Damson Idris",
+                    "character": "Joshua Pearce",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Damson_Idris_Attends_Snowfall_Screening_In_Chicago_On_Alexus_Renee%27s_Celebrity_Myxer.jpg/330px-Damson_Idris_Attends_Snowfall_Screening_In_Chicago_On_Alexus_Renee%27s_Celebrity_Myxer.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Javier Bardem",
+                    "character": "Ruben Cervantes",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Javier_Bardem_Venice_Film_Festival.jpg/330px-Javier_Bardem_Venice_Film_Festival.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "runtime": 155,
+            "trailer_key": "69ffwl-8pCU"
+        },
+        {
+            "id": 709,
+            "title": "Oppenheimer",
+            "alternative_titles": [
+                "ओपेनहाइमर"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Oppenheimer_%28film%29.jpg/500px-Oppenheimer_%28film%29.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Oppenheimer_%28film%29.jpg/500px-Oppenheimer_%28film%29.jpg",
+            "release_date": "2023-07-21",
+            "vote_average": 8.1,
+            "overview": "The story of J. Robert Oppenheimer and his role in developing the atomic bomb.",
+            "genres": [
+                {
+                    "id": 6,
+                    "name": "Drama"
+                },
+                {
+                    "id": 11,
+                    "name": "Biography"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Cillian Murphy",
+                    "character": "J. Robert Oppenheimer",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Cillian_Murphy_at_the_London_premier_of_Steve_in_September_2025_%28cropped%29.jpg/330px-Cillian_Murphy_at_the_London_premier_of_Steve_in_September_2025_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Emily Blunt",
+                    "character": "Kitty Oppenheimer",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Emily_Blunt_at_TIFF_2025_01_%28cropped%29.jpg/330px-Emily_Blunt_at_TIFF_2025_01_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Robert Downey Jr.",
+                    "character": "Lewis Strauss",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/RobertDowneyJr-byPhilipRomano7_%28cropped%29.jpg/330px-RobertDowneyJr-byPhilipRomano7_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "runtime": 180,
+            "trailer_key": "uYPbbksJxIg"
+        },
+        {
+            "id": 710,
+            "title": "Barbie",
+            "alternative_titles": [
+                "बार्बी"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Barbie_2023_poster.jpg/500px-Barbie_2023_poster.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Barbie_2023_poster.jpg/500px-Barbie_2023_poster.jpg",
+            "release_date": "2023-07-21",
+            "vote_average": 7,
+            "overview": "Barbie and Ken leave Barbieland for the real world and discover the joys and perils of living among humans.",
+            "genres": [
+                {
+                    "id": 8,
+                    "name": "Comedy"
+                },
+                {
+                    "id": 9,
+                    "name": "Fantasy"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Margot Robbie",
+                    "character": "Barbie",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Margot_Robbie_at_the_Paris_premiere_of_%22Wuthering_Heights%22.jpg/330px-Margot_Robbie_at_the_Paris_premiere_of_%22Wuthering_Heights%22.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Ryan Gosling",
+                    "character": "Ken",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/GoslingBFI081223_%2822_of_30%29_%2853388157347%29_%28cropped%29.jpg/330px-GoslingBFI081223_%2822_of_30%29_%2853388157347%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "America Ferrera",
+                    "character": "Gloria",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/America_Ferrera_at_the_2025_Toronto_International_Film_Festival_%28cropped2%29.jpg/330px-America_Ferrera_at_the_2025_Toronto_International_Film_Festival_%28cropped2%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "runtime": 114,
+            "trailer_key": "pBk4NYhWNMM"
+        },
+        {
+            "id": 711,
+            "title": "Mission: Impossible – The Final Reckoning",
+            "alternative_titles": [
+                "मिशन: इम्पॉसिबल – द फाइनल रेकनिंग"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Mission_Impossible_%E2%80%93_The_Final_Reckoning_Poster.jpg/500px-Mission_Impossible_%E2%80%93_The_Final_Reckoning_Poster.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Mission_Impossible_%E2%80%93_The_Final_Reckoning_Poster.jpg/500px-Mission_Impossible_%E2%80%93_The_Final_Reckoning_Poster.jpg",
+            "release_date": "2025-05-23",
+            "vote_average": 7.2,
+            "overview": "Ethan Hunt and his team race against time to stop a rogue artificial intelligence that threatens the world.",
+            "genres": [
+                {
+                    "id": 1,
+                    "name": "Action"
+                },
+                {
+                    "id": 12,
+                    "name": "Thriller"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Tom Cruise",
+                    "character": "Ethan Hunt",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Tom_Cruise_at_53rd_Saturn_Awards_2026-01.jpg/330px-Tom_Cruise_at_53rd_Saturn_Awards_2026-01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Hayley Atwell",
+                    "character": "Grace",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Hayley_Atwell_2025_%28crop%29.jpg/330px-Hayley_Atwell_2025_%28crop%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Ving Rhames",
+                    "character": "Luther Stickell",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Ving_Rhames_2010_%284710601891%29_%28cropped%29.jpg/330px-Ving_Rhames_2010_%284710601891%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "runtime": 169,
+            "trailer_key": "fsQgc9pCyDU"
+        },
+        {
+            "id": 712,
+            "title": "Zootopia 2",
+            "alternative_titles": [
+                "ज़ूटोपिया 2"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6a/Zootopia_2_%282025_film%29.jpg/500px-Zootopia_2_%282025_film%29.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6a/Zootopia_2_%282025_film%29.jpg/500px-Zootopia_2_%282025_film%29.jpg",
+            "release_date": "2025-11-26",
+            "vote_average": 7.6,
+            "overview": "Judy Hopps and Nick Wilde take on a new case that leads them to unexpected corners of the animal city.",
+            "genres": [
+                {
+                    "id": 4,
+                    "name": "Animation"
+                },
+                {
+                    "id": 5,
+                    "name": "Family"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Ginnifer Goodwin",
+                    "character": "Judy Hopps",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Ginnifer_Goodwin_by_Gage_Skidmore_%28cropped%29.jpg/330px-Ginnifer_Goodwin_by_Gage_Skidmore_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Jason Bateman",
+                    "character": "Nick Wilde",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Jason_Bateman.jpg/330px-Jason_Bateman.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Ke Huy Quan",
+                    "character": "Gary De'Snake",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Ke_Huy_Quan_at_the_White_House_%2852902390767%29_%28cropped%29.jpg/330px-Ke_Huy_Quan_at_the_White_House_%2852902390767%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "runtime": 108,
+            "trailer_key": "BjkIOU5PhyQ"
+        },
+        {
+            "id": 503,
+            "title": "Top Gun: Maverick",
+            "alternative_titles": [
+                "टॉप गन: मेवरिक"
+            ],
+            "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Top_Gun_Maverick_Poster.jpg/500px-Top_Gun_Maverick_Poster.jpg",
+            "backdrop_path": "https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Top_Gun_Maverick_Poster.jpg/500px-Top_Gun_Maverick_Poster.jpg",
+            "release_date": "2022-05-27",
+            "vote_average": 8.2,
+            "overview": "After thirty years, Maverick returns to train a new generation of elite pilots for a dangerous mission.",
+            "genres": [
+                {
+                    "id": 1,
+                    "name": "Action"
+                },
+                {
+                    "id": 6,
+                    "name": "Drama"
+                }
+            ],
+            "cast": [
+                {
+                    "id": 1,
+                    "name": "Tom Cruise",
+                    "character": "Pete \"Maverick\" Mitchell",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Tom_Cruise_at_53rd_Saturn_Awards_2026-01.jpg/330px-Tom_Cruise_at_53rd_Saturn_Awards_2026-01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 2,
+                    "name": "Miles Teller",
+                    "character": "Rooster",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Miles_Teller_TIFF_2025_%283x4_cropped%29.png/330px-Miles_Teller_TIFF_2025_%283x4_cropped%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                },
+                {
+                    "id": 3,
+                    "name": "Jennifer Connelly",
+                    "character": "Penny Benjamin",
+                    "profile_path": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Jennifer_Connelly_2019_2.png/330px-Jennifer_Connelly_2019_2.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+                }
+            ],
+            "runtime": 131,
+            "trailer_key": "qSqVVswa420"
+        },
+        {
+            "id": 801,
+            "title": "Sholay",
+            "original_title": "शोले",
+            "original_language": "hi",
+            "alternative_titles": [
+                "Sholey",
+                "Sholai"
+            ],
+            "poster_path": "",
+            "backdrop_path": "",
+            "release_date": "1975-08-15",
+            "vote_average": 8.1,
+            "overview": "A retired police officer hires two small-time crooks, Jai and Veeru, to capture the ruthless dacoit Gabbar Singh who terrorises the village of Ramgarh.",
+            "genres": [
+                {
+                    "id": 1,
+                    "name": "Action"
+                },
+                {
+                    "id": 5,
+                    "name": "Adventure"
+                }
+            ],
+            "runtime": 204,
+            "cast": [
+                {
+                    "id": 8011,
+                    "name": "Dharmendra",
+                    "character": "Veeru",
+                    "profile_path": ""
+                },
+                {
+                    "id": 8012,
+                    "name": "Amitabh Bachchan",
+                    "character": "Jai",
+                    "profile_path": ""
+                },
+                {
+                    "id": 8013,
+                    "name": "Sanjeev Kumar",
+                    "character": "Thakur Baldev Singh",
+                    "profile_path": ""
+                },
+                {
+                    "id": 8014,
+                    "name": "Hema Malini",
+                    "character": "Basanti",
+                    "profile_path": ""
+                },
+                {
+                    "id": 8015,
+                    "name": "Amjad Khan",
+                    "character": "Gabbar Singh",
+                    "profile_path": ""
+                }
+            ]
+        },
+        {
+            "id": 802,
+            "title": "3 Idiots",
+            "original_title": "थ्री इडियट्स",
+            "original_language": "hi",
+            "alternative_titles": [
+                "Three Idiots",
+                "3 इडियट्स"
+            ],
+            "poster_path": "",
+            "backdrop_path": "",
+            "release_date": "2009-12-25",
+            "vote_average": 8.0,
+            "overview": "Two friends search for their long-lost college buddy Rancho, who once inspired them to think differently while studying at a strict engineering college.",
+            "genres": [
+                {
+                    "id": 7,
+                    "name": "Comedy"
+                },
+                {
+                    "id": 3,
+                    "name": "Drama"
+                }
+            ],
+            "runtime": 170,
+            "cast": [
+                {
+                    "id": 8021,
+                    "name": "Aamir Khan",
+                    "character": "Rancho",
+                    "profile_path": ""
+                },
+                {
+                    "id": 8022,
+                    "name": "R. Madhavan",
+                    "character": "Farhan",
+                    "profile_path": ""
+                },
+                {
+                    "id": 8023,
+                    "name": "Sharman Joshi",
+                    "character": "Raju",
+                    "profile_path": ""
+                },
+                {
+                    "id": 8024,
+                    "name": "Kareena Kapoor",
+                    "character": "Pia",
+                    "profile_path": ""
+                }
+            ]
+        },
+        {
+            "id": 803,
+            "title": "Dangal",
+            "original_title": "दंगल",
+            "original_language": "hi",
+            "alternative_titles": [
+                "Dangal"
+            ],
+            "poster_path": "",
+            "backdrop_path": "",
+            "release_date": "2016-12-21",
+            "vote_average": 8.0,
+            "overview": "Former wrestler Mahavir Singh Phogat trains his daughters Geeta and Babita to become world-class wrestlers, against the wishes of their village.",
+            "genres": [
+                {
+                    "id": 3,
+                    "name": "Drama"
+                }
+            ],
+            "runtime": 161,
+            "cast": [
+                {
+                    "id": 8031,
+                    "name": "Aamir Khan",
+                    "character": "Mahavir Singh Phogat",
+                    "profile_path": ""
+                },
+                {
+                    "id": 8032,
+                    "name": "Fatima Sana Shaikh",
+                    "character": "Geeta Phogat",
+                    "profile_path": ""
+                },
+                {
+                    "id": 8033,
+                    "name": "Sanya Malhotra",
+                    "character": "Babita Kumari",
+                    "profile_path": ""
+                }
+            ]
+        },
+        {
+            "id": 804,
+            "title": "Lagaan",
+            "original_title": "लगान",
+            "original_language": "hi",
+            "alternative_titles": [
+                "Lagaan: Once Upon a Time in India"
+            ],
+            "poster_path": "",
+            "backdrop_path": "",
+            "release_date": "2001-06-15",
+            "vote_average": 7.6,
+            "overview": "In 1893, villagers burdened by high taxes accept a British officer's challenge: win a cricket match and the tax is cancelled for three years.",
+            "genres": [
+                {
+                    "id": 3,
+                    "name": "Drama"
+                },
+                {
+                    "id": 5,
+                    "name": "Adventure"
+                }
+            ],
+            "runtime": 224,
+            "cast": [
+                {
+                    "id": 8041,
+                    "name": "Aamir Khan",
+                    "character": "Bhuvan",
+                    "profile_path": ""
+                },
+                {
+                    "id": 8042,
+                    "name": "Gracy Singh",
+                    "character": "Gauri",
+                    "profile_path": ""
+                },
+                {
+                    "id": 8043,
+                    "name": "Rachel Shelley",
+                    "character": "Elizabeth Russell",
+                    "profile_path": ""
+                }
+            ]
+        },
+        {
+            "id": 805,
+            "title": "Dilwale Dulhania Le Jayenge",
+            "original_title": "दिलवाले दुल्हनिया ले जाएंगे",
+            "original_language": "hi",
+            "alternative_titles": [
+                "DDLJ",
+                "दिलवाले दुल्हनिया ले जायेंगे"
+            ],
+            "poster_path": "",
+            "backdrop_path": "",
+            "release_date": "1995-10-20",
+            "vote_average": 8.5,
+            "overview": "Raj and Simran fall in love on a trip across Europe, but Simran's father has already promised her hand to his friend's son in Punjab.",
+            "genres": [
+                {
+                    "id": 3,
+                    "name": "Drama"
+                },
+                {
+                    "id": 7,
+                    "name": "Comedy"
+                }
+            ],
+            "runtime": 189,
+            "cast": [
+                {
+                    "id": 8051,
+                    "name": "Shah Rukh Khan",
+                    "character": "Raj Malhotra",
+                    "profile_path": ""
+                },
+                {
+                    "id": 8052,
+                    "name": "Kajol",
+                    "character": "Simran Singh",
+                    "profile_path": ""
+                },
+                {
+                    "id": 8053,
+                    "name": "Amrish Puri",
+                    "character": "Chaudhry Baldev Singh",
+                    "profile_path": ""
+                }
+            ]
+        },
+        {
+            "id": 806,
+            "title": "Zindagi Na Milegi Dobara",
+            "original_title": "ज़िंदगी ना मिलेगी दोबारा",
+            "original_language": "hi",
+            "alternative_titles": [
+                "ZNMD",
+                "Zindagi Na Milegi Dubara"
+            ],
+            "poster_path": "",
+            "backdrop_path": "",
+            "release_date": "2011-07-15",
+            "vote_average": 7.6,
+            "overview": "Three childhood friends take a road trip across Spain before one of them gets married, each facing a fear on the way.",
+            "genres": [
+                {
+                    "id": 7,
+                    "name": "Comedy"
+                },
+                {
+                    "id": 3,
+                    "name": "Drama"
+                }
+            ],
+            "runtime": 155,
+            "cast": [
+                {
+                    "id": 8061,
+                    "name": "Hrithik Roshan",
+                    "character": "Arjun",
+                    "profile_path": ""
+                },
+                {
+                    "id": 8062,
+                    "name": "Farhan Akhtar",
+                    "character": "Imraan",
+                    "profile_path": ""
+                },
+                {
+                    "id": 8063,
+                    "name": "Abhay Deol",
+                    "character": "Kabir",
+                    "profile_path": ""
+                },
+                {
+                    "id": 8064,
+                    "name": "Katrina Kaif",
+                    "character": "Laila",
+                    "profile_path": ""
+                }
+            ]
+        }
+    ],
+    "searchResults": {
+        "results": [
+            {
+                "id": 801,
+                "title": "Sholay",
+                "original_title": "शोले",
+                "original_language": "hi",
+                "alternative_titles": [
+                    "Sholey",
+                    "Sholai"
+                ],
+                "poster_path": "",
+                "backdrop_path": "",
+                "release_date": "1975-08-15",
+                "vote_average": 8.1,
+                "overview": "A retired police officer hires two small-time crooks, Jai and Veeru, to capture the ruthless dacoit Gabbar Singh who terrorises the village of Ramgarh.",
+                "genres": [
+                    {
+                        "id": 1,
+                        "name": "Action"
+                    },
+                    {
+                        "id": 5,
+                        "name": "Adventure"
+                    }
+                ]
+            },
+            {
+                "id": 802,
+                "title": "3 Idiots",
+                "original_title": "थ्री इडियट्स",
+                "original_language": "hi",
+                "alternative_titles": [
+                    "Three Idiots",
+                    "3 इडियट्स"
+                ],
+                "poster_path": "",
+                "backdrop_path": "",
+                "release_date": "2009-12-25",
+                "vote_average": 8.0,
+                "overview": "Two friends search for their long-lost college buddy Rancho, who once inspired them to think differently while studying at a strict engineering college.",
+                "genres": [
+                    {
+                        "id": 7,
+                        "name": "Comedy"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Drama"
+                    }
+                ]
+            },
+            {
+                "id": 803,
+                "title": "Dangal",
+                "original_title": "दंगल",
+                "original_language": "hi",
+                "alternative_titles": [
+                    "Dangal"
+                ],
+                "poster_path": "",
+                "backdrop_path": "",
+                "release_date": "2016-12-21",
+                "vote_average": 8.0,
+                "overview": "Former wrestler Mahavir Singh Phogat trains his daughters Geeta and Babita to become world-class wrestlers, against the wishes of their village.",
+                "genres": [
+                    {
+                        "id": 3,
+                        "name": "Drama"
+                    }
+                ]
+            },
+            {
+                "id": 804,
+                "title": "Lagaan",
+                "original_title": "लगान",
+                "original_language": "hi",
+                "alternative_titles": [
+                    "Lagaan: Once Upon a Time in India"
+                ],
+                "poster_path": "",
+                "backdrop_path": "",
+                "release_date": "2001-06-15",
+                "vote_average": 7.6,
+                "overview": "In 1893, villagers burdened by high taxes accept a British officer's challenge: win a cricket match and the tax is cancelled for three years.",
+                "genres": [
+                    {
+                        "id": 3,
+                        "name": "Drama"
+                    },
+                    {
+                        "id": 5,
+                        "name": "Adventure"
+                    }
+                ]
+            },
+            {
+                "id": 805,
+                "title": "Dilwale Dulhania Le Jayenge",
+                "original_title": "दिलवाले दुल्हनिया ले जाएंगे",
+                "original_language": "hi",
+                "alternative_titles": [
+                    "DDLJ",
+                    "दिलवाले दुल्हनिया ले जायेंगे"
+                ],
+                "poster_path": "",
+                "backdrop_path": "",
+                "release_date": "1995-10-20",
+                "vote_average": 8.5,
+                "overview": "Raj and Simran fall in love on a trip across Europe, but Simran's father has already promised her hand to his friend's son in Punjab.",
+                "genres": [
+                    {
+                        "id": 3,
+                        "name": "Drama"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Comedy"
+                    }
+                ]
+            },
+            {
+                "id": 806,
+                "title": "Zindagi Na Milegi Dobara",
+                "original_title": "ज़िंदगी ना मिलेगी दोबारा",
+                "original_language": "hi",
+                "alternative_titles": [
+                    "ZNMD",
+                    "Zindagi Na Milegi Dubara"
+                ],
+                "poster_path": "",
+                "backdrop_path": "",
+                "release_date": "2011-07-15",
+                "vote_average": 7.6,
+                "overview": "Three childhood friends take a road trip across Spain before one of them gets married, each facing a fear on the way.",
+                "genres": [
+                    {
+                        "id": 7,
+                        "name": "Comedy"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Drama"
+                    }
+                ]
+            }
+        ]
+    },
+    "settings": {
+        "showRatings": true,
+        "hiddenRatingIds": [],
+        "showHeroBanner": true,
+        "showPopular": true,
+        "showUpcoming": true,
+        "showLatest": true
+    }
+}

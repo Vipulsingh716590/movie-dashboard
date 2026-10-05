@@ -1,0 +1,36 @@
+<div class="backdrop" (click)="cancel.emit()"></div>
+<div class="dialog" role="dialog" aria-modal="true" aria-labelledby="editor-title">
+  <h2 id="editor-title">Edit "{{ movie.title }}"</h2>
+
+  <form [formGroup]="form" (ngSubmit)="submit()" novalidate>
+    <label>
+      Title
+      <input formControlName="title" autofocus>
+      @if (form.controls.title.touched && form.controls.title.invalid) { <span class="error">Enter a title (max 120 characters).</span> }
+    </label>
+
+    <label>
+      Overview
+      <textarea formControlName="overview" rows="4"></textarea>
+    </label>
+
+    <div class="two">
+      <label>
+        Release date
+        <input type="date" formControlName="release_date">
+        @if (form.controls.release_date.touched && form.controls.release_date.invalid) { <span class="error">Pick a valid date.</span> }
+      </label>
+
+      <label>
+        Rating (0-10)
+        <input type="number" step="0.1" min="0" max="10" formControlName="vote_average">
+        @if (form.controls.vote_average.touched && form.controls.vote_average.invalid) { <span class="error">Between 0 and 10.</span> }
+      </label>
+    </div>
+
+    <div class="actions">
+      <button type="button" class="btn" (click)="cancel.emit()">Cancel</button>
+      <button type="submit" class="btn btn--primary">Save changes</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,8 @@
+{
+  "/movie/popular": "/popular",
+  "/movie/upcoming": "/upcoming",
+  "/movie/now_playing": "/latest",
+  "/movie/hero": "/hero",
+  "/movie/:id": "/movieDetails/:id",
+  "/search/movie": "/searchResults"
+}

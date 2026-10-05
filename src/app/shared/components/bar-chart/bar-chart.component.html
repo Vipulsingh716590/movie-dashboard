@@ -1,0 +1,11 @@
+<ul class="bars" role="img" [attr.aria-label]="label">
+  @for (row of rows(); track row.label) {
+    <li class="bars__row">
+      <span class="bars__label">{{ row.label }}</span>
+      <span class="bars__track"><span class="bars__fill" [style.width.%]="row.pct" [style.background]="color"></span></span>
+      <span class="bars__value">{{ row.value }}</span>
+    </li>
+  } @empty {
+    <li class="bars__empty">No data yet</li>
+  }
+</ul>

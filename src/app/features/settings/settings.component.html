@@ -1,0 +1,64 @@
+<div class="page">
+  <header>
+    <h1 class="page__title">Display settings</h1>
+    <p class="page__subtitle">Changes are saved immediately and appear on the MovieFlix site the next time it loads.</p>
+  </header>
+
+  @if (!store.loaded()) {
+    <app-loading-state [failed]="store.failed()" (retry)="store.load()"></app-loading-state>
+  } @else {
+    <section class="group">
+      <h2>Ratings</h2>
+
+      <div class="row">
+        <div>
+          <h3>Show ratings</h3>
+          <p>Master switch for every rating badge: cards, hero banner and movie page.</p>
+        </div>
+        <app-toggle-switch label="Show ratings" [checked]="store.settings().showRatings"
+          (changed)="store.updateSettings({ showRatings: $event }, $event ? 'Ratings are now visible' : 'Ratings are now hidden')"></app-toggle-switch>
+      </div>
+
+      <div class="row">
+        <div>
+          <h3>Per-movie overrides</h3>
+          <p>
+            {{ store.settings().hiddenRatingIds.length }} movie(s) have their rating hidden.
+            Hide or show a single movie from the <a routerLink="/movies">Movies</a> page.
+          </p>
+        </div>
+        <button type="button" class="btn" [disabled]="!store.settings().hiddenRatingIds.length" (click)="clearOverrides()">Clear all</button>
+      </div>
+
+      <div class="preview" aria-label="Preview">
+        <span class="preview__label">Preview of a movie card</span>
+        <div class="preview__card">
+          <div class="preview__poster">
+            @if (store.settings().showRatings) {
+              <app-rating-badge class="preview__rating" [rating]="8.4"></app-rating-badge>
+            }
+          </div>
+          <strong>Inception</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="group">
+      <h2>Home page sections</h2>
+      @for (s of sections; track s.key) {
+        <div class="row">
+          <div>
+            <h3>{{ s.label }}</h3>
+            <p>{{ s.hint }}</p>
+          </div>
+          <app-toggle-switch [label]="'Show ' + s.label" [checked]="store.settings()[s.key]"
+            (changed)="setSection(s.key, $event, s.label)"></app-toggle-switch>
+        </div>
+      }
+    </section>
+
+    <div>
+      <button type="button" class="btn" (click)="store.resetSettings()">Reset everything to defaults</button>
+    </div>
+  }
+</div>

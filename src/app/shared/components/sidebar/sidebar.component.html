@@ -1,0 +1,22 @@
+<aside class="sidebar">
+  <a class="sidebar__brand" routerLink="/" aria-label="MovieFlix dashboard home">
+    <span class="sidebar__logo">M</span>
+    <span class="sidebar__name">MovieFlix <small>Dashboard</small></span>
+  </a>
+
+  <nav class="sidebar__nav" aria-label="Dashboard">
+    @for (item of items; track item.path) {
+      <a class="sidebar__link" [routerLink]="item.path" routerLinkActive="sidebar__link--active"
+        [routerLinkActiveOptions]="{ exact: item.exact }">
+        <span class="sidebar__icon" aria-hidden="true">{{ item.icon }}</span>
+        <span>{{ item.label }}</span>
+      </a>
+    }
+  </nav>
+
+  @if (demo) {
+    <p class="sidebar__demo"><strong>Demo</strong> Sample data. Changes stay in this browser tab and reset on reload.</p>
+  } @else {
+    <a class="sidebar__site" [href]="siteUrl" target="_blank" rel="noopener">View live site ↗</a>
+  }
+</aside>

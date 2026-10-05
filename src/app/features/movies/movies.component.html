@@ -1,0 +1,87 @@
+<div class="page">
+  <header>
+    <h1 class="page__title">Movies</h1>
+    <p class="page__subtitle">Search, edit and control how each movie's rating appears on the site.</p>
+  </header>
+
+  @if (!store.loaded()) {
+    <app-loading-state [failed]="store.failed()" (retry)="store.load()"></app-loading-state>
+  } @else {
+    <div class="filters" role="search">
+      <input class="filters__search" type="search" placeholder="Search by title (English or Hindi)" aria-label="Search movies"
+        [value]="query()" (input)="onInput(query, $event)">
+
+      <select aria-label="Filter by genre" (change)="onInput(genre, $event)">
+        <option value="">All genres</option>
+        @for (g of genres(); track g) { <option [value]="g">{{ g }}</option> }
+      </select>
+
+      <select aria-label="Filter by section" (change)="setSection($event)">
+        <option value="">All sections</option>
+        @for (s of sectionOptions; track s[0]) { <option [value]="s[0]">{{ s[1] }}</option> }
+      </select>
+
+      <select aria-label="Sort by" (change)="setSort($event)">
+        <option value="title">Sort: Title</option>
+        <option value="rating">Sort: Rating</option>
+        <option value="year">Sort: Newest</option>
+        <option value="runtime">Sort: Longest</option>
+      </select>
+    </div>
+
+    <p class="count" aria-live="polite">{{ filtered().length }} of {{ store.movies().length }} movies</p>
+
+    <div class="table-wrap">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Movie</th>
+            <th scope="col">Genres</th>
+            <th scope="col">Runtime</th>
+            <th scope="col">Rating</th>
+            <th scope="col">Show rating</th>
+            <th scope="col"><span class="visually-hidden">Actions</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (m of filtered(); track m.id) {
+            <tr>
+              <td>
+                <div class="movie">
+                  <img class="movie__poster" [src]="m.poster_path" alt="" loading="lazy" (error)="$any($event.target).style.visibility = 'hidden'" width="40" height="60">
+                  <div>
+                    <strong>{{ m.title }}</strong>
+                    <small>{{ m.release_date.slice(0, 4) }}
+                      @for (s of m.sections; track s) { <span class="chip">{{ sectionLabels[s] }}</span> }
+                    </small>
+                  </div>
+                </div>
+              </td>
+              <td class="muted">
+                @for (g of m.genres ?? []; track g.id; let last = $last) { {{ g.name }}{{ last ? '' : ', ' }} }
+              </td>
+              <td class="muted">{{ m.runtime | runtime }}</td>
+              <td><app-rating-badge [rating]="m.vote_average"></app-rating-badge></td>
+              <td>
+                <app-toggle-switch [label]="'Show rating for ' + m.title"
+                  [checked]="!store.isRatingHidden(m.id)" [disabled]="!store.settings().showRatings"
+                  (changed)="store.setRatingHidden(m.id, !$event)"></app-toggle-switch>
+              </td>
+              <td><button type="button" class="btn" (click)="editing.set(m)">Edit</button></td>
+            </tr>
+          } @empty {
+            <tr><td colspan="6" class="empty">No movies match these filters.</td></tr>
+          }
+        </tbody>
+      </table>
+    </div>
+
+    @if (!store.settings().showRatings) {
+      <p class="note">Ratings are switched off for the whole site, so the per-movie switches are disabled. Turn them back on in Display settings.</p>
+    }
+  }
+</div>
+
+@if (editing(); as movie) {
+  <app-movie-editor [movie]="movie" (save)="save($event)" (cancel)="editing.set(null)"></app-movie-editor>
+}

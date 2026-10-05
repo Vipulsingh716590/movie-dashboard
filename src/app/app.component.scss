@@ -1,0 +1,12 @@
+@use 'variables' as *;
+
+.shell {
+  display: flex;
+  min-height: 100vh;
+
+  &__main { flex: 1; min-width: 0; }
+}
+
+@media (max-width: $breakpoint-md) {
+  .shell { flex-direction: column; }
+}
