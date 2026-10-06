@@ -2,7 +2,7 @@ import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, forkJoin, map, of, switchMap } from 'rxjs';
 import { environment } from '../../../environments/environment';
-import { Movie, MovieEdit, MovieRow, SectionKey } from '../models/movie.model';
+import { Movie, MoviePatch, MovieRow, SectionKey } from '../models/movie.model';
 import { DEFAULT_SITE_SETTINGS, SiteSettings } from '../models/site-settings.model';
 
 const SECTIONS: SectionKey[] = ['hero', 'popular', 'upcoming', 'latest'];
@@ -32,9 +32,27 @@ export class MovieApiService {
     );
   }
 
-  updateMovie(id: number, edit: MovieEdit): Observable<Movie> {
-    return this.http.patch<Movie>(`${this.base}/movieDetails/${id}`, edit).pipe(
-      switchMap((saved) => this.syncLists(id, edit).pipe(map(() => saved)))
+  updateMovie(id: number, patch: MoviePatch): Observable<Movie> {
+    return this.http.patch<Movie>(`${this.base}/movieDetails/${id}`, patch).pipe(
+      switchMap((saved) =>
+        this.editLists(SECTIONS, (results) =>
+          results.some((m) => m.id === id) ? results.map((m) => (m.id === id ? { ...m, ...patch } : m)) : null
+        ).pipe(map(() => saved))
+      )
+    );
+  }
+
+  /** Stores the movie and adds a copy (without cast and runtime, like the existing ones) to each chosen home list. */
+  addMovie(movie: Movie, sections: SectionKey[]): Observable<Movie> {
+    const { cast, runtime, ...copy } = movie;
+    return this.http.post<Movie>(`${this.base}/movieDetails`, movie).pipe(
+      switchMap((saved) => this.editLists(sections, (results) => [...results, copy]).pipe(map(() => saved)))
+    );
+  }
+
+  deleteMovie(id: number): Observable<unknown> {
+    return this.http.delete(`${this.base}/movieDetails/${id}`).pipe(
+      switchMap(() => this.editLists(SECTIONS, (results) => (results.some((m) => m.id === id) ? results.filter((m) => m.id !== id) : null)))
     );
   }
 
@@ -48,19 +66,15 @@ export class MovieApiService {
     return this.http.put<SiteSettings>(`${this.base}/settings`, settings);
   }
 
-  /** Writes the edit into every home list that contains the movie. */
-  private syncLists(id: number, edit: MovieEdit): Observable<unknown> {
-    return forkJoin(SECTIONS.map((key) => this.http.get<SectionList>(`${this.base}/${key}`))).pipe(
+  /** Rewrites the given home lists; `change` returns the new movies, or null to leave a list alone. */
+  private editLists(keys: SectionKey[], change: (results: Movie[]) => Movie[] | null): Observable<unknown> {
+    if (!keys.length) return of(null);
+    return forkJoin(keys.map((key) => this.http.get<SectionList>(`${this.base}/${key}`))).pipe(
       switchMap((lists) => {
-        const writes = lists
-          .map((list, i) => ({ key: SECTIONS[i], list }))
-          .filter(({ list }) => list.results.some((m) => m.id === id))
-          .map(({ key, list }) =>
-            this.http.put(`${this.base}/${key}`, {
-              ...list,
-              results: list.results.map((m) => (m.id === id ? { ...m, ...edit } : m))
-            })
-          );
+        const writes = lists.flatMap((list, i) => {
+          const results = change(list.results);
+          return results ? [this.http.put(`${this.base}/${keys[i]}`, { ...list, results })] : [];
+        });
         return writes.length ? forkJoin(writes) : of(null);
       })
     );

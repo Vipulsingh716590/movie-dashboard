@@ -1,6 +1,6 @@
 import { Injectable, computed, inject, signal } from '@angular/core';
 import { forkJoin } from 'rxjs';
-import { MovieEdit, MovieRow } from '../models/movie.model';
+import { Genre, MoviePatch, MovieRow, NewMovie, SectionKey } from '../models/movie.model';
 import { DEFAULT_SITE_SETTINGS, SiteSettings } from '../models/site-settings.model';
 import { MovieApiService } from './movie-api.service';
 import { ToastService } from './toast.service';
@@ -20,6 +20,13 @@ export class MovieStore {
   readonly loading = signal(false);
   readonly loaded = signal(false);
   readonly failed = signal(false);
+
+  /** Every genre in the catalogue (id and name), for forms. */
+  readonly genres = computed<Genre[]>(() => {
+    const byName = new Map<string, Genre>();
+    for (const m of this.movies()) for (const g of m.genres ?? []) if (!byName.has(g.name)) byName.set(g.name, g);
+    return [...byName.values()].sort((a, b) => a.name.localeCompare(b.name));
+  });
 
   readonly kpis = computed(() => computeKpis(this.movies()));
   readonly ratingBuckets = computed(() => ratingBuckets(this.movies()));
@@ -47,7 +54,7 @@ export class MovieStore {
     });
   }
 
-  saveMovie(id: number, edit: MovieEdit, onDone?: () => void): void {
+  saveMovie(id: number, edit: MoviePatch, onDone?: () => void): void {
     this.api.updateMovie(id, edit).subscribe({
       next: () => {
         this.moviesState.update((list) => list.map((m) => (m.id === id ? { ...m, ...edit } : m)));
@@ -56,6 +63,35 @@ export class MovieStore {
       },
       // An edit is several writes (the movie, then each list that holds a copy). If one fails the server may be
       // half updated, so show what it really has; the interceptor already told the user it failed.
+      error: () => this.load(true)
+    });
+  }
+
+  /** Adds a movie (the next free id) and puts it on the chosen home lists. */
+  addMovie(movie: NewMovie, sections: SectionKey[], onDone?: () => void): void {
+    const id = Math.max(0, ...this.movies().map((m) => m.id)) + 1;
+    this.api.addMovie({ ...movie, id }, sections).subscribe({
+      next: (saved) => {
+        this.moviesState.update((list) => [...list, { ...saved, sections }]);
+        this.toast.show(`"${saved.title}" added`);
+        onDone?.();
+      },
+      error: () => this.load(true)
+    });
+  }
+
+  /** Deletes a movie everywhere (details and home lists) and forgets its per-movie rating switch. */
+  deleteMovie(id: number, onDone?: () => void): void {
+    this.api.deleteMovie(id).subscribe({
+      next: () => {
+        this.moviesState.update((list) => list.filter((m) => m.id !== id));
+        if (this.isRatingHidden(id)) {
+          this.updateSettings({ hiddenRatingIds: this.settings().hiddenRatingIds.filter((x) => x !== id) }, 'Movie deleted');
+        } else {
+          this.toast.show('Movie deleted');
+        }
+        onDone?.();
+      },
       error: () => this.load(true)
     });
   }

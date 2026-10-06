@@ -1,0 +1,25 @@
+<main class="login">
+  <form class="login__card" [formGroup]="form" (ngSubmit)="submit()" novalidate>
+    <div class="login__brand"><span class="login__logo">M</span> MovieFlix Dashboard</div>
+    <h1>Sign in</h1>
+
+    <label>
+      Username
+      <input formControlName="username" autocomplete="username" autofocus (input)="failed.set(false)">
+    </label>
+
+    <label>
+      Password
+      <input type="password" formControlName="password" autocomplete="current-password" (input)="failed.set(false)">
+    </label>
+
+    @if (failed()) { <p class="login__error" role="alert">Wrong username or password.</p> }
+
+    <button type="submit" class="btn btn--primary">Sign in</button>
+
+    <p class="login__hint">
+      <strong>Mock login.</strong> Use <code>{{ hint.username }}</code> / <code>{{ hint.password }}</code>.
+      This only keeps the screens tidy, it is not real security.
+    </p>
+  </form>
+</main>

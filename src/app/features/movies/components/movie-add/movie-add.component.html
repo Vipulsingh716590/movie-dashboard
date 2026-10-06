@@ -1,0 +1,100 @@
+<div class="backdrop" (click)="cancel.emit()"></div>
+<div class="dialog" role="dialog" aria-modal="true" aria-labelledby="add-title">
+  <h2 id="add-title">Add movie</h2>
+
+  <section class="tmdb">
+    <h3>Find it on TMDB</h3>
+    @if (hasKey()) {
+      <form class="tmdb__search" (submit)="$event.preventDefault(); search()">
+        <input type="search" placeholder="Movie name" aria-label="Search TMDB" [value]="query()" (input)="onQuery($event)">
+        <button type="submit" class="btn" [disabled]="searching() || !query().trim()">{{ searching() ? 'Searching…' : 'Search' }}</button>
+      </form>
+      @if (searchError()) { <p class="error" role="alert">{{ searchError() }}</p> }
+      <ul class="hits">
+        @for (hit of hits(); track hit.tmdbId) {
+          <li class="hits__row">
+            <app-poster [src]="hit.poster" [title]="hit.title"></app-poster>
+            <span class="hits__text"><strong>{{ hit.title }}</strong> <small>{{ hit.year }}</small></span>
+            <button type="button" class="btn" [disabled]="loadingId() !== null" (click)="useHit(hit)">
+              {{ loadingId() === hit.tmdbId ? 'Loading…' : 'Use' }}
+            </button>
+          </li>
+        } @empty {
+          @if (searched()) { <li class="hint">No movie found. Try another spelling, or fill the form by hand.</li> }
+        }
+      </ul>
+    } @else {
+      <p class="hint">
+        To search TMDB, save your free TMDB API key in <a routerLink="/settings" (click)="cancel.emit()">Display settings</a>.
+        Until then, fill the form by hand.
+      </p>
+    }
+  </section>
+
+  <form [formGroup]="form" (ngSubmit)="submit()" novalidate>
+    <label>
+      Title
+      <input formControlName="title">
+      @if (form.controls.title.touched && form.controls.title.invalid) { <span class="error">Enter a title (max 120 characters).</span> }
+      @if (isDuplicate()) { <span class="error">A movie with this title is already in the catalogue.</span> }
+    </label>
+
+    <div class="three">
+      <label>
+        Release date
+        <input type="date" formControlName="release_date">
+        @if (form.controls.release_date.touched && form.controls.release_date.invalid) { <span class="error">Pick a date.</span> }
+      </label>
+      <label>
+        Rating (0-10)
+        <input type="number" step="0.1" min="0" max="10" formControlName="vote_average">
+        @if (form.controls.vote_average.invalid) { <span class="error">Between 0 and 10.</span> }
+      </label>
+      <label>
+        Runtime (min)
+        <input type="number" min="1" max="600" formControlName="runtime">
+        @if (form.controls.runtime.invalid) { <span class="error">1 to 600.</span> }
+      </label>
+    </div>
+
+    <label>
+      Overview
+      <textarea formControlName="overview" rows="3"></textarea>
+    </label>
+
+    <label>
+      Poster image link
+      <input type="url" formControlName="poster_path" placeholder="https://…/poster.jpg">
+      @if (form.controls.poster_path.invalid) { <span class="error">Use a full link starting with http:// or https://, or leave it empty.</span> }
+    </label>
+
+    <label>
+      Trailer (YouTube link or video id)
+      <input formControlName="trailer" placeholder="https://www.youtube.com/watch?v=…">
+      @if (form.controls.trailer.invalid) { <span class="error">That is not a YouTube video link.</span> }
+    </label>
+
+    <fieldset>
+      <legend>Genres</legend>
+      <div class="chips">
+        @for (g of genreOptions(); track g.name) {
+          <label class="chip"><input type="checkbox" [checked]="hasGenre(g)" (change)="toggleGenre(g)"> {{ g.name }}</label>
+        }
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Show on the site in</legend>
+      <div class="chips">
+        @for (s of sectionOptions; track s[0]) {
+          <label class="chip"><input type="checkbox" [checked]="hasSection(s[0])" (change)="toggleSection(s[0])"> {{ s[1] }}</label>
+        }
+      </div>
+    </fieldset>
+
+    <div class="actions">
+      <button type="button" class="btn" (click)="cancel.emit()">Cancel</button>
+      <button type="submit" class="btn btn--primary">Add movie</button>
+    </div>
+  </form>
+</div>

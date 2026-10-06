@@ -1,11 +1,13 @@
 import { Component, OnInit, computed, inject, signal } from '@angular/core';
 import { MovieStore } from '../../core/services/movie-store.service';
-import { MovieEdit, MovieRow, SECTION_LABELS, SectionKey } from '../../core/models/movie.model';
+import { MovieEdit, MovieRow, NewMovie, SECTION_LABELS, SectionKey } from '../../core/models/movie.model';
 import { PosterComponent } from '../../shared/components/poster/poster.component';
 import { RatingBadgeComponent } from '../../shared/components/rating-badge/rating-badge.component';
 import { ToggleSwitchComponent } from '../../shared/components/toggle-switch/toggle-switch.component';
 import { LoadingStateComponent } from '../../shared/components/loading-state/loading-state.component';
 import { RuntimePipe } from '../../shared/pipes/runtime.pipe';
+import { ConfirmDialogComponent } from '../../shared/components/confirm-dialog/confirm-dialog.component';
+import { MovieAddComponent } from './components/movie-add/movie-add.component';
 import { MovieEditorComponent } from './components/movie-editor/movie-editor.component';
 
 type SortKey = 'title' | 'rating' | 'year' | 'runtime';
@@ -20,7 +22,7 @@ const SORTERS: Record<SortKey, (a: MovieRow, b: MovieRow) => number> = {
 @Component({
   selector: 'app-movies',
   standalone: true,
-  imports: [PosterComponent, RatingBadgeComponent, ToggleSwitchComponent, LoadingStateComponent, RuntimePipe, MovieEditorComponent],
+  imports: [PosterComponent, RatingBadgeComponent, ToggleSwitchComponent, LoadingStateComponent, RuntimePipe, MovieEditorComponent, MovieAddComponent, ConfirmDialogComponent],
   templateUrl: './movies.component.html',
   styleUrl: './movies.component.scss'
 })
@@ -33,6 +35,8 @@ export class MoviesComponent implements OnInit {
   poster = signal<'' | 'missing'>('');
   sort = signal<SortKey>('title');
   editing = signal<MovieRow | null>(null);
+  adding = signal(false);
+  deleting = signal<MovieRow | null>(null);
 
   readonly sectionOptions = Object.entries(SECTION_LABELS) as [SectionKey, string][];
   readonly sectionLabels = SECTION_LABELS;
@@ -75,6 +79,15 @@ export class MoviesComponent implements OnInit {
 
   setSort(event: Event): void {
     this.sort.set((event.target as HTMLSelectElement).value as SortKey);
+  }
+
+  addMovie(event: { movie: NewMovie; sections: SectionKey[] }): void {
+    this.store.addMovie(event.movie, event.sections, () => this.adding.set(false));
+  }
+
+  confirmDelete(): void {
+    const movie = this.deleting();
+    if (movie) this.store.deleteMovie(movie.id, () => this.deleting.set(null));
   }
 
   save(edit: MovieEdit): void {

@@ -1,5 +1,7 @@
-import { Component, OnInit, computed, inject } from '@angular/core';
+import { Component, OnInit, computed, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { ToastService } from '../../core/services/toast.service';
+import { TmdbService } from '../../core/services/tmdb.service';
 import { MovieStore } from '../../core/services/movie-store.service';
 import { MovieRow } from '../../core/models/movie.model';
 import { SiteSettings } from '../../core/models/site-settings.model';
@@ -19,6 +21,10 @@ type SectionSwitch = { key: keyof Pick<SiteSettings, 'showHeroBanner' | 'showPop
 })
 export class SettingsComponent implements OnInit {
   store = inject(MovieStore);
+  tmdb = inject(TmdbService);
+  private toast = inject(ToastService);
+
+  keyDraft = signal('');
 
   readonly sections: SectionSwitch[] = [
     { key: 'showHeroBanner', label: 'Hero banner', hint: 'The featured trailer at the top of the home page.' },
@@ -36,6 +42,21 @@ export class SettingsComponent implements OnInit {
 
   setSection(key: SectionSwitch['key'], value: boolean, label: string): void {
     this.store.updateSettings({ [key]: value }, `${label} ${value ? 'shown' : 'hidden'}`);
+  }
+
+  onKeyInput(event: Event): void {
+    this.keyDraft.set((event.target as HTMLInputElement).value);
+  }
+
+  saveKey(): void {
+    this.tmdb.setKey(this.keyDraft());
+    this.keyDraft.set('');
+    this.toast.show('TMDB key saved in this browser');
+  }
+
+  removeKey(): void {
+    this.tmdb.setKey('');
+    this.toast.show('TMDB key removed');
   }
 
   clearOverrides(): void {

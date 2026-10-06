@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router';
+import { AuthService } from '../../../core/services/auth.service';
 import { environment } from '../../../../environments/environment';
 
 interface NavItem {
@@ -19,10 +20,18 @@ interface NavItem {
 export class SidebarComponent {
   readonly siteUrl = environment.siteUrl;
   readonly demo = environment.demo;
+  auth = inject(AuthService);
+  private router = inject(Router);
+
+  logout(): void {
+    this.auth.logout();
+    void this.router.navigateByUrl('/login');
+  }
 
   readonly items: NavItem[] = [
     { path: '/', label: 'Overview', icon: '▦', exact: true },
     { path: '/movies', label: 'Movies', icon: '🎬', exact: false },
+    { path: '/trailers', label: 'Trailers', icon: '▶', exact: false },
     { path: '/settings', label: 'Display settings', icon: '⚙', exact: false }
   ];
 }

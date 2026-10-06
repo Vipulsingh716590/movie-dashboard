@@ -58,6 +58,25 @@
       }
     </section>
 
+    <section class="group">
+      <h2>TMDB import</h2>
+      <div class="row row--stack">
+        <div>
+          <h3>TMDB API key</h3>
+          <p>
+            Lets "Add movie" search TMDB and "Find on TMDB" suggest trailers. Get a free v3 key at themoviedb.org (Settings, then API).
+            It is stored only in this browser and sent only to TMDB.
+            {{ tmdb.hasKey() ? 'A key is saved.' : 'No key saved yet.' }}
+          </p>
+        </div>
+        <form class="keyform" (submit)="$event.preventDefault(); saveKey()">
+          <input type="password" autocomplete="off" placeholder="Paste your TMDB API key" aria-label="TMDB API key" [value]="keyDraft()" (input)="onKeyInput($event)">
+          <button type="submit" class="btn btn--primary" [disabled]="!keyDraft().trim()">Save key</button>
+          @if (tmdb.hasKey()) { <button type="button" class="btn btn--danger" (click)="removeKey()">Remove key</button> }
+        </form>
+      </div>
+    </section>
+
     <div>
       <button type="button" class="btn" (click)="store.resetSettings()">Reset everything to defaults</button>
     </div>

@@ -1,0 +1,32 @@
+.login {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: var(--gutter);
+
+  &__card {
+    width: min(380px, 100%);
+    display: grid;
+    gap: 14px;
+    padding: 26px;
+    border-radius: 12px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    h1 { font-size: 1.4rem; }
+  }
+
+  &__brand { display: flex; align-items: center; gap: 10px; font-weight: 700; }
+  &__logo { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 8px; background: var(--accent); color: #fff; font-weight: 800; }
+  &__error { margin: 0; color: var(--low); font-size: 0.9rem; }
+  &__hint { margin: 0; color: var(--muted); font-size: 0.82rem; code { color: #fff; } }
+}
+
+label { display: grid; gap: 6px; font-size: 0.88rem; color: var(--muted); }
+
+input {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #fff;
+}

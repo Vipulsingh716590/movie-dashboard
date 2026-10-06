@@ -40,8 +40,14 @@ export const demoApiInterceptor: HttpInterceptorFn = (req, next) => {
       if (id !== undefined) {
         const index = (collection as { id: number }[]).findIndex((m) => String(m.id) === id);
         if (index < 0) return notFound(req.url);
+        if (req.method === 'DELETE') return reply(collection.splice(index, 1)[0]);
         if (req.method === 'PATCH') collection[index] = { ...collection[index], ...(req.body as object) };
         return reply(collection[index]);
+      }
+
+      if (req.method === 'POST' && Array.isArray(collection)) {
+        collection.push(structuredClone(req.body));
+        return reply(req.body);
       }
 
       if (req.method === 'PUT') data[resource] = req.body;

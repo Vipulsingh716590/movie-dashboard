@@ -1,0 +1,15 @@
+<div class="backdrop" (click)="close.emit()"></div>
+<div class="dialog" role="dialog" aria-modal="true" aria-labelledby="preview-title">
+  <div class="dialog__head">
+    <h2 id="preview-title">{{ title || 'Trailer' }}</h2>
+    <button type="button" class="btn" (click)="close.emit()">Close</button>
+  </div>
+
+  @if (embedUrl(); as url) {
+    <iframe class="dialog__player" [src]="url" title="Trailer preview" allow="encrypted-media; picture-in-picture" allowfullscreen
+      referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <p class="dialog__hint">Video not showing? <a [href]="watchUrl()" target="_blank" rel="noopener">Open it on YouTube</a>. If YouTube says it is unavailable, the link is broken: replace it.</p>
+  } @else {
+    <p class="dialog__hint">This is not a valid YouTube video id.</p>
+  }
+</div>

@@ -20,6 +20,16 @@
   a { color: #fff; }
 }
 
+.row--stack { flex-direction: column; align-items: stretch; }
+
+.keyform {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+
+  input { flex: 1; min-width: 220px; background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 9px 12px; color: #fff; }
+}
+
 .preview {
   border-top: 1px solid var(--border);
   padding: 14px 0 6px;

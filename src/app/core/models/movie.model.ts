@@ -27,6 +27,12 @@ export interface Movie {
   trailer_url?: string;
 }
 
+/** A movie before it has an id (what "Add movie" and the TMDB import produce). */
+export type NewMovie = Omit<Movie, 'id'>;
+
+/** Any field of a stored movie except its id, for partial updates such as changing only the trailer. */
+export type MoviePatch = Partial<Omit<Movie, 'id'>>;
+
 /** Fields the dashboard lets an admin edit. */
 export type MovieEdit = Pick<Movie, 'title' | 'overview' | 'release_date' | 'vote_average' | 'poster_path'>;
 
@@ -39,6 +45,15 @@ export const SECTION_LABELS: Record<SectionKey, string> = {
   upcoming: 'Upcoming',
   latest: 'Now playing'
 };
+
+export interface TmdbHit {
+  tmdbId: number;
+  title: string;
+  year: string;
+  poster: string;
+  overview: string;
+  rating: number;
+}
 
 export interface MovieRow extends Movie {
   sections: SectionKey[];

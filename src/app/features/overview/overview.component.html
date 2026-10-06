@@ -18,6 +18,7 @@
       <app-stat-card label="Average runtime" [value]="store.kpis().averageRuntime | runtime"></app-stat-card>
       <app-stat-card label="Genres" [value]="store.kpis().genreCount"></app-stat-card>
       <app-stat-card label="Missing posters" [value]="store.kpis().missingPosters" hint="Add a link in Movies > Edit"></app-stat-card>
+      <app-stat-card label="Missing trailers" [value]="store.kpis().missingTrailers" hint="Fix them in Trailers"></app-stat-card>
     </section>
 
     <section class="panel overview__control">

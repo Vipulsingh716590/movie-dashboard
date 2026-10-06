@@ -64,6 +64,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   cursor: pointer;
   &:hover { border-color: #666; }
   &:disabled { opacity: 0.5; cursor: not-allowed; }
+  &--danger { color: #ff7b7b; &:hover { border-color: #ff7b7b; } }
+  &--danger-solid { background: #b3261e; border-color: #b3261e; color: #fff; font-weight: 600; &:hover { background: #cc2d24; } }
   &--primary { background: $color-accent; border-color: $color-accent; color: #fff; font-weight: 600; &:hover { background: #f6121d; } }
 }
 

@@ -7,6 +7,7 @@ export interface Kpis {
   averageRuntime: number;
   genreCount: number;
   missingPosters: number;
+  missingTrailers: number;
 }
 
 export interface Datum {
@@ -29,7 +30,8 @@ export function computeKpis(movies: MovieRow[]): Kpis {
       ? Math.round(withRuntime.reduce((s, m) => s + (m.runtime ?? 0), 0) / withRuntime.length)
       : 0,
     genreCount: genres.size,
-    missingPosters: movies.filter((m) => !m.poster_path).length
+    missingPosters: movies.filter((m) => !m.poster_path).length,
+    missingTrailers: movies.filter((m) => !m.trailer_key && !m.trailer_url).length
   };
 }
 

@@ -18,11 +18,11 @@ describe('analytics', () => {
   const movies = [movie(1, 8.4, 2010, ['Action', 'Sci-Fi'], 148), movie(2, 6.2, 1975, ['Drama']), movie(3, 0, 2026, ['Action'], 90)];
 
   it('computes KPIs, ignoring unrated movies in the average rating', () => {
-    expect(computeKpis(movies)).toEqual({ total: 3, rated: 2, averageRating: 7.3, averageRuntime: 113, genreCount: 3, missingPosters: 3 });
+    expect(computeKpis(movies)).toEqual({ total: 3, rated: 2, averageRating: 7.3, averageRuntime: 113, genreCount: 3, missingPosters: 3, missingTrailers: 3 });
   });
 
   it('handles an empty catalogue', () => {
-    expect(computeKpis([])).toEqual({ total: 0, rated: 0, averageRating: 0, averageRuntime: 0, genreCount: 0, missingPosters: 0 });
+    expect(computeKpis([])).toEqual({ total: 0, rated: 0, averageRating: 0, averageRuntime: 0, genreCount: 0, missingPosters: 0, missingTrailers: 0 });
   });
 
   it('buckets rated movies by rating point', () => {

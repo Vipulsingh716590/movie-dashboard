@@ -1,0 +1,20 @@
+.backdrop { position: fixed; inset: 0; z-index: 60; background: rgba(0, 0, 0, 0.7); }
+
+.dialog {
+  position: fixed;
+  z-index: 61;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(440px, calc(100vw - 32px));
+  padding: 22px;
+  border-radius: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  display: grid;
+  gap: 12px;
+
+  p { margin: 0; color: var(--muted); }
+}
+
+.actions { display: flex; justify-content: flex-end; gap: 10px; }

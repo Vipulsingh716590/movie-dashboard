@@ -1,7 +1,10 @@
 <div class="page">
-  <header>
-    <h1 class="page__title">Movies</h1>
-    <p class="page__subtitle">Search, edit and control how each movie's rating appears on the site.</p>
+  <header class="movies__head">
+    <div>
+      <h1 class="page__title">Movies</h1>
+      <p class="page__subtitle">Add, edit and delete movies, and control how each rating appears on the site.</p>
+    </div>
+    <button type="button" class="btn btn--primary" (click)="adding.set(true)">Add movie</button>
   </header>
 
   @if (!store.loaded()) {
@@ -72,7 +75,10 @@
                   [checked]="!store.isRatingHidden(m.id)" [disabled]="!store.settings().showRatings"
                   (changed)="store.setRatingHidden(m.id, !$event)"></app-toggle-switch>
               </td>
-              <td><button type="button" class="btn" (click)="editing.set(m)">Edit</button></td>
+              <td class="actions">
+                <button type="button" class="btn" (click)="editing.set(m)">Edit</button>
+                <button type="button" class="btn btn--danger" [attr.aria-label]="'Delete ' + m.title" (click)="deleting.set(m)">Delete</button>
+              </td>
             </tr>
           } @empty {
             <tr><td colspan="6" class="empty">No movies match these filters.</td></tr>
@@ -89,4 +95,14 @@
 
 @if (editing(); as movie) {
   <app-movie-editor [movie]="movie" (save)="save($event)" (cancel)="editing.set(null)"></app-movie-editor>
+}
+
+@if (adding()) {
+  <app-movie-add (add)="addMovie($event)" (cancel)="adding.set(false)"></app-movie-add>
+}
+
+@if (deleting(); as movie) {
+  <app-confirm-dialog title="Delete this movie?" confirmLabel="Delete movie"
+    [message]="'&quot;' + movie.title + '&quot; will be removed from the dashboard and from every list on the site. This cannot be undone.'"
+    (confirm)="confirmDelete()" (cancel)="deleting.set(null)"></app-confirm-dialog>
 }

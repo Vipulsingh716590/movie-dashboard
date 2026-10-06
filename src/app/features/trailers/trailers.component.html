@@ -1,0 +1,89 @@
+<div class="page">
+  <header>
+    <h1 class="page__title">Trailers</h1>
+    <p class="page__subtitle">Every movie plays its own trailer on the site. Fix missing or wrong ones here.</p>
+  </header>
+
+  @if (!store.loaded()) {
+    <app-loading-state [failed]="store.failed()" (retry)="store.load()"></app-loading-state>
+  } @else {
+    <div class="summary" aria-live="polite">
+      <span class="pill pill--good">{{ counts().set }} with a trailer</span>
+      <span class="pill" [class.pill--bad]="counts().missing > 0">{{ counts().missing }} missing</span>
+    </div>
+
+    <div class="filters" role="search">
+      <input type="search" placeholder="Search by title" aria-label="Search movies" [value]="query()" (input)="setQuery($event)">
+      <select aria-label="Filter by trailer" (change)="setStatus($event)">
+        <option value="">All movies</option>
+        <option value="missing">Trailer missing</option>
+        <option value="set">Has a trailer</option>
+      </select>
+    </div>
+
+    <div class="table-wrap">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Movie</th>
+            <th scope="col">Trailer</th>
+            <th scope="col">YouTube link or video id</th>
+            <th scope="col"><span class="visually-hidden">Actions</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (m of filtered(); track m.id) {
+            <tr>
+              <td>
+                <div class="movie">
+                  <app-poster [src]="m.poster_path" [title]="m.title"></app-poster>
+                  <div><strong>{{ m.title }}</strong><small>{{ m.release_date.slice(0, 4) }}</small></div>
+                </div>
+              </td>
+              <td>
+                @if (m.trailer_key) {
+                  <button type="button" class="thumb" [attr.aria-label]="'Preview the trailer of ' + m.title" (click)="preview.set(m)">
+                    <img [src]="thumb(m.trailer_key)" alt="" loading="lazy" width="96" height="54"
+                      (error)="$any($event.target).style.visibility = 'hidden'">
+                    <span class="thumb__play" aria-hidden="true">▶</span>
+                  </button>
+                } @else if (m.trailer_url) {
+                  <span class="pill">Video file</span>
+                } @else {
+                  <span class="pill pill--bad">Missing</span>
+                }
+              </td>
+              <td>
+                <input class="link" [value]="draftFor(m)" (input)="onDraft(m, $event)" (keydown.enter)="save(m)"
+                  placeholder="https://www.youtube.com/watch?v=…" [attr.aria-label]="'Trailer link for ' + m.title">
+                @if (errors()[m.id]) { <span class="error" role="alert">{{ errors()[m.id] }}</span> }
+              </td>
+              <td class="actions">
+                <button type="button" class="btn btn--primary" [disabled]="!dirty(m)" (click)="save(m)">Save</button>
+                @if (hasTmdbKey()) {
+                  <button type="button" class="btn" [disabled]="finding() !== null" (click)="findWithTmdb(m)">
+                    {{ finding() === m.id ? 'Searching…' : 'Find on TMDB' }}
+                  </button>
+                }
+                @if (m.trailer_key) {
+                  <a class="btn" [href]="watchUrl(m.trailer_key)" target="_blank" rel="noopener">YouTube ↗</a>
+                  <button type="button" class="btn btn--danger" (click)="remove(m)">Remove</button>
+                }
+              </td>
+            </tr>
+          } @empty {
+            <tr><td colspan="4" class="empty">No movies match these filters.</td></tr>
+          }
+        </tbody>
+      </table>
+    </div>
+
+    @if (!hasTmdbKey()) {
+      <p class="note">Tip: save a TMDB API key in Display settings to get a "Find on TMDB" button that suggests each movie's official trailer.</p>
+    }
+  }
+</div>
+
+@if (preview(); as movie) {
+  <app-trailer-preview [title]="movie.title" [videoKey]="movie.trailer_key ?? ''" (close)="preview.set(null)"></app-trailer-preview>
+}
