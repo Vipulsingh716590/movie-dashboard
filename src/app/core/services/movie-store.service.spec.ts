@@ -43,7 +43,7 @@ describe('MovieStore', () => {
 
   it('reloads from the server when saving a movie fails, so the screen matches what was really saved', () => {
     flushLoad();
-    store.saveMovie(1, { title: 'B', overview: '', release_date: '2010-01-01', vote_average: 7 });
+    store.saveMovie(1, { title: 'B', overview: '', release_date: '2010-01-01', vote_average: 7, poster_path: '' });
     http.expectOne({ method: 'PATCH', url: `${base}/movieDetails/1` }).error(new ProgressEvent('error'), { status: 500 });
 
     http.expectOne(`${base}/movieDetails`).flush([{ id: 1, title: 'B', vote_average: 7, release_date: '2010-01-01', overview: '', poster_path: '', backdrop_path: '' }]);

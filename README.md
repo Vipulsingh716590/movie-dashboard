@@ -14,8 +14,8 @@ npm start          # mock API (port 3000) + dashboard: http://localhost:4300
 ## What it does
 | Page | What you can do |
 |------|-----------------|
-| **Overview** | KPIs (movies, average rating, average runtime, genres), rating distribution, genre donut, movies per decade, movies per site section, top rated, and a quick "Show ratings" switch. |
-| **Movies** | Search (English or Hindi title), filter by genre or section, sort, edit title / overview / release date / rating, and hide the rating of a single movie. |
+| **Overview** | KPIs (movies, average rating, average runtime, genres, movies missing a poster), rating distribution, genre donut, movies per decade, movies per site section, top rated, and a quick "Show ratings" switch. |
+| **Movies** | Search (English or Hindi title), filter by genre, section or "poster missing", sort, edit title / overview / release date / rating / poster link, and hide the rating of a single movie. Movies without a poster show a letter tile instead of a blank. |
 | **Display settings** | Master switch for all ratings, clear per-movie overrides, show or hide the hero banner and the Popular / Upcoming / Now playing sections, reset to defaults, live preview. |
 
 Every switch is saved straight away and rolled back with an error toast if the API is down.

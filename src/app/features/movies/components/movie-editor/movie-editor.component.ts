@@ -21,12 +21,14 @@ export class MovieEditorComponent implements OnInit {
     title: ['', [Validators.required, Validators.maxLength(120)]],
     overview: ['', Validators.maxLength(1000)],
     release_date: ['', [Validators.required, Validators.pattern(/^\d{4}-\d{2}-\d{2}$/)]],
-    vote_average: [0, [Validators.required, Validators.min(0), Validators.max(10)]]
+    vote_average: [0, [Validators.required, Validators.min(0), Validators.max(10)]],
+    // Empty is allowed (the dashboard then shows a letter tile); otherwise a full web link.
+    poster_path: ['', Validators.pattern(/^(https?:\/\/\S+)?$/)]
   });
 
   ngOnInit(): void {
-    const { title, overview, release_date, vote_average } = this.movie;
-    this.form.setValue({ title, overview, release_date, vote_average });
+    const { title, overview, release_date, vote_average, poster_path } = this.movie;
+    this.form.setValue({ title, overview, release_date, vote_average, poster_path: poster_path ?? '' });
   }
 
   @HostListener('document:keydown.escape')

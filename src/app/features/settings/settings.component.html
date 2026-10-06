@@ -34,11 +34,12 @@
         <span class="preview__label">Preview of a movie card</span>
         <div class="preview__card">
           <div class="preview__poster">
+            <app-poster size="lg" [src]="sample()?.poster_path" [title]="sample()?.title ?? ''"></app-poster>
             @if (store.settings().showRatings) {
-              <app-rating-badge class="preview__rating" [rating]="8.4"></app-rating-badge>
+              <app-rating-badge class="preview__rating" [rating]="sample()?.vote_average ?? 0"></app-rating-badge>
             }
           </div>
-          <strong>Inception</strong>
+          <strong>{{ sample()?.title }}</strong>
         </div>
       </div>
     </section>

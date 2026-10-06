@@ -29,8 +29,7 @@
   display: grid;
   gap: 10px;
 
-  &__row { display: grid; grid-template-columns: 24px 36px 1fr auto; align-items: center; gap: 12px; }
+  &__row { display: grid; grid-template-columns: 24px 40px 1fr auto; align-items: center; gap: 12px; }
   &__rank { color: var(--muted); text-align: center; }
-  &__poster { width: 36px; height: 54px; object-fit: cover; border-radius: 4px; background: var(--surface-2); }
   &__title { small { color: var(--muted); margin-left: 6px; } }
 }

@@ -28,6 +28,12 @@
       </label>
     </div>
 
+    <label>
+      Poster image link
+      <input type="url" formControlName="poster_path" placeholder="https://…/poster.jpg">
+      @if (form.controls.poster_path.touched && form.controls.poster_path.invalid) { <span class="error">Use a full link starting with http:// or https://, or leave it empty.</span> }
+    </label>
+
     <div class="actions">
       <button type="button" class="btn" (click)="cancel.emit()">Cancel</button>
       <button type="submit" class="btn btn--primary">Save changes</button>

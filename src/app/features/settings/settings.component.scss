@@ -26,6 +26,6 @@
 
   &__label { display: block; color: var(--muted); font-size: 0.8rem; margin-bottom: 8px; }
   &__card { display: inline-grid; gap: 6px; width: 120px; }
-  &__poster { position: relative; height: 170px; border-radius: 8px; background: linear-gradient(135deg, #3a3a3a, #1f1f1f); }
+  &__poster { position: relative; width: 120px; height: 170px; }
   &__rating { position: absolute; top: 8px; right: 8px; }
 }

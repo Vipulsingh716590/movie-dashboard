@@ -21,6 +21,11 @@
         @for (s of sectionOptions; track s[0]) { <option [value]="s[0]">{{ s[1] }}</option> }
       </select>
 
+      <select aria-label="Filter by poster" (change)="setPoster($event)">
+        <option value="">All posters</option>
+        <option value="missing">Poster missing</option>
+      </select>
+
       <select aria-label="Sort by" (change)="setSort($event)">
         <option value="title">Sort: Title</option>
         <option value="rating">Sort: Rating</option>
@@ -48,7 +53,7 @@
             <tr>
               <td>
                 <div class="movie">
-                  <img class="movie__poster" [src]="m.poster_path" alt="" loading="lazy" (error)="$any($event.target).style.visibility = 'hidden'" width="40" height="60">
+                  <app-poster [src]="m.poster_path" [title]="m.title"></app-poster>
                   <div>
                     <strong>{{ m.title }}</strong>
                     <small>{{ m.release_date.slice(0, 4) }}

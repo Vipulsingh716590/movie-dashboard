@@ -28,7 +28,7 @@ export interface Movie {
 }
 
 /** Fields the dashboard lets an admin edit. */
-export type MovieEdit = Pick<Movie, 'title' | 'overview' | 'release_date' | 'vote_average'>;
+export type MovieEdit = Pick<Movie, 'title' | 'overview' | 'release_date' | 'vote_average' | 'poster_path'>;
 
 /** Which movie app section lists a movie (each is a list in the mock API). */
 export type SectionKey = 'hero' | 'popular' | 'upcoming' | 'latest';

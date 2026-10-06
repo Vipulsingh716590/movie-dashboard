@@ -1,0 +1,5 @@
+@if (url(); as link) {
+  <img class="poster__img" [src]="link" alt="" loading="lazy" (error)="onError()">
+} @else {
+  <span class="poster__none" aria-hidden="true">{{ initial }}</span>
+}

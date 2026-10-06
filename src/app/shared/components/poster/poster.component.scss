@@ -1,0 +1,37 @@
+:host {
+  display: block;
+  flex: none;
+  width: 40px;
+  height: 60px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--surface-2);
+}
+
+:host(.poster--lg) {
+  width: 120px;
+  height: 170px;
+  border-radius: 8px;
+}
+
+.poster__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.poster__none {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #3a3a3a, #1f1f1f);
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+:host(.poster--lg) .poster__none {
+  font-size: 2.4rem;
+}

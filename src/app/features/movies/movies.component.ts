@@ -1,6 +1,7 @@
 import { Component, OnInit, computed, inject, signal } from '@angular/core';
 import { MovieStore } from '../../core/services/movie-store.service';
 import { MovieEdit, MovieRow, SECTION_LABELS, SectionKey } from '../../core/models/movie.model';
+import { PosterComponent } from '../../shared/components/poster/poster.component';
 import { RatingBadgeComponent } from '../../shared/components/rating-badge/rating-badge.component';
 import { ToggleSwitchComponent } from '../../shared/components/toggle-switch/toggle-switch.component';
 import { LoadingStateComponent } from '../../shared/components/loading-state/loading-state.component';
@@ -19,7 +20,7 @@ const SORTERS: Record<SortKey, (a: MovieRow, b: MovieRow) => number> = {
 @Component({
   selector: 'app-movies',
   standalone: true,
-  imports: [RatingBadgeComponent, ToggleSwitchComponent, LoadingStateComponent, RuntimePipe, MovieEditorComponent],
+  imports: [PosterComponent, RatingBadgeComponent, ToggleSwitchComponent, LoadingStateComponent, RuntimePipe, MovieEditorComponent],
   templateUrl: './movies.component.html',
   styleUrl: './movies.component.scss'
 })
@@ -29,6 +30,7 @@ export class MoviesComponent implements OnInit {
   query = signal('');
   genre = signal('');
   section = signal<SectionKey | ''>('');
+  poster = signal<'' | 'missing'>('');
   sort = signal<SortKey>('title');
   editing = signal<MovieRow | null>(null);
 
@@ -41,10 +43,12 @@ export class MoviesComponent implements OnInit {
     const q = this.query().trim().toLowerCase();
     const genre = this.genre();
     const section = this.section();
+    const missingOnly = this.poster() === 'missing';
     return this.store
       .movies()
       .filter((m) => !genre || (m.genres ?? []).some((g) => g.name === genre))
       .filter((m) => !section || m.sections.includes(section))
+      .filter((m) => !missingOnly || !m.poster_path)
       .filter(
         (m) =>
           !q ||
@@ -63,6 +67,10 @@ export class MoviesComponent implements OnInit {
 
   setSection(event: Event): void {
     this.section.set((event.target as HTMLSelectElement).value as SectionKey | '');
+  }
+
+  setPoster(event: Event): void {
+    this.poster.set((event.target as HTMLSelectElement).value as '' | 'missing');
   }
 
   setSort(event: Event): void {

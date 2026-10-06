@@ -2,7 +2,7 @@
 
 .filters {
   display: grid;
-  grid-template-columns: minmax(200px, 2fr) repeat(3, minmax(130px, 1fr));
+  grid-template-columns: minmax(200px, 2fr) repeat(4, minmax(120px, 1fr));
   gap: 10px;
 
   input, select {
@@ -38,7 +38,6 @@
   align-items: center;
   gap: 12px;
 
-  &__poster { width: 40px; height: 60px; object-fit: cover; border-radius: 4px; background: var(--surface-2); flex: none; }
   small { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; color: var(--muted); margin-top: 4px; }
 }
 

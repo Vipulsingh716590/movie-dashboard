@@ -17,6 +17,7 @@
       <app-stat-card label="Average rating" [value]="store.kpis().averageRating + ' / 10'" hint="Rated movies only"></app-stat-card>
       <app-stat-card label="Average runtime" [value]="store.kpis().averageRuntime | runtime"></app-stat-card>
       <app-stat-card label="Genres" [value]="store.kpis().genreCount"></app-stat-card>
+      <app-stat-card label="Missing posters" [value]="store.kpis().missingPosters" hint="Add a link in Movies > Edit"></app-stat-card>
     </section>
 
     <section class="panel overview__control">
@@ -61,7 +62,7 @@
         @for (m of store.topRated(); track m.id; let i = $index) {
           <li class="top__row">
             <span class="top__rank">{{ i + 1 }}</span>
-            <img class="top__poster" [src]="m.poster_path" [alt]="''" loading="lazy" (error)="$any($event.target).style.visibility = 'hidden'" width="36" height="54">
+            <app-poster [src]="m.poster_path" [title]="m.title"></app-poster>
             <span class="top__title">{{ m.title }} <small>{{ m.release_date.slice(0, 4) }}</small></span>
             <app-rating-badge [rating]="m.vote_average"></app-rating-badge>
           </li>
