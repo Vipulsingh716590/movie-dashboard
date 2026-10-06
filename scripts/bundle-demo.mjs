@@ -1,9 +1,11 @@
 // Packs the demo build (dist/demo-build/browser) into ONE self-contained page so it can be hosted anywhere that serves
 // a single file (no extra files, no API). Lazy route chunks are merged into the script.
-//   dist/demo/index.html     full document, for static hosts such as Netlify
-//   dist/demo/artifact.html  fragment without <html>/<head>, for hosts that add their own page skeleton
+//   dist/movie-dashboard/browser/index.html     full document, for static hosts such as Netlify
+//   dist/movie-dashboard/browser/artifact.html  fragment without <html>/<head>, for hosts that add their own page skeleton
+// The output goes to Angular's default output folder because Netlify's Angular plugin looks for it there and
+// publishes it; any other folder fails the deploy with "Could not find build output directory".
 import { build } from 'esbuild';
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 
 const src = 'dist/demo-build/browser';
 const { outputFiles } = await build({
@@ -45,7 +47,9 @@ ${body}</body>
 </html>
 `;
 
-mkdirSync('dist/demo', { recursive: true });
-writeFileSync('dist/demo/index.html', page);
-writeFileSync('dist/demo/artifact.html', `<title>MovieFlix Dashboard</title>\n${body}`);
-console.log(`dist/demo/index.html  ${(page.length / 1024).toFixed(0)} kB`);
+const out = 'dist/movie-dashboard/browser';
+rmSync(out, { recursive: true, force: true });
+mkdirSync(out, { recursive: true });
+writeFileSync(`${out}/index.html`, page);
+writeFileSync(`${out}/artifact.html`, `<title>MovieFlix Dashboard</title>\n${body}`);
+console.log(`${out}/index.html  ${(page.length / 1024).toFixed(0)} kB`);
