@@ -36,14 +36,15 @@ export type MoviePatch = Partial<Omit<Movie, 'id'>>;
 /** Fields the dashboard lets an admin edit. */
 export type MovieEdit = Pick<Movie, 'title' | 'overview' | 'release_date' | 'vote_average' | 'poster_path'>;
 
-/** Which movie app section lists a movie (each is a list in the mock API). */
-export type SectionKey = 'hero' | 'popular' | 'upcoming' | 'latest';
+/** Which list of the movie app holds a movie (each is a list in the mock API). `search` is the list of films that only appear in search. */
+export type SectionKey = 'hero' | 'popular' | 'upcoming' | 'latest' | 'search';
 
 export const SECTION_LABELS: Record<SectionKey, string> = {
   hero: 'Hero banner',
   popular: 'Popular',
   upcoming: 'Upcoming',
-  latest: 'Now playing'
+  latest: 'Now playing',
+  search: 'Search only'
 };
 
 export interface TmdbHit {
@@ -53,6 +54,15 @@ export interface TmdbHit {
   poster: string;
   overview: string;
   rating: number;
+}
+
+/** What TMDB suggests for a movie that is missing a poster or a trailer. */
+export interface TmdbSuggestion {
+  tmdbId: number;
+  title: string;
+  year: string;
+  poster: string;
+  trailerKey?: string;
 }
 
 export interface MovieRow extends Movie {

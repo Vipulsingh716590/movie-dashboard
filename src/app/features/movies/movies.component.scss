@@ -1,5 +1,6 @@
 @use 'mixins' as *;
 
+.movies__buttons { display: flex; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
 .movies__head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
 
 .actions { white-space: nowrap; .btn + .btn { margin-left: 8px; } }

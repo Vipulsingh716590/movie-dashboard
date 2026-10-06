@@ -10,6 +10,9 @@
     <div class="summary" aria-live="polite">
       <span class="pill pill--good">{{ counts().set }} with a trailer</span>
       <span class="pill" [class.pill--bad]="counts().missing > 0">{{ counts().missing }} missing</span>
+      @if (hasTmdbKey() && store.incomplete().length) {
+        <button type="button" class="btn summary__fill" (click)="autofill.set(true)">Find all missing on TMDB</button>
+      }
     </div>
 
     <div class="filters" role="search">
@@ -83,6 +86,10 @@
     }
   }
 </div>
+
+@if (autofill()) {
+  <app-tmdb-autofill (close)="autofill.set(false)"></app-tmdb-autofill>
+}
 
 @if (preview(); as movie) {
   <app-trailer-preview [title]="movie.title" [videoKey]="movie.trailer_key ?? ''" (close)="preview.set(null)"></app-trailer-preview>

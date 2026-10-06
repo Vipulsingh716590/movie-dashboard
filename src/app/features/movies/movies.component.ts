@@ -7,6 +7,8 @@ import { ToggleSwitchComponent } from '../../shared/components/toggle-switch/tog
 import { LoadingStateComponent } from '../../shared/components/loading-state/loading-state.component';
 import { RuntimePipe } from '../../shared/pipes/runtime.pipe';
 import { ConfirmDialogComponent } from '../../shared/components/confirm-dialog/confirm-dialog.component';
+import { TmdbAutofillComponent } from '../../shared/components/tmdb-autofill/tmdb-autofill.component';
+import { TmdbService } from '../../core/services/tmdb.service';
 import { MovieAddComponent } from './components/movie-add/movie-add.component';
 import { MovieEditorComponent } from './components/movie-editor/movie-editor.component';
 
@@ -22,7 +24,7 @@ const SORTERS: Record<SortKey, (a: MovieRow, b: MovieRow) => number> = {
 @Component({
   selector: 'app-movies',
   standalone: true,
-  imports: [PosterComponent, RatingBadgeComponent, ToggleSwitchComponent, LoadingStateComponent, RuntimePipe, MovieEditorComponent, MovieAddComponent, ConfirmDialogComponent],
+  imports: [PosterComponent, RatingBadgeComponent, ToggleSwitchComponent, LoadingStateComponent, RuntimePipe, MovieEditorComponent, MovieAddComponent, ConfirmDialogComponent, TmdbAutofillComponent],
   templateUrl: './movies.component.html',
   styleUrl: './movies.component.scss'
 })
@@ -35,7 +37,9 @@ export class MoviesComponent implements OnInit {
   poster = signal<'' | 'missing'>('');
   sort = signal<SortKey>('title');
   editing = signal<MovieRow | null>(null);
+  tmdb = inject(TmdbService);
   adding = signal(false);
+  autofill = signal(false);
   deleting = signal<MovieRow | null>(null);
 
   readonly sectionOptions = Object.entries(SECTION_LABELS) as [SectionKey, string][];

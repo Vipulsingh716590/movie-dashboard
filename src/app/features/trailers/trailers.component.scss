@@ -1,6 +1,7 @@
 @use 'mixins' as *;
 
-.summary { display: flex; gap: 8px; flex-wrap: wrap; }
+.summary { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.summary__fill { margin-left: 8px; }
 
 .pill {
   display: inline-block;

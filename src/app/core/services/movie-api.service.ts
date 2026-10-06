@@ -5,7 +5,16 @@ import { environment } from '../../../environments/environment';
 import { Movie, MoviePatch, MovieRow, SectionKey } from '../models/movie.model';
 import { DEFAULT_SITE_SETTINGS, SiteSettings } from '../models/site-settings.model';
 
-const SECTIONS: SectionKey[] = ['hero', 'popular', 'upcoming', 'latest'];
+const SECTIONS: SectionKey[] = ['hero', 'popular', 'upcoming', 'latest', 'search'];
+
+/** The name of each list in the mock API. */
+const COLLECTION: Record<SectionKey, string> = {
+  hero: 'hero',
+  popular: 'popular',
+  upcoming: 'upcoming',
+  latest: 'latest',
+  search: 'searchResults'
+};
 type SectionList = { results: Movie[] };
 
 /**
@@ -20,7 +29,7 @@ export class MovieApiService {
   getCatalogue(): Observable<MovieRow[]> {
     return forkJoin({
       details: this.http.get<Movie[]>(`${this.base}/movieDetails`),
-      lists: forkJoin(SECTIONS.map((key) => this.http.get<SectionList>(`${this.base}/${key}`)))
+      lists: forkJoin(SECTIONS.map((key) => this.http.get<SectionList>(`${this.base}/${COLLECTION[key]}`)))
     }).pipe(
       map(({ details, lists }) => {
         const sections = new Map<number, SectionKey[]>();
@@ -69,11 +78,11 @@ export class MovieApiService {
   /** Rewrites the given home lists; `change` returns the new movies, or null to leave a list alone. */
   private editLists(keys: SectionKey[], change: (results: Movie[]) => Movie[] | null): Observable<unknown> {
     if (!keys.length) return of(null);
-    return forkJoin(keys.map((key) => this.http.get<SectionList>(`${this.base}/${key}`))).pipe(
+    return forkJoin(keys.map((key) => this.http.get<SectionList>(`${this.base}/${COLLECTION[key]}`))).pipe(
       switchMap((lists) => {
         const writes = lists.flatMap((list, i) => {
           const results = change(list.results);
-          return results ? [this.http.put(`${this.base}/${keys[i]}`, { ...list, results })] : [];
+          return results ? [this.http.put(`${this.base}/${COLLECTION[keys[i]]}`, { ...list, results })] : [];
         });
         return writes.length ? forkJoin(writes) : of(null);
       })

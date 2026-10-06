@@ -4,7 +4,12 @@
       <h1 class="page__title">Movies</h1>
       <p class="page__subtitle">Add, edit and delete movies, and control how each rating appears on the site.</p>
     </div>
-    <button type="button" class="btn btn--primary" (click)="adding.set(true)">Add movie</button>
+    <div class="movies__buttons">
+      @if (tmdb.hasKey() && store.incomplete().length) {
+        <button type="button" class="btn" (click)="autofill.set(true)">Fill missing from TMDB</button>
+      }
+      <button type="button" class="btn btn--primary" (click)="adding.set(true)">Add movie</button>
+    </div>
   </header>
 
   @if (!store.loaded()) {
@@ -99,6 +104,10 @@
 
 @if (adding()) {
   <app-movie-add (add)="addMovie($event)" (cancel)="adding.set(false)"></app-movie-add>
+}
+
+@if (autofill()) {
+  <app-tmdb-autofill (close)="autofill.set(false)"></app-tmdb-autofill>
 }
 
 @if (deleting(); as movie) {

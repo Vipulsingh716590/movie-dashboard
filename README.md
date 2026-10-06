@@ -17,7 +17,7 @@ Sign in with the **mock login: `admin` / `admin123`** (see [Mock login](#mock-lo
 |------|-----------------|
 | **Overview** | KPIs (movies, average rating, average runtime, genres, movies missing a poster or a trailer), rating distribution, genre donut, movies per decade, movies per site section, top rated, and a quick "Show ratings" switch. |
 | **Movies** | **Add** a movie by hand or by searching TMDB (poster, cast, genres, runtime and trailer are filled in, and can be changed before saving). **Edit** title / overview / release date / rating / poster link. **Delete** a movie (with a confirmation). Search (English or Hindi title), filter by genre, section or "poster missing", sort, and hide the rating of a single movie. Movies without a poster show a letter tile instead of a blank. |
-| **Trailers** | See which movies have a trailer and which are missing one. Paste any YouTube link (`watch?v=`, `youtu.be/`, `/embed/`, `/shorts/`) or an 11-character video id, preview it in a player, open it on YouTube, replace or remove it. With a TMDB key, "Find on TMDB" suggests each movie's official trailer. |
+| **Trailers** | See which movies have a trailer and which are missing one. Paste any YouTube link (`watch?v=`, `youtu.be/`, `/embed/`, `/shorts/`) or an 11-character video id, preview it in a player, open it on YouTube, replace or remove it. With a TMDB key, "Find on TMDB" suggests one movie's official trailer, and **Find all missing on TMDB** (also on the Movies page as "Fill missing from TMDB") looks up every movie without a poster or trailer and lists the matches. Nothing is saved until you tick what to use and apply; a match with a different release year is left unticked so a wrong film is not applied by accident. |
 | **Display settings** | Master switch for all ratings, clear per-movie overrides, show or hide the hero banner and the Popular / Upcoming / Now playing sections, the TMDB key, reset to defaults, live preview. |
 
 Every change is saved straight away and rolled back (or reloaded from the server) with an error toast if the API is down.
@@ -41,7 +41,7 @@ Without a key everything else works and movies can be added by hand.
 It is served by json-server (`npm run mock:server`). A site that wants to follow these switches reads `GET /settings`.
 Connecting the movie app that way is a separate step and not part of this project.
 
-Adding, editing and deleting a movie write to `movieDetails` **and** to the `hero` / `popular` / `upcoming` / `latest` lists that hold copies, so every list agrees.
+Adding, editing and deleting a movie write to `movieDetails` **and** to the `hero` / `popular` / `upcoming` / `latest` / `searchResults` lists that hold copies (`searchResults` is the list of search-only films, shown as "Search only"), so every list agrees.
 
 ## Structure (same layout as the movie app)
 ```

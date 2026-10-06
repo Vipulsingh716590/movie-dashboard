@@ -6,6 +6,7 @@ import { ToastService } from '../../core/services/toast.service';
 import { parseYoutubeKey, youtubeThumbUrl, youtubeWatchUrl } from '../../core/utils/youtube';
 import { LoadingStateComponent } from '../../shared/components/loading-state/loading-state.component';
 import { PosterComponent } from '../../shared/components/poster/poster.component';
+import { TmdbAutofillComponent } from '../../shared/components/tmdb-autofill/tmdb-autofill.component';
 import { TrailerPreviewComponent } from '../../shared/components/trailer-preview/trailer-preview.component';
 
 type Status = '' | 'missing' | 'set';
@@ -13,7 +14,7 @@ type Status = '' | 'missing' | 'set';
 @Component({
   selector: 'app-trailers',
   standalone: true,
-  imports: [LoadingStateComponent, PosterComponent, TrailerPreviewComponent],
+  imports: [LoadingStateComponent, PosterComponent, TrailerPreviewComponent, TmdbAutofillComponent],
   templateUrl: './trailers.component.html',
   styleUrl: './trailers.component.scss'
 })
@@ -29,6 +30,7 @@ export class TrailersComponent implements OnInit {
   errors = signal<Record<number, string>>({});
   finding = signal<number | null>(null);
   preview = signal<MovieRow | null>(null);
+  autofill = signal(false);
 
   readonly hasTmdbKey = this.tmdb.hasKey;
   readonly thumb = youtubeThumbUrl;

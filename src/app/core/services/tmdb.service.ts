@@ -1,11 +1,13 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable, computed, inject, signal } from '@angular/core';
 import { Observable, catchError, map, of, switchMap, throwError } from 'rxjs';
-import { Genre, NewMovie, TmdbHit } from '../models/movie.model';
+import { Genre, NewMovie, TmdbHit, TmdbSuggestion } from '../models/movie.model';
 import { TMDB_POSTER_BASE, TmdbDetail, TmdbVideo, mapTmdbMovie, pickTrailer } from '../utils/tmdb-map';
 
 const BASE = 'https://api.themoviedb.org/3';
 const KEY_STORAGE = 'movieflix-dashboard.tmdbKey';
+/** Many Indian films have their trailer uploaded in Hindi (or with no language set), which TMDB hides by default. */
+const VIDEO_LANGUAGES = 'en,hi,null';
 
 const readKey = (): string => {
   try {
@@ -57,7 +59,7 @@ export class TmdbService {
   }
 
   details(tmdbId: number, knownGenres: Genre[]): Observable<NewMovie> {
-    return this.get<TmdbDetail>(`/movie/${tmdbId}`, { append_to_response: 'credits,videos' }).pipe(
+    return this.get<TmdbDetail>(`/movie/${tmdbId}`, { append_to_response: 'credits,videos', include_video_language: VIDEO_LANGUAGES }).pipe(
       map((d) => mapTmdbMovie(d, knownGenres))
     );
   }
@@ -67,9 +69,37 @@ export class TmdbService {
     return this.get<SearchResponse>('/search/movie', { query: title, ...(year ? { primary_release_year: year } : {}) }).pipe(
       switchMap((res) =>
         res.results.length
-          ? this.get<{ results: TmdbVideo[] }>(`/movie/${res.results[0].id}/videos`).pipe(map((v) => pickTrailer(v.results) ?? null))
+          ? this.get<{ results: TmdbVideo[] }>(`/movie/${res.results[0].id}/videos`, { include_video_language: VIDEO_LANGUAGES }).pipe(
+              map((v) => pickTrailer(v.results) ?? null)
+            )
           : of(null)
       )
+    );
+  }
+
+  /**
+   * The best TMDB match for a movie by title and year (falling back to the title alone), with its poster and trailer.
+   * It is only a suggestion: the caller shows it to the admin, who decides.
+   */
+  suggest(title: string, year: string): Observable<TmdbSuggestion | null> {
+    return this.get<SearchResponse>('/search/movie', { query: title, ...(year ? { primary_release_year: year } : {}) }).pipe(
+      switchMap((res) => (res.results.length || !year ? of(res) : this.get<SearchResponse>('/search/movie', { query: title }))),
+      switchMap((res) => {
+        const hit = res.results[0];
+        if (!hit) return of(null);
+        return this.get<{ poster_path?: string | null; release_date?: string; videos?: { results?: TmdbVideo[] } }>(`/movie/${hit.id}`, {
+          append_to_response: 'videos',
+          include_video_language: VIDEO_LANGUAGES
+        }).pipe(
+          map((d) => ({
+            tmdbId: hit.id,
+            title: hit.title,
+            year: (d.release_date ?? hit.release_date ?? '').slice(0, 4),
+            poster: d.poster_path ? `${TMDB_POSTER_BASE}${d.poster_path}` : '',
+            trailerKey: pickTrailer(d.videos?.results)
+          }))
+        );
+      })
     );
   }
 

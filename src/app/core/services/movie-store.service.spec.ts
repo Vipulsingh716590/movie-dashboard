@@ -20,7 +20,7 @@ describe('MovieStore', () => {
   function flushLoad() {
     store.load();
     http.expectOne(`${base}/movieDetails`).flush([{ id: 1, title: 'A', vote_average: 8, release_date: '2010-01-01', overview: '', poster_path: '', backdrop_path: '' }]);
-    for (const key of ['hero', 'popular', 'upcoming', 'latest']) {
+    for (const key of ['hero', 'popular', 'upcoming', 'latest', 'searchResults']) {
       http.expectOne(`${base}/${key}`).flush({ results: key === 'popular' ? [{ id: 1 }] : [] });
     }
     http.expectOne(`${base}/settings`).flush({ showRatings: true });
@@ -47,7 +47,7 @@ describe('MovieStore', () => {
     http.expectOne({ method: 'PATCH', url: `${base}/movieDetails/1` }).error(new ProgressEvent('error'), { status: 500 });
 
     http.expectOne(`${base}/movieDetails`).flush([{ id: 1, title: 'B', vote_average: 7, release_date: '2010-01-01', overview: '', poster_path: '', backdrop_path: '' }]);
-    for (const key of ['hero', 'popular', 'upcoming', 'latest']) http.expectOne(`${base}/${key}`).flush({ results: [] });
+    for (const key of ['hero', 'popular', 'upcoming', 'latest', 'searchResults']) http.expectOne(`${base}/${key}`).flush({ results: [] });
     http.expectOne(`${base}/settings`).flush({});
     expect(store.movies()[0].title).toBe('B');
   });
@@ -83,7 +83,7 @@ describe('MovieStore', () => {
 
     store.deleteMovie(1);
     http.expectOne({ method: 'DELETE', url: `${base}/movieDetails/1` }).flush({});
-    for (const key of ['hero', 'popular', 'upcoming', 'latest']) {
+    for (const key of ['hero', 'popular', 'upcoming', 'latest', 'searchResults']) {
       http.expectOne(`${base}/${key}`).flush({ results: key === 'popular' ? [{ id: 1 }] : [] });
     }
     const put = http.expectOne({ method: 'PUT', url: `${base}/popular` });
@@ -93,6 +93,30 @@ describe('MovieStore', () => {
 
     expect(store.movies().length).toBe(0);
     expect(store.settings().hiddenRatingIds).toEqual([]);
+  });
+
+  it('saves several movies one after another, never in parallel, and reports one toast', () => {
+    flushLoad();
+    store.saveMany([
+      { id: 1, patch: { trailer_key: 'aaaaaaaaaaa' } },
+      { id: 1, patch: { poster_path: 'https://example.com/p.jpg' } }
+    ]);
+
+    // expectOne fails if two saves were sent at once: the second must wait for the first to finish.
+    http.expectOne({ method: 'PATCH', url: `${base}/movieDetails/1` }).flush({});
+    for (const key of ['hero', 'popular', 'upcoming', 'latest', 'searchResults']) {
+      http.expectOne({ method: 'GET', url: `${base}/${key}` }).flush({ results: key === 'popular' ? [{ id: 1 }] : [] });
+    }
+    http.expectOne({ method: 'PUT', url: `${base}/popular` }).flush({});
+
+    http.expectOne({ method: 'PATCH', url: `${base}/movieDetails/1` }).flush({});
+    for (const key of ['hero', 'popular', 'upcoming', 'latest', 'searchResults']) {
+      http.expectOne({ method: 'GET', url: `${base}/${key}` }).flush({ results: key === 'popular' ? [{ id: 1 }] : [] });
+    }
+    http.expectOne({ method: 'PUT', url: `${base}/popular` }).flush({});
+
+    expect(store.movies()[0].trailer_key).toBe('aaaaaaaaaaa');
+    expect(store.movies()[0].poster_path).toBe('https://example.com/p.jpg');
   });
 
   it('hides and shows a single movie rating', () => {

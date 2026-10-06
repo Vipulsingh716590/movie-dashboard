@@ -1,5 +1,5 @@
 import { Injectable, computed, inject, signal } from '@angular/core';
-import { forkJoin } from 'rxjs';
+import { concatMap, forkJoin, from, map, toArray } from 'rxjs';
 import { Genre, MoviePatch, MovieRow, NewMovie, SectionKey } from '../models/movie.model';
 import { DEFAULT_SITE_SETTINGS, SiteSettings } from '../models/site-settings.model';
 import { MovieApiService } from './movie-api.service';
@@ -27,6 +27,9 @@ export class MovieStore {
     for (const m of this.movies()) for (const g of m.genres ?? []) if (!byName.has(g.name)) byName.set(g.name, g);
     return [...byName.values()].sort((a, b) => a.name.localeCompare(b.name));
   });
+
+  /** Movies that lack a poster, a trailer or both. */
+  readonly incomplete = computed(() => this.movies().filter((m) => !m.poster_path || (!m.trailer_key && !m.trailer_url)));
 
   readonly kpis = computed(() => computeKpis(this.movies()));
   readonly ratingBuckets = computed(() => ratingBuckets(this.movies()));
@@ -65,6 +68,29 @@ export class MovieStore {
       // half updated, so show what it really has; the interceptor already told the user it failed.
       error: () => this.load(true)
     });
+  }
+
+  /**
+   * Saves several movies one after another. They must not run in parallel: each save rewrites the home lists it is in,
+   * and two saves rewriting the same list at once would lose one of the changes.
+   */
+  saveMany(items: { id: number; patch: MoviePatch }[], onDone?: () => void): void {
+    from(items)
+      .pipe(
+        concatMap(({ id, patch }) => this.api.updateMovie(id, patch).pipe(map(() => ({ id, patch })))),
+        toArray()
+      )
+      .subscribe({
+        next: (done) => {
+          this.moviesState.update((list) =>
+            list.map((m) => done.filter((d) => d.id === m.id).reduce((movie, d) => ({ ...movie, ...d.patch }), m))
+          );
+          this.toast.show(`${done.length} movie${done.length === 1 ? '' : 's'} updated`);
+          onDone?.();
+        },
+        // Some may have been saved before the failure: show what the server really has.
+        error: () => this.load(true)
+      });
   }
 
   /** Adds a movie (the next free id) and puts it on the chosen home lists. */

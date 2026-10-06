@@ -1,0 +1,86 @@
+<div class="backdrop" (click)="close.emit()"></div>
+<div class="dialog" role="dialog" aria-modal="true" aria-labelledby="fill-title">
+  <h2 id="fill-title">Fill missing posters and trailers from TMDB</h2>
+  <p class="intro">
+    TMDB's best match for each movie is listed below. Tick what to use, then apply. Nothing is saved until you do.
+    A match with a different release year is left unticked: check it first, it may be another film.
+  </p>
+
+  @if (!rows().length) {
+    <p class="hint">Every movie already has a poster and a trailer.</p>
+  } @else {
+    @if (error()) {
+      <p class="error" role="alert">{{ error() }}</p>
+    } @else if (loading()) {
+      <p class="hint" aria-live="polite">Looking up {{ done() }} of {{ rows().length }}…</p>
+    }
+
+    <div class="table-wrap">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Our movie</th>
+            <th scope="col">TMDB match</th>
+            <th scope="col">Poster</th>
+            <th scope="col">Trailer</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (row of rows(); track row.movie.id; let i = $index) {
+            <tr>
+              <td>
+                <div class="movie">
+                  <app-poster [src]="row.movie.poster_path" [title]="row.movie.title"></app-poster>
+                  <div><strong>{{ row.movie.title }}</strong><small>{{ row.movie.release_date.slice(0, 4) }}</small></div>
+                </div>
+              </td>
+              <td>
+                @if (suggestionOf(row); as s) {
+                  <div class="movie">
+                    <app-poster [src]="s.poster" [title]="s.title"></app-poster>
+                    <div>
+                      <strong>{{ s.title }}</strong><small>{{ s.year }}</small>
+                      @if (yearDiffers(row)) { <span class="warn">Year differs, check this match</span> }
+                    </div>
+                  </div>
+                } @else if (row.suggestion === 'none') {
+                  <span class="muted">No match on TMDB</span>
+                } @else if (!error()) {
+                  <span class="muted">Looking…</span>
+                }
+              </td>
+              <td>
+                @if (suggestionOf(row); as s) {
+                  @if (canPoster(row.movie, s)) {
+                    <label class="use"><input type="checkbox" [checked]="row.usePoster" (change)="toggle(i, 'usePoster')"
+                      [attr.aria-label]="'Use the TMDB poster for ' + row.movie.title"> Use</label>
+                  } @else {
+                    <span class="muted">{{ row.movie.poster_path ? 'Already has one' : 'None found' }}</span>
+                  }
+                }
+              </td>
+              <td>
+                @if (suggestionOf(row); as s) {
+                  @if (canTrailer(row.movie, s) && s.trailerKey; as key) {
+                    <label class="use"><input type="checkbox" [checked]="row.useTrailer" (change)="toggle(i, 'useTrailer')"
+                      [attr.aria-label]="'Use the TMDB trailer for ' + row.movie.title"> Use</label>
+                    <a class="watch" [href]="watchUrl(key)" target="_blank" rel="noopener">Watch ↗</a>
+                  } @else {
+                    <span class="muted">{{ row.movie.trailer_key || row.movie.trailer_url ? 'Already has one' : 'None found' }}</span>
+                  }
+                }
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  }
+
+  <div class="actions">
+    <button type="button" class="btn" (click)="close.emit()">Cancel</button>
+    <button type="button" class="btn btn--primary" [disabled]="changes() === 0 || loading() || applying()" (click)="apply()">
+      {{ applying() ? 'Saving…' : 'Apply ' + changes() + ' change' + (changes() === 1 ? '' : 's') }}
+    </button>
+  </div>
+</div>
