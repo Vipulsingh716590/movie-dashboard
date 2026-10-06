@@ -1,3 +1,5 @@
+@use 'mixins' as *;
+
 .backdrop { position: fixed; inset: 0; z-index: 50; background: rgba(0, 0, 0, 0.7); }
 
 .dialog {
@@ -59,3 +61,12 @@ input:not([type='checkbox']), textarea {
 .actions { display: flex; justify-content: flex-end; gap: 10px; }
 
 @media (max-width: 560px) { .three { grid-template-columns: 1fr; } }
+
+@include dialog-mobile(560px);
+
+.tmdb__search input { min-width: 0; }
+
+@media (max-width: 560px) {
+  .tmdb { padding: 12px; }
+  .chip { min-height: 40px; }
+}

@@ -1,3 +1,5 @@
+@use 'mixins' as *;
+
 .backdrop { position: fixed; inset: 0; z-index: 50; background: rgba(0, 0, 0, 0.7); }
 
 .dialog {
@@ -32,3 +34,9 @@ input, textarea {
 .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .error { color: var(--low); font-size: 0.8rem; }
 .actions { display: flex; justify-content: flex-end; gap: 10px; }
+
+@include dialog-mobile(560px);
+
+@media (max-width: 480px) {
+  .two { grid-template-columns: 1fr; }
+}

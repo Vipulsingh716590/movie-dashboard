@@ -16,3 +16,29 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/// Below the breakpoint a wide table becomes a list of cards. Each row is a card and each cell shows its column name
+/// (the cell's data-label) in front of its value, so nothing needs sideways scrolling. The header row stays for screen readers.
+@mixin stacked-table($breakpoint: 700px) {
+  @media (max-width: $breakpoint) {
+    .table { display: block; min-width: 0; }
+    .table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    .table tbody, .table tr { display: block; }
+    .table tr { display: grid; gap: 10px; padding: 14px; border-bottom: 1px solid var(--border); }
+    .table tbody tr:last-child { border-bottom: 0; }
+    .table td { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0; border: 0; min-width: 0; }
+    .table td[data-label]::before { content: attr(data-label); flex: none; color: var(--muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  }
+}
+
+/// Dialogs on a phone: nearly full width, less padding, and never taller than the visible screen (dvh excludes the browser bars).
+@mixin dialog-mobile($breakpoint: 560px) {
+  @media (max-width: $breakpoint) {
+    .dialog { padding: 16px; width: calc(100vw - 16px); max-height: calc(100vh - 16px); max-height: calc(100dvh - 16px); }
+    // A grid column sizes to its widest child (a date field, say) and pushes the rest out of the dialog; let it shrink.
+    .dialog, .dialog form { grid-template-columns: minmax(0, 1fr); }
+    .dialog label { min-width: 0; }
+    .dialog input:not([type='checkbox']), .dialog textarea, .dialog select { width: 100%; min-width: 0; }
+    .actions { flex-direction: column-reverse; .btn { width: 100%; justify-content: center; } }
+  }
+}

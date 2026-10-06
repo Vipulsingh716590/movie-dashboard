@@ -43,7 +43,7 @@
                   <div><strong>{{ m.title }}</strong><small>{{ m.release_date.slice(0, 4) }}</small></div>
                 </div>
               </td>
-              <td>
+              <td data-label="Trailer">
                 @if (m.trailer_key) {
                   <button type="button" class="thumb" [attr.aria-label]="'Preview the trailer of ' + m.title" (click)="preview.set(m)">
                     <img [src]="thumb(m.trailer_key)" alt="" loading="lazy" width="96" height="54"
@@ -56,7 +56,7 @@
                   <span class="pill pill--bad">Missing</span>
                 }
               </td>
-              <td>
+              <td class="link-cell" data-label="Link">
                 <input class="link" [value]="draftFor(m)" (input)="onDraft(m, $event)" (keydown.enter)="save(m)"
                   placeholder="https://www.youtube.com/watch?v=…" [attr.aria-label]="'Trailer link for ' + m.title">
                 @if (errors()[m.id]) { <span class="error" role="alert">{{ errors()[m.id] }}</span> }

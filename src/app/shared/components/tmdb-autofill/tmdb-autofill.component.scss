@@ -1,3 +1,5 @@
+@use 'mixins' as *;
+
 .backdrop { position: fixed; inset: 0; z-index: 50; background: rgba(0, 0, 0, 0.7); }
 
 .dialog {
@@ -44,3 +46,13 @@
 .use { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
 .watch { margin-left: 12px; color: #fff; font-size: 0.85rem; }
 .actions { display: flex; justify-content: flex-end; gap: 10px; }
+
+@include stacked-table(700px);
+@include dialog-mobile(560px);
+
+@media (max-width: 700px) {
+  .table-wrap { border: 0; }
+  .table tr { border: 1px solid var(--border); border-radius: 10px; margin-bottom: 10px; }
+  .watch { margin-left: 0; }
+  .use { min-height: 44px; }
+}

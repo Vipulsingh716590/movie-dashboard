@@ -20,5 +20,9 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 
   &--error { border-left-color: var(--low); }
-  &__close { background: none; border: 0; cursor: pointer; font-size: 1.2rem; color: var(--muted); }
+  &__close { background: none; border: 0; cursor: pointer; font-size: 1.4rem; line-height: 1; color: var(--muted); min-width: 40px; min-height: 40px; margin: -8px -10px -8px 0; }
+}
+
+@media (max-width: 900px) {
+  .toasts { left: 16px; right: 16px; max-width: none; bottom: calc(72px + env(safe-area-inset-bottom, 0px)); }
 }

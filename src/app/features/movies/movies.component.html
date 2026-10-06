@@ -70,12 +70,12 @@
                   </div>
                 </div>
               </td>
-              <td class="muted">
+              <td class="muted" data-label="Genres">
                 @for (g of m.genres ?? []; track g.id; let last = $last) { {{ g.name }}{{ last ? '' : ', ' }} }
               </td>
-              <td class="muted">{{ m.runtime | runtime }}</td>
-              <td><app-rating-badge [rating]="m.vote_average"></app-rating-badge></td>
-              <td>
+              <td class="muted" data-label="Runtime">{{ m.runtime | runtime }}</td>
+              <td data-label="Rating"><app-rating-badge [rating]="m.vote_average"></app-rating-badge></td>
+              <td data-label="Show rating">
                 <app-toggle-switch [label]="'Show rating for ' + m.title"
                   [checked]="!store.isRatingHidden(m.id)" [disabled]="!store.settings().showRatings"
                   (changed)="store.setRatingHidden(m.id, !$event)"></app-toggle-switch>

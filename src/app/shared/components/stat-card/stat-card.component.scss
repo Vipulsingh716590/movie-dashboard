@@ -10,3 +10,7 @@
   &__value { font-size: 2rem; line-height: 1; }
   &__hint { color: var(--muted); font-size: 0.8rem; }
 }
+
+@media (max-width: 560px) {
+  .stat { padding: 14px 16px; &__value { font-size: 1.6rem; } &__label { font-size: 0.75rem; } }
+}

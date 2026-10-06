@@ -1,3 +1,5 @@
+@use 'mixins' as *;
+
 .backdrop { position: fixed; inset: 0; z-index: 50; background: rgba(0, 0, 0, 0.8); }
 
 .dialog {
@@ -19,4 +21,8 @@
   &__head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
   &__player { width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 8px; background: #000; }
   &__hint { margin: 0; color: var(--muted); font-size: 0.88rem; a { color: #fff; } }
+}
+
+@media (max-width: 560px) {
+  .dialog { padding: 12px; width: calc(100vw - 16px); }
 }

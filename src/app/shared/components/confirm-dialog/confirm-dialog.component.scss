@@ -1,3 +1,5 @@
+@use 'mixins' as *;
+
 .backdrop { position: fixed; inset: 0; z-index: 60; background: rgba(0, 0, 0, 0.7); }
 
 .dialog {
@@ -18,3 +20,5 @@
 }
 
 .actions { display: flex; justify-content: flex-end; gap: 10px; }
+
+@include dialog-mobile(560px);

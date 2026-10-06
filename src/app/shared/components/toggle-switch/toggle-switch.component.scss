@@ -19,3 +19,14 @@
   }
   &--on &__thumb { transform: translateX(20px); }
 }
+
+/* Phones: a larger switch, and a touch area bigger than what is drawn. */
+@media (max-width: 700px) {
+  .switch {
+    width: 52px;
+    height: 30px;
+    &::after { content: ''; position: absolute; inset: -8px -2px; }
+  }
+  .switch .switch__thumb { width: 24px; height: 24px; }
+  .switch--on .switch__thumb { transform: translateX(22px); }
+}

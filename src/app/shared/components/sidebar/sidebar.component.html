@@ -9,14 +9,23 @@
       <a class="sidebar__link" [routerLink]="item.path" routerLinkActive="sidebar__link--active"
         [routerLinkActiveOptions]="{ exact: item.exact }">
         <span class="sidebar__icon" aria-hidden="true">{{ item.icon }}</span>
-        <span>{{ item.label }}</span>
+        <span><span class="sidebar__full">{{ item.label }}</span><span class="sidebar__short">{{ item.short ?? item.label }}</span></span>
       </a>
     }
   </nav>
 
   <div class="sidebar__user">
-    <span class="sidebar__who">{{ auth.user() }}</span>
-    <button type="button" class="sidebar__logout" (click)="logout()">Sign out</button>
+    <span class="sidebar__avatar" aria-hidden="true">{{ initial }}</span>
+    <span class="sidebar__who"><strong>{{ auth.user() }}</strong><small>Signed in</small></span>
+    <button type="button" class="sidebar__logout" aria-label="Sign out" (click)="logout()">
+      <svg class="sidebar__logout-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+        <polyline points="16 17 21 12 16 7"></polyline>
+        <line x1="21" y1="12" x2="9" y2="12"></line>
+      </svg>
+      <span class="sidebar__logout-text">Sign out</span>
+    </button>
   </div>
 
   @if (demo) {

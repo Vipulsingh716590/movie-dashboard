@@ -22,6 +22,9 @@ Sign in with the **mock login: `admin` / `admin123`** (see [Mock login](#mock-lo
 
 Every change is saved straight away and rolled back (or reloaded from the server) with an error toast if the API is down.
 
+## Phones and tablets
+The dashboard is responsive from 320 px up. On phones (under 900 px) the sidebar becomes a slim top bar plus a bottom tab bar within thumb reach; the Movies and Trailers tables (under 760 px) and the TMDB review list (under 700 px) turn into cards with a label in front of each value, so nothing needs sideways scrolling; dialogs fill the screen width; fields are 16 px (so iPhones do not zoom in when you tap one) and buttons and switches are at least 44 px high. It was checked at 320, 360, 375, 390, 412, 420, 480, 600, 768, 1024 and 1280 px.
+
 ## Mock login
 A sign-in page guards every screen. The user is `admin` and the password is `admin123`, set in `src/environments/environment*.ts`
 (`mockUser`). **This is a mock: the password is visible in the page source, so it keeps casual visitors out but is not security.**

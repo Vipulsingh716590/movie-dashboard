@@ -10,3 +10,7 @@
 @media (max-width: $breakpoint-md) {
   .shell { flex-direction: column; }
 }
+
+@media (max-width: $breakpoint-md) {
+  .shell__main { padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px)); }
+}

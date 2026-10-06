@@ -27,18 +27,45 @@
     &--active { background: $color-surface-2; color: #fff; box-shadow: inset 3px 0 0 $color-accent; }
   }
   &__icon { width: 20px; text-align: center; }
+  &__short { display: none; }
   &__user {
     margin-top: auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-    padding: 8px 12px;
-    border-radius: 8px;
+    gap: 12px;
+    padding: 12px;
+    border: 1px solid $color-border;
+    border-radius: 12px;
     background: $color-surface-2;
-    font-size: 0.85rem;
   }
-  &__logout { background: none; border: 0; padding: 0; color: $color-muted; cursor: pointer; text-decoration: underline; &:hover { color: #fff; } }
+  &__avatar {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: $color-accent;
+    color: #fff;
+    font-weight: 700;
+  }
+  &__who { display: grid; line-height: 1.25; min-width: 0; strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } small { color: $color-muted; font-size: 0.75rem; } }
+  &__logout {
+    grid-column: 1 / -1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #4a4a52;
+    border-radius: 8px;
+    background: transparent;
+    color: $color-text;
+    font-weight: 500;
+    cursor: pointer;
+    &:hover { border-color: #ff7b7b; color: #ff9b9b; background: rgba(255, 90, 95, 0.1); }
+  }
 
   &__demo {
     margin: 0;
@@ -52,12 +79,60 @@
   &__site { color: $color-muted; font-size: 0.85rem; &:hover { color: #fff; } }
 }
 
+/// Phones and small tablets: a slim top bar (brand, user) and a bottom tab bar for the four screens, within thumb reach.
 @media (max-width: $breakpoint-md) {
   .sidebar {
-    position: static; height: auto; width: 100%; flex-direction: row; align-items: center; flex-wrap: wrap;
-    gap: 12px; padding: 12px var(--gutter); border-right: 0; border-bottom: 1px solid $color-border;
-    &__nav { display: flex; flex-wrap: wrap; }
-    &__user { margin-top: 0; margin-left: auto; }
-    &__site { margin-left: 0; }
+    position: relative;
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px 12px;
+    padding: 10px var(--gutter);
+    padding-top: calc(10px + env(safe-area-inset-top, 0px));
+    border-right: 0;
+    border-bottom: 1px solid $color-border;
+
+    &__nav {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 30;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      background: $color-surface;
+      border-top: 1px solid $color-border;
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+    &__link {
+      flex-direction: column;
+      justify-content: center;
+      gap: 2px;
+      min-height: 56px;
+      padding: 6px 2px;
+      border-radius: 0;
+      font-size: 0.75rem;
+      text-align: center;
+      &--active { box-shadow: inset 0 3px 0 $color-accent; }
+    }
+    &__icon { font-size: 1.15rem; line-height: 1; }
+    &__full { display: none; }
+    &__short { display: inline; }
+    &__user { margin: 0; padding: 4px 4px 4px 8px; display: flex; gap: 8px; border-radius: 999px; }
+    &__avatar { width: 34px; height: 34px; }
+    &__who small { display: none; }
+    &__logout { min-width: 44px; min-height: 44px; padding: 0; border-radius: 50%; border-color: transparent; background: rgba(255, 255, 255, 0.06); }
+    &__logout-text { display: none; }
+    &__demo { order: 3; flex: 1 0 100%; padding: 6px 10px; strong { display: inline; margin: 0 6px 0 0; } }
+    &__site { display: none; }
   }
+}
+
+@media (max-width: 380px) {
+  .sidebar__name small { display: none; }
+  .sidebar__who { display: none; }
 }

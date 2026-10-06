@@ -2,8 +2,8 @@
 
 .overview {
   &__head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
-  &__kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px; }
-  &__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+  &__kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; }
+  &__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 16px; }
 
   &__control {
     display: flex;
@@ -32,4 +32,10 @@
   &__row { display: grid; grid-template-columns: 24px 40px 1fr auto; align-items: center; gap: 12px; }
   &__rank { color: var(--muted); text-align: center; }
   &__title { small { color: var(--muted); margin-left: 6px; } }
+}
+
+@media (max-width: 560px) {
+  .overview__kpis, .overview__grid { gap: 12px; }
+  .overview__control { flex-direction: row; align-items: center; }
+  .panel { padding: 14px 16px; }
 }

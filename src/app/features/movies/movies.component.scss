@@ -53,6 +53,23 @@
   font-size: 0.72rem;
 }
 
+/* Tablets: the search box on its own line, the four menus below it. */
+@media (max-width: 900px) {
+  .filters { grid-template-columns: repeat(4, 1fr); &__search { grid-column: 1 / -1; } }
+}
+
 @media (max-width: 700px) {
   .filters { grid-template-columns: 1fr 1fr; &__search { grid-column: 1 / -1; } }
+}
+
+@include stacked-table(760px);
+
+@media (max-width: 760px) {
+  .actions { display: flex; flex-wrap: wrap; justify-content: flex-start; white-space: normal; gap: 8px; .btn + .btn { margin-left: 0; } .btn { flex: 1; } }
+  .movies__head { flex-wrap: wrap; }
+  .movies__buttons { width: 100%; .btn { flex: 1; } }
+}
+
+@media (max-width: 380px) {
+  .filters { grid-template-columns: 1fr; }
 }

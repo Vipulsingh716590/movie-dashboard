@@ -8,6 +8,8 @@ interface NavItem {
   label: string;
   icon: string;
   exact: boolean;
+  /** Shorter name for the narrow bottom tab bar. */
+  short?: string;
 }
 
 @Component({
@@ -23,6 +25,11 @@ export class SidebarComponent {
   auth = inject(AuthService);
   private router = inject(Router);
 
+  /** First letter of the signed-in name, for the avatar. */
+  get initial(): string {
+    return (this.auth.user() ?? '?').charAt(0).toUpperCase();
+  }
+
   logout(): void {
     this.auth.logout();
     void this.router.navigateByUrl('/login');
@@ -32,6 +39,6 @@ export class SidebarComponent {
     { path: '/', label: 'Overview', icon: '▦', exact: true },
     { path: '/movies', label: 'Movies', icon: '🎬', exact: false },
     { path: '/trailers', label: 'Trailers', icon: '▶', exact: false },
-    { path: '/settings', label: 'Display settings', icon: '⚙', exact: false }
+    { path: '/settings', label: 'Display settings', short: 'Settings', icon: '⚙', exact: false }
   ];
 }

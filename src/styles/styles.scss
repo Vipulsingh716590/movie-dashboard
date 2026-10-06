@@ -75,3 +75,13 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Phones: 16px fields (smaller ones make iOS zoom the page when you tap them), comfortable touch targets, tighter spacing. */
+@media (max-width: $breakpoint-sm) {
+  input:not([type='checkbox']), select, textarea { font-size: 16px; }
+  input:not([type='checkbox']), select { min-height: 44px; }
+  input[type='checkbox'] { width: 20px; height: 20px; }
+  .btn { min-height: 44px; padding: 10px 16px; display: inline-flex; align-items: center; justify-content: center; }
+  .page { gap: 18px; padding-block: 16px; }
+  .page__title { font-size: 1.4rem; }
+}

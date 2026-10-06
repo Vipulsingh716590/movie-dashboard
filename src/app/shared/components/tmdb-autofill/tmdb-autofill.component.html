@@ -28,13 +28,13 @@
         <tbody>
           @for (row of rows(); track row.movie.id; let i = $index) {
             <tr>
-              <td>
+              <td data-label="Our movie">
                 <div class="movie">
                   <app-poster [src]="row.movie.poster_path" [title]="row.movie.title"></app-poster>
                   <div><strong>{{ row.movie.title }}</strong><small>{{ row.movie.release_date.slice(0, 4) }}</small></div>
                 </div>
               </td>
-              <td>
+              <td data-label="TMDB match">
                 @if (suggestionOf(row); as s) {
                   <div class="movie">
                     <app-poster [src]="s.poster" [title]="s.title"></app-poster>
@@ -49,7 +49,7 @@
                   <span class="muted">Looking…</span>
                 }
               </td>
-              <td>
+              <td data-label="Poster">
                 @if (suggestionOf(row); as s) {
                   @if (canPoster(row.movie, s)) {
                     <label class="use"><input type="checkbox" [checked]="row.usePoster" (change)="toggle(i, 'usePoster')"
@@ -59,7 +59,7 @@
                   }
                 }
               </td>
-              <td>
+              <td data-label="Trailer">
                 @if (suggestionOf(row); as s) {
                   @if (canTrailer(row.movie, s) && s.trailerKey; as key) {
                     <label class="use"><input type="checkbox" [checked]="row.useTrailer" (change)="toggle(i, 'useTrailer')"
