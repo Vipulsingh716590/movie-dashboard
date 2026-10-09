@@ -1,0 +1,82 @@
+<div class="page">
+  <header class="live__head">
+    <div>
+      <h1 class="page__title">TMDB Live</h1>
+      <p class="page__subtitle">
+        Popular, trending and top-rated movies fetched from TMDB right now.
+        @if (loadedAt(); as at) { Updated {{ at.toLocaleTimeString() }}. }
+      </p>
+    </div>
+    @if (tmdb.hasKey()) {
+      <button type="button" class="btn" (click)="load()" [disabled]="loading()">{{ loading() ? 'Refreshing…' : 'Refresh' }}</button>
+    }
+  </header>
+
+  @if (!tmdb.hasKey()) {
+    <section class="panel live__key">
+      <h2>Add your TMDB API key to load live data</h2>
+      <p>Get a free v3 key at themoviedb.org (Settings, then API). It is saved only in this browser, the same key as in Display settings.</p>
+      <form class="live__keyform" (submit)="$event.preventDefault(); saveKey()">
+        <input type="password" autocomplete="off" placeholder="Paste your TMDB API key" aria-label="TMDB API key"
+          [value]="keyDraft()" (input)="onKeyInput($event)">
+        <button type="submit" class="btn btn--primary" [disabled]="!keyDraft().trim()">Save and load</button>
+      </form>
+    </section>
+  } @else if (error()) {
+    <section class="panel live__error" role="alert">
+      <h2>Couldn't load TMDB data</h2>
+      <p>{{ error() }}</p>
+      <button type="button" class="btn" (click)="load()">Try again</button>
+    </section>
+  } @else if (!loadedAt()) {
+    <p class="live__loading">Loading movies from TMDB…</p>
+  } @else {
+    <section class="live__kpis" aria-label="Key numbers">
+      <app-stat-card label="Popular movies" [value]="popular().length" hint="Pages 1 and 2"></app-stat-card>
+      <app-stat-card label="Average rating" [value]="averageRating() + ' / 10'"></app-stat-card>
+      <app-stat-card label="Total votes" [value]="(totalVotes() | number) ?? 0"></app-stat-card>
+      <app-stat-card label="Top genre" [value]="topGenre()"></app-stat-card>
+    </section>
+
+    <section class="panel">
+      <h2>Trending this week</h2>
+      <ol class="reel">
+        @for (m of trending(); track m.id; let i = $index) {
+          <li class="reel__item">
+            <span class="reel__rank">{{ i + 1 }}</span>
+            <app-poster size="lg" [src]="poster(m.poster_path)" [title]="m.title"></app-poster>
+            <span class="reel__title">{{ m.title }}</span>
+          </li>
+        }
+      </ol>
+    </section>
+
+    <div class="live__grid">
+      <section class="panel">
+        <h2>Genres</h2>
+        <app-donut-chart label="Popular movies per genre (a movie can have several)" centerLabel="tags" [data]="genreCounts()"></app-donut-chart>
+      </section>
+      <section class="panel">
+        <h2>Rating distribution</h2>
+        <app-bar-chart label="Popular movies per rating band" [data]="ratingBuckets()"></app-bar-chart>
+      </section>
+      <section class="panel">
+        <h2>Releases by year</h2>
+        <app-bar-chart label="Popular movies per release year" color="#4aa3ff" [data]="releasesByYear()"></app-bar-chart>
+      </section>
+      <section class="panel">
+        <h2>All-time top rated</h2>
+        <ol class="top">
+          @for (m of topRated(); track m.id; let i = $index) {
+            <li class="top__row">
+              <span class="top__rank">{{ i + 1 }}</span>
+              <app-poster [src]="poster(m.poster_path)" [title]="m.title"></app-poster>
+              <span class="top__title">{{ m.title }} <small>{{ m.release_date?.slice(0, 4) }}</small></span>
+              <app-rating-badge [rating]="m.vote_average"></app-rating-badge>
+            </li>
+          }
+        </ol>
+      </section>
+    </div>
+  }
+</div>

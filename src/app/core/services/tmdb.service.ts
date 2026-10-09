@@ -17,6 +17,18 @@ const readKey = (): string => {
   }
 };
 
+/** A movie as TMDB returns it in its list endpoints (popular, top rated, trending). */
+export interface TmdbListMovie {
+  id: number;
+  title: string;
+  poster_path: string | null;
+  release_date?: string;
+  vote_average: number;
+  vote_count: number;
+  popularity: number;
+  genre_ids: number[];
+}
+
 type SearchResponse = {
   results: { id: number; title: string; release_date?: string; poster_path?: string | null; overview?: string; vote_average?: number }[];
 };
@@ -101,6 +113,16 @@ export class TmdbService {
         );
       })
     );
+  }
+
+  /** One page of a TMDB movie list, used by the TMDB Live page: '/movie/popular', '/movie/top_rated', '/trending/movie/week'. */
+  movieList(path: string, page = 1): Observable<TmdbListMovie[]> {
+    return this.get<{ results: TmdbListMovie[] }>(path, { page: String(page) }).pipe(map((res) => res.results));
+  }
+
+  /** TMDB's genre ids with their names, to turn genre_ids into labels. */
+  genreList(): Observable<Genre[]> {
+    return this.get<{ genres: Genre[] }>('/genre/movie/list').pipe(map((res) => res.genres));
   }
 
   private get<T>(path: string, params: Record<string, string> = {}): Observable<T> {

@@ -26,6 +26,12 @@ export const routes: Routes = [
     loadChildren: () => import('./features/trailers/trailers.routes')
   },
   {
+    path: 'tmdb-live',
+    title: 'TMDB Live · MovieFlix Dashboard',
+    canActivate: [authGuard],
+    loadChildren: () => import('./features/tmdb-live/tmdb-live.routes')
+  },
+  {
     path: 'settings',
     title: 'Display settings · MovieFlix Dashboard',
     canActivate: [authGuard],

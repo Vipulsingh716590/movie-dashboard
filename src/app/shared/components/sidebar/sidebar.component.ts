@@ -39,6 +39,7 @@ export class SidebarComponent {
     { path: '/', label: 'Overview', icon: '▦', exact: true },
     { path: '/movies', label: 'Movies', icon: '🎬', exact: false },
     { path: '/trailers', label: 'Trailers', icon: '▶', exact: false },
+    { path: '/tmdb-live', label: 'TMDB Live', short: 'Live', icon: '◉', exact: false },
     { path: '/settings', label: 'Display settings', short: 'Settings', icon: '⚙', exact: false }
   ];
 }
