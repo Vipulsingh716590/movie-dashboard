@@ -53,15 +53,6 @@ export class TmdbLiveComponent implements OnInit {
   });
   topGenre = computed(() => this.genreCounts()[0]?.label ?? '—');
 
-  ratingBuckets = computed<Datum[]>(() => {
-    const buckets: Datum[] = ['<5', '5-6', '6-7', '7-8', '8+'].map((label) => ({ label, value: 0 }));
-    for (const m of this.popular()) {
-      const r = m.vote_average;
-      buckets[r < 5 ? 0 : r < 6 ? 1 : r < 7 ? 2 : r < 8 ? 3 : 4].value++;
-    }
-    return buckets;
-  });
-
   releasesByYear = computed<Datum[]>(() => {
     const byYear = new Map<string, number>();
     for (const m of this.popular()) {

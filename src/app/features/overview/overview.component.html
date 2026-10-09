@@ -36,12 +36,7 @@
     </section>
 
     <div class="overview__grid">
-      <section class="panel">
-        <h2>Rating distribution</h2>
-        <app-bar-chart label="Number of movies per rating band" [data]="store.ratingBuckets()"></app-bar-chart>
-      </section>
-
-      <section class="panel">
+      <section class="panel overview__genres">
         <h2>Genres</h2>
         <app-donut-chart label="Movies per genre (a movie can have several)" centerLabel="tags" [data]="store.genreCounts()"></app-donut-chart>
       </section>

@@ -57,14 +57,10 @@
         <app-donut-chart label="Popular movies per genre (a movie can have several)" centerLabel="tags" [data]="genreCounts()"></app-donut-chart>
       </section>
       <section class="panel">
-        <h2>Rating distribution</h2>
-        <app-bar-chart label="Popular movies per rating band" [data]="ratingBuckets()"></app-bar-chart>
-      </section>
-      <section class="panel">
         <h2>Releases by year</h2>
         <app-bar-chart label="Popular movies per release year" color="#4aa3ff" [data]="releasesByYear()"></app-bar-chart>
       </section>
-      <section class="panel">
+      <section class="panel live__wide">
         <h2>All-time top rated</h2>
         <ol class="top">
           @for (m of topRated(); track m.id; let i = $index) {

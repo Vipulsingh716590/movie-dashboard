@@ -3,7 +3,8 @@
 .overview {
   &__head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
   &__kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; }
-  &__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 16px; }
+  // Genres donut on the left, the two bar charts stacked beside it; one column below 1100px.
+  &__grid { display: grid; grid-template-columns: 1fr; gap: 16px; align-items: start; }
 
   &__control {
     display: flex;
@@ -32,6 +33,11 @@
   &__row { display: grid; grid-template-columns: 24px 40px 1fr auto; align-items: center; gap: 12px; }
   &__rank { color: var(--muted); text-align: center; }
   &__title { small { color: var(--muted); margin-left: 6px; } }
+}
+
+@media (min-width: 1100px) {
+  .overview__grid { grid-template-columns: 1fr 1fr; }
+  .overview__genres { grid-row: span 2; }
 }
 
 @media (max-width: 560px) {
