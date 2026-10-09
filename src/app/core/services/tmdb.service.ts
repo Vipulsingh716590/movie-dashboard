@@ -12,7 +12,7 @@ const VIDEO_LANGUAGES = 'en,hi,null';
 
 const readKey = (): string => {
   try {
-    return localStorage.getItem(KEY_STORAGE) ?? '';
+    return (localStorage.getItem(KEY_STORAGE) ?? '').replace(/[\s"']/g, '');
   } catch {
     return '';
   }
@@ -46,7 +46,8 @@ export class TmdbService {
   readonly hasKey = computed(() => this.keyState() !== '');
 
   setKey(value: string): void {
-    const key = value.trim();
+    // Phones often paste a stray space, line break or quote along with the key.
+    const key = value.replace(/[\s"']/g, '');
     this.keyState.set(key);
     try {
       if (key) localStorage.setItem(KEY_STORAGE, key);
@@ -127,14 +128,26 @@ export class TmdbService {
   }
 
   private get<T>(path: string, params: Record<string, string> = {}): Observable<T> {
-    return this.http.get<T>(`${BASE}${path}`, { params: { api_key: this.keyState(), ...params } }).pipe(
+    const key = this.keyState();
+    // TMDB gives two credentials on its API page: the 32-character "API Key" goes in the URL, the long
+    // "API Read Access Token" (starts with eyJ) goes in an Authorization header. Accept either.
+    const options = isReadAccessToken(key)
+      ? { params, headers: { Authorization: `Bearer ${key}` } }
+      : { params: { api_key: key, ...params } };
+    return this.http.get<T>(`${BASE}${path}`, options).pipe(
       catchError((error: HttpErrorResponse) => throwError(() => new Error(tmdbMessage(error))))
     );
   }
 }
 
+/** The v4 read access token is a JWT (three dot-separated parts starting with eyJ); the v3 key is 32 hex characters. */
+function isReadAccessToken(key: string): boolean {
+  return key.startsWith('eyJ') && key.split('.').length === 3;
+}
+
 function tmdbMessage(error: HttpErrorResponse): string {
-  if (error.status === 401) return 'TMDB did not accept that API key. Check it in Display settings.';
+  if (error.status === 401)
+    return 'TMDB did not accept that key. In Display settings, remove it and paste the "API Key" or the "API Read Access Token" from themoviedb.org (Settings, then API) again.';
   if (error.status === 0) return "Can't reach TMDB. Check your internet connection, or try another network (some mobile networks block TMDB).";
   if (error.status === 429) return 'TMDB is limiting requests. Wait a moment and try again.';
   return 'TMDB could not complete that request.';
