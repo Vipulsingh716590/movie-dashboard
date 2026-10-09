@@ -3,7 +3,7 @@ import { DecimalPipe } from '@angular/common';
 import { forkJoin } from 'rxjs';
 import { Genre } from '../../core/models/movie.model';
 import { TmdbListMovie, TmdbService } from '../../core/services/tmdb.service';
-import { TMDB_POSTER_BASE } from '../../core/utils/tmdb-map';
+import { environment } from '../../../environments/environment';
 import { Datum } from '../../core/utils/analytics';
 import { StatCardComponent } from '../../shared/components/stat-card/stat-card.component';
 import { BarChartComponent } from '../../shared/components/bar-chart/bar-chart.component';
@@ -67,7 +67,7 @@ export class TmdbLiveComponent implements OnInit {
   }
 
   poster(path: string | null): string {
-    return path ? `${TMDB_POSTER_BASE}${path}` : '';
+    return path ? `${environment.tmdbImageBase}/w342${path}` : '';
   }
 
   onKeyInput(event: Event): void {

@@ -8,3 +8,18 @@
 
 [build.environment]
   NODE_VERSION = "22"
+
+# TMDB through this site: the browser calls /tmdb-api/... and /tmdb-img/..., Netlify fetches TMDB server-side.
+# Some Indian networks (Jio, for one) block api.themoviedb.org and image.tmdb.org, so direct calls fail there.
+# Query strings (api_key, page, ...) are passed on to TMDB unchanged.
+[[redirects]]
+  from = "/tmdb-api/*"
+  to = "https://api.themoviedb.org/3/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/tmdb-img/*"
+  to = "https://image.tmdb.org/t/p/:splat"
+  status = 200
+  force = true

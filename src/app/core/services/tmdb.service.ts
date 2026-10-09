@@ -3,8 +3,9 @@ import { Injectable, computed, inject, signal } from '@angular/core';
 import { Observable, catchError, map, of, switchMap, throwError } from 'rxjs';
 import { Genre, NewMovie, TmdbHit, TmdbSuggestion } from '../models/movie.model';
 import { TMDB_POSTER_BASE, TmdbDetail, TmdbVideo, mapTmdbMovie, pickTrailer } from '../utils/tmdb-map';
+import { environment } from '../../../environments/environment';
 
-const BASE = 'https://api.themoviedb.org/3';
+const BASE = environment.tmdbApiBase;
 const KEY_STORAGE = 'movieflix-dashboard.tmdbKey';
 /** Many Indian films have their trailer uploaded in Hindi (or with no language set), which TMDB hides by default. */
 const VIDEO_LANGUAGES = 'en,hi,null';
@@ -134,7 +135,7 @@ export class TmdbService {
 
 function tmdbMessage(error: HttpErrorResponse): string {
   if (error.status === 401) return 'TMDB did not accept that API key. Check it in Display settings.';
-  if (error.status === 0) return "Can't reach TMDB. Check your internet connection.";
+  if (error.status === 0) return "Can't reach TMDB. Check your internet connection, or try another network (some mobile networks block TMDB).";
   if (error.status === 429) return 'TMDB is limiting requests. Wait a moment and try again.';
   return 'TMDB could not complete that request.';
 }
